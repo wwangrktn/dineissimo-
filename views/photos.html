@@ -1,3 +1,17 @@
 <div data-role="view" data-title="Photos" data-layout="main" data-model="app.Photos">
-  <h1 data-bind="html: title"></h1>
+  <ul class="full-width-list"
+            data-bind="source: dataSource"
+            data-template="photoTemplate">
+        </ul>
 </div>
+
+<script type="text/x-kendo-template" id="photoTemplate">
+<div class="row photo-row">
+	<div class="main-img-crop">
+		<img class="main-img" src="#: data.src #" />
+	</div>
+	<div class="author-block">
+		<img src="#: data.userImg #" alt="#: data.userName #" />
+  		<span>by #: data.userName #</span>
+</div>
+</script>

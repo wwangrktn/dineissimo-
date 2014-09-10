@@ -1,0 +1,27 @@
+[
+    {
+        "userName": "Bob Jones",
+        "userImg": "http://www.gravatar.com/avatar",
+        "src": "styles/images/firstPhoto.png"
+    },
+    {
+        "userName": "Sally Jones",
+        "userImg": "http://www.gravatar.com/avatar",
+        "src": "styles/images/secondPhoto.png"
+    },
+    {
+        "userName": "Walter Smith",
+        "userImg": "http://www.gravatar.com/avatar",
+        "src": "styles/images/thirdPhoto.png"
+    },
+    {
+        "userName": "Michelle Smith",
+        "userImg": "http://www.gravatar.com/avatar",
+        "src": "styles/images/fourthPhoto.png"
+    },
+    {
+        "userName": "Johnny Ford",
+        "userImg": "http://www.gravatar.com/avatar",
+        "src": "styles/images/fifthPhoto.png"
+    }
+]
