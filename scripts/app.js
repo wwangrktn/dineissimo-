@@ -1,8 +1,11 @@
-var app = (function (win) {
+/*jslint browser: true */
+/*global app, kendo */
+
+var app = (function () {
     'use strict';
 
-    var onDeviceReady = function() {
-      navigator.splashscreen.hide();
+    var onDeviceReady = function () {
+        navigator.splashscreen.hide();
     };
 
     //Initialize the KendoUI app
@@ -12,7 +15,7 @@ var app = (function (win) {
     document.addEventListener('deviceready',  onDeviceReady);
 
     return {
-      mobileApp: mobileApp
+        mobileApp: mobileApp
     };
 
 }(window));
