@@ -16,10 +16,14 @@ app.Menu = (function () {
         }
     });
 
+    var changeView = function (e) {
+        console.log('View Changed', e.currentTarget.text);
+    };
+
     return new kendo.observable({
         title: "Menu",
         dataSource: ds,
-        show: function (e) { console.log('testing', e); }
+        changeView: changeView
     });
 
 }());

@@ -1,19 +1,42 @@
-<div data-role="view" data-title="Menu" data-layout="main" data-model="app.Menu">
-  <ul class="full-width-list"
+<div data-role="view" id="popular" data-title="Menu" data-layout="main" data-model="app.Menu">
+    <div data-role="tabstrip">
+        <a href="#popular" data-icon="none">Popular</a>
+        <a href="#favorites" data-icon="none">Favorites</a>
+        <a href="#categories" data-icon="none">Categories</a>
+    </div>
+    <ul class="full-width-list"
             data-bind="source: dataSource"
             data-template="menuTemplate">
     </ul>
 </div>
 
+<div data-role="view" id="favorites" data-title="Menu" data-layout="main" data-model="app.Menu">
+<div data-role="tabstrip">
+        <a href="#popular" data-icon="none">Popular</a>
+        <a href="#favorites" data-icon="none">Favorites</a>
+        <a href="#categories" data-icon="none">Categories</a>
+    </div>
+    <h1>Favorites</h1>
+</div>
+
+<div data-role="view" id="categories" data-title="Menu" data-layout="main" data-model="app.Menu">
+<div data-role="tabstrip">
+        <a href="#popular" data-icon="none">Popular</a>
+        <a href="#favorites" data-icon="none">Favorites</a>
+        <a href="#categories" data-icon="none">Categories</a>
+    </div>
+    <h1>Categories</h1>
+</div>
+
 <script type="text/x-kendo-template" id="menuTemplate">
-	<div class="row menu-row">
-		<a href="\#views/menu-details.html?id=#= data.id #">
-		<img class="menu-img" src="#: data.imgSrc #" />
-		
-		<div class="menu-block">
-			<span class="title">#: data.title #</span><br />
-			<span class="price">$#: data.price #</span>
-	  	<div>
-	  	</a>
-	</div>
+    <div class="row menu-row">
+        <a href="\#views/menu-details.html?id=#= data.id #">
+        <img class="menu-img" src="#: data.imgSrc #" />
+        
+        <div class="menu-block">
+            <span class="title">#: data.title #</span><br />
+            <span class="price">$#: data.price #</span>
+        <div>
+        </a>
+    </div>
 </script>

@@ -22,6 +22,7 @@
     <script src="scripts/viewmodels/videos.js"></script>
     <script src="scripts/viewmodels/shopping-cart.js"></script>
     <script src="scripts/viewmodels/menu-details.js"></script>
+    <script src="scripts/viewmodels/edit-profile.js"></script>
 
 
 </head>
@@ -40,14 +41,14 @@
   </div>
 
   <!-- application drawer and contents -->
-  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="foodamental">
+  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="foodamental" data-model="app.EditProfile">
     <div id="side-header" data-role="header">
       <div id="user-panel">
         <img src="http://www.gravatar.com/avatar" alt="Profile Picture"/>
         <span id="user-name">User Name</span>
         <ul>
           <li>
-            <a href="views/edit-my-profile.html">Edit my profile</a>
+            <a data-bind="click: showEditProfile">Edit my profile</a>
           </li>
         </ul>
       </div>
@@ -75,7 +76,29 @@
         <a href="views/claim-your-prize.html" class="orange">Claim your prize</a>
       </li>
     </ul>
-  </div>       
+  </div>
+
+  <div data-role="drawer" id="editProfileDrawer" class="hidden" style="width:270px">
+    <div id="side-header" data-role="header">
+      <div id="user-panel">
+        <img src="http://www.gravatar.com/avatar" alt="Profile Picture"/>
+        <ul>
+          <li>
+            <a data-bind="click: updatePhoto">Update Photo</a>
+          </li>
+          <li>
+            <a data-bind="click: deletePhoto">Delete Photo</a>
+          </li>
+        </ul>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" />
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" />
+        <label for="email">e-mail</label>
+        <input type="text" id="email" />
+      </div>
+    </div>
+  </div>      
 
 </body>
 </html>

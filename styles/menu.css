@@ -13,11 +13,11 @@
 	height: 80px;
 	width: 80px;
 }
-
-.menu-row .title {
-	
+.km-tabstrip {
+	height: 20px;
 }
-
-.menu-row .price {
-	
+.km-tabstrip a{
+	background-color: white !important;
+	color: black !important;
+	height: 20px;
 }
