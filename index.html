@@ -8,6 +8,7 @@
     <link href="styles/about-us.css" rel="stylesheet" />
     <link href="styles/menu.css" rel="stylesheet" />
     <link href="styles/photos.css" rel="stylesheet" />
+    <link href="styles/claim.css" rel="stylesheet" />
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
@@ -33,6 +34,7 @@
       <div data-role="navbar">
         <span data-role="view-title"></span>
         <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+        <a data-role="button" href="views/claim-your-prize.html" data-align="right" data-transition="slide:down"></a>
       </div>
     </header>
 
@@ -71,7 +73,7 @@
       </li>
     </ul>
     <hr />
-    <ul>
+    <ul data-role="listview">
       <li>
         <a href="views/claim-your-prize.html" class="orange">Claim your prize</a>
       </li>
