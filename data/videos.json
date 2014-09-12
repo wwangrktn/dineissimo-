@@ -1,0 +1,22 @@
+[
+    {
+        "description": "Bob Jones",
+        "src": "styles/images/static-data/lobsterRoll.png"
+    },
+    {
+        "description": "Sally Jones",
+        "src": "styles/images/static-data/chicken.png"
+    },
+    {
+        "description": "Walter Smith",
+        "src": "styles/images/static-data/crabCake.png"
+    },
+    {
+        "description": "Michelle Smith",
+        "src": "styles/images/static-data/reindeerSausage.png"
+    },
+    {
+        "description": "Johnny Ford",
+        "src": "styles/images/static-data/hamburger.png"
+    }
+]

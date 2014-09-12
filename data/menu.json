@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Lobster Roll",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/lobsterRoll.png"
+    },
+    {
+        "id": 2,
+        "title": "Chicken",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/chicken.png"
+    },
+    {
+        "id": 3,
+        "title": "Crab Cakes",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/crabCake.png"
+    },
+    {
+        "id": 4,
+        "title": "Hamburger",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/hamburger.png"
+    },
+    {
+        "id": 5,
+        "title": "Lobster Roll",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/reindeerSausage.png"
+    }
+]

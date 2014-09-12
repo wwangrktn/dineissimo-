@@ -1,0 +1,29 @@
+
+/*************************************************************************
+ *
+ * Styles for the Photos page
+ *
+ *************************************************************************/
+.main-img {
+	width: 100%;
+	margin-top: -75px;
+}
+
+.main-img-crop {
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.author-block img {
+	width: 60px;
+	height: 60px;
+	padding: 8px;
+	margin-left: 14px;
+	border-radius: 30px;
+}
+
+.author-block span {
+	margin-top: 24px;
+	position: absolute;
+	font-size: 12px;
+}
