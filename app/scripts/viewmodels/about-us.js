@@ -5,7 +5,7 @@
 var app = app || {};
 
 app.AboutUs = (function () {
-    'use strict';
+    "use strict";
 
     return new kendo.observable({
         phone: "+1-888-365-2779",

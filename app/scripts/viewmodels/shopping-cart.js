@@ -5,7 +5,7 @@
 var app = app || {};
 
 app.ShoppingCart = (function () {
-    'use strict';
+    "use strict";
 
     return new kendo.observable({
         title: "Shopping Cart"

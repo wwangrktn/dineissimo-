@@ -5,18 +5,18 @@
 var app = app || {};
 
 app.EditProfile = (function () {
-    'use strict';
+    "use strict";
 
     var showEditProfile = function () {
-        console.log('showing');
-        $('#appDrawer').hide();
-        $('#editProfileDrawer').show();
+        console.log("showing");
+        $("#appDrawer").hide();
+        $("#editProfileDrawer").show();
     };
 
     var hideEditProfile = function () {
-        console.log('hiding');
-        $('#appDrawer').show();
-        $('#editProfileDrawer').hide();
+        console.log("hiding");
+        $("#appDrawer").show();
+        $("#editProfileDrawer").hide();
     };
 
     return new kendo.observable({

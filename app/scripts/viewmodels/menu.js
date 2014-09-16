@@ -5,7 +5,7 @@
 var app = app || {};
 
 app.Menu = (function () {
-    'use strict';
+    "use strict";
 
     var ds = new kendo.data.DataSource({
         transport: {
@@ -17,7 +17,7 @@ app.Menu = (function () {
     });
 
     var changeView = function (e) {
-        console.log('View Changed', e.currentTarget.text);
+        console.log("View Changed", e.currentTarget.text);
     };
 
     return new kendo.observable({

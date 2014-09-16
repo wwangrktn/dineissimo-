@@ -5,7 +5,7 @@
 var app = app || {};
 
 app.Claim = (function () {
-    'use strict';
+    "use strict";
 
     //This will be replaced by the event handler for a live sync.
     var showThanks = function (e) {

@@ -5,7 +5,7 @@
 var app = app || {};
 
 app.Photos = (function () {
-    'use strict';
+    "use strict";
 
     var ds = new kendo.data.DataSource({
         transport: {
