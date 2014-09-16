@@ -1,3 +1,15 @@
+ @font-face {
+        font-family: "icon-font";
+        src: url("fonts/icons.woff") format("woff"),
+             url("fonts/icons.ttf") format("truetype");
+    }
+
+.km-icon:after,
+.km-icon:before
+{
+    font: 1em/1em "icon-font";
+}
+
 .km-drawer-button:before, .km-drawer-button:after  { content: "\E077"; }
 
 /*************************************************************************
