@@ -1,28 +1,30 @@
 /*jslint browser: true */
 /*global app, kendo */
+"use strict";
 
-//View Model for the edit profile page
-var app = app || {};
 
-app.EditProfile = (function () {
-    "use strict";
+(function (win) {
+    win.app = win.app || {};
 
-    var showEditProfile = function () {
-        console.log("showing");
-        $("#appDrawer").hide();
-        $("#editProfileDrawer").show();
-    };
+    win.app.EditProfile = (function () {
 
-    var hideEditProfile = function () {
-        console.log("hiding");
-        $("#appDrawer").show();
-        $("#editProfileDrawer").hide();
-    };
+        var showEditProfile = function () {
+            console.log("showing");
+            $("#appDrawer").hide();
+            $("#editProfileDrawer").show();
+        };
 
-    return new kendo.observable({
-        showEditProfile: showEditProfile,
-        updatePhoto: hideEditProfile,
-        deletePhoto: hideEditProfile
-    });
+        var hideEditProfile = function () {
+            console.log("hiding");
+            $("#appDrawer").show();
+            $("#editProfileDrawer").hide();
+        };
 
-}());
+        return new kendo.observable({
+            showEditProfile: showEditProfile,
+            updatePhoto: hideEditProfile,
+            deletePhoto: hideEditProfile
+        });
+
+    }());
+}(window));

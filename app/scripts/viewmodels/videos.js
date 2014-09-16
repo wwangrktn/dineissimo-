@@ -1,24 +1,25 @@
 /*jslint browser: true */
 /*global app, kendo */
+"use strict";
 
-//View Model for the Videos page.
-var app = app || {};
+(function (win) {
+    win.app = win.app || {};
 
-app.Videos = (function () {
-    "use strict";
+    win.app.Videos = (function () {
 
-    var ds = new kendo.data.DataSource({
-        transport: {
-            read: {
-                url: "data/videos.json",
-                dataType: "json"
+        var ds = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "data/videos.json",
+                    dataType: "json"
+                }
             }
-        }
-    });
+        });
 
-    return new kendo.observable({
-        title: "Videos",
-        dataSource: ds
-    });
+        return new kendo.observable({
+            title: "Videos",
+            dataSource: ds
+        });
 
-}());
+    }());
+}(window));

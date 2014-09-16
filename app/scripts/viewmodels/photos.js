@@ -1,24 +1,25 @@
 /*jslint browser: true */
 /*global app, kendo */
+"use strict";
 
-//View Model for the Photos page.
-var app = app || {};
+(function (win) {
+    win.app = win.app || {};
 
-app.Photos = (function () {
-    "use strict";
+    win.app.Photos = (function () {
 
-    var ds = new kendo.data.DataSource({
-        transport: {
-            read: {
-                url: "data/photos.json",
-                dataType: "json"
+        var ds = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "data/photos.json",
+                    dataType: "json"
+                }
             }
-        }
-    });
+        });
 
-    return new kendo.observable({
-        title: "Photos",
-        dataSource: ds
-    });
+        return new kendo.observable({
+            title: "Photos",
+            dataSource: ds
+        });
 
-}());
+    }());
+}(window));

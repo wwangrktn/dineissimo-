@@ -1,34 +1,35 @@
 /*jslint browser: true */
 /*global app, kendo */
+"use strict";
 
-//View Model for the Menu Details page.
-var app = app || {};
+(function (win) {
+    win.app = win.app || {};
 
-app.MenuDetails = (function () {
-    "use strict";
+    win.app.MenuDetails = (function () {
 
-    var ds = new kendo.data.DataSource({
-        transport: {
-            read: {
-                url: "data/menu.json",
-                dataType: "json"
+        var ds = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "data/menu.json",
+                    dataType: "json"
+                }
             }
-        }
-    });
-
-    var show = function (e) {
-        var view = e.view;
-        ds.fetch(function () {
-            var model = view.model,
-                item = ds.get(view.params.id);
-            model.set("item", item);
         });
-    };
 
-    return new kendo.observable({
-        title: "Menu Details",
-        dataSource: ds,
-        show: show
-    });
+        var show = function (e) {
+            var view = e.view;
+            ds.fetch(function () {
+                var model = view.model,
+                    item = ds.get(view.params.id);
+                model.set("item", item);
+            });
+        };
 
-}());
+        return new kendo.observable({
+            title: "Menu Details",
+            dataSource: ds,
+            show: show
+        });
+
+    }());
+}(window));

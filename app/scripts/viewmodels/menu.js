@@ -1,29 +1,30 @@
 /*jslint browser: true */
 /*global app, kendo */
+"use strict";
 
-//View Model for the menu page.
-var app = app || {};
+(function (win) {
+    win.app = win.app || {};
 
-app.Menu = (function () {
-    "use strict";
+    win.app.Menu = (function () {
 
-    var ds = new kendo.data.DataSource({
-        transport: {
-            read: {
-                url: "data/menu.json",
-                dataType: "json"
+        var ds = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "data/menu.json",
+                    dataType: "json"
+                }
             }
-        }
-    });
+        });
 
-    var changeView = function (e) {
-        console.log("View Changed", e.currentTarget.text);
-    };
+        var changeView = function (e) {
+            console.log("View Changed", e.currentTarget.text);
+        };
 
-    return new kendo.observable({
-        title: "Menu",
-        dataSource: ds,
-        changeView: changeView
-    });
+        return new kendo.observable({
+            title: "Menu",
+            dataSource: ds,
+            changeView: changeView
+        });
 
-}());
+    }());
+}(window));

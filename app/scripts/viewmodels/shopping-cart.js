@@ -1,14 +1,15 @@
 /*jslint browser: true */
 /*global app, kendo */
+"use strict";
 
-//View Model for the Shopping Cart page.
-var app = app || {};
+(function (win) {
+    win.app = win.app || {};
 
-app.ShoppingCart = (function () {
-    "use strict";
+    win.app.ShoppingCart = (function () {
 
-    return new kendo.observable({
-        title: "Shopping Cart"
-    });
+        return new kendo.observable({
+            title: "Shopping Cart"
+        });
 
-}());
+    }());
+}(window));
