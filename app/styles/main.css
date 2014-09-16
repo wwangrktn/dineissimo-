@@ -1,89 +1,82 @@
  @font-face {
-        font-family: "icon-font";
-        src: url("fonts/icons.woff") format("woff"),
-             url("fonts/icons.ttf") format("truetype");
-    }
-
-.km-icon:after,
-.km-icon:before
-{
-    font: 1em/1em "icon-font";
-}
-
-.km-drawer-button:before, .km-drawer-button:after  { content: "\E077"; }
-
-/*************************************************************************
+     font-family: "icon-font";
+     src: url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype");
+ }
+ .km-icon:after, .km-icon:before {
+     font: 1em/1em"icon-font";
+ }
+ .km-drawer-button:before, .km-drawer-button:after {
+     content: "\E077";
+ }
+ /*************************************************************************
  *
  * Helper styles
  *
  *************************************************************************/
-.orange { color: #ff6e40 !important; }
-.full-width-list { padding: 0px;}
-.hidden { display: none;}
-.left { float: left; }
-
-/*************************************************************************
+ .orange {
+     color: #ff6e40 !important;
+ }
+ .full-width-list {
+     padding: 0px;
+ }
+ .hidden {
+     display: none;
+ }
+ .left {
+     float: left;
+ }
+ /*************************************************************************
  *
  * Styles for the app drawer
  *
  *************************************************************************/
-
-#appDrawer .km-content, #editProfileDrawer .km-content {
-	background-color: #5d4037;
-}
-
-#appDrawer ul {
-	padding-left: 20px;
-}
-
-#appDrawer li {
-	list-style: none;
-margin: 10px 0;
-font-weight: bold;
-background-color: transparent;
-box-shadow: none;
-border: 0px;
-line-height: 0em;
-}
-
-#appDrawer li a:after {
-	box-shadow: none;
-	content: none;
-}
-
-#appDrawer hr {
-	border-color: black;
-}
-
-#appDrawer li a {
-	text-decoration: none;
-	color: white;
-}
-
-#user-panel {
-	background-color: #4a332c;
-	height: 130px;
-}
-
-#user-panel img {
-	width: 80px;
-	height: 80px;
-	padding: 8px;
-	border-radius: 40px;
-	-webkit-border-radius: 40px;
-	-moz-border-radius: 40px;
-}
-
-#user-name {
-	position: absolute;
-	top: 50%;
-	margin-left:12px;
-	margin-top: -34px;
-	color: #a59996;
-	font-weight: bold;
-}
-
-#editProfileDrawer input{
-	width: 96%;
-	margin-left: 2%;%;
-}
+ #appDrawer .km-content, #editProfileDrawer .km-content {
+     background-color: #5d4037;
+ }
+ #appDrawer ul {
+     padding-left: 20px;
+ }
+ #appDrawer li {
+     list-style: none;
+     margin: 10px 0;
+     font-weight: bold;
+     background-color: transparent;
+     box-shadow: none;
+     border: 0px;
+     line-height: 0em;
+ }
+ #appDrawer li a:after {
+     box-shadow: none;
+     content: none;
+ }
+ #appDrawer hr {
+     border-color: black;
+ }
+ #appDrawer li a {
+     text-decoration: none;
+     color: white;
+ }
+ #user-panel {
+     background-color: #4a332c;
+     height: 130px;
+ }
+ #user-panel img {
+     width: 80px;
+     height: 80px;
+     padding: 8px;
+     border-radius: 40px;
+     -webkit-border-radius: 40px;
+     -moz-border-radius: 40px;
+ }
+ #user-name {
+     position: absolute;
+     top: 50%;
+     margin-left: 12px;
+     margin-top: -34px;
+     color: #a59996;
+     font-weight: bold;
+ }
+ #editProfileDrawer input {
+     width: 96%;
+     margin-left: 2%;
+ }

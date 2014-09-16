@@ -3,21 +3,22 @@
  * Styles for the Menu List page
  *
  *************************************************************************/
+
 .menu-row {
-	clear: both;
-	border-bottom: 1px solid #ccc;
-	height:80px;
+    clear: both;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
 }
 .menu-img {
-	float: left;
-	height: 80px;
-	width: 80px;
+    float: left;
+    height: 80px;
+    width: 80px;
 }
 .km-tabstrip {
-	height: 20px;
+    height: 20px;
 }
-.km-tabstrip a{
-	background-color: white !important;
-	color: black !important;
-	height: 20px;
+.km-tabstrip a {
+    background-color: white !important;
+    color: black !important;
+    height: 20px;
 }
