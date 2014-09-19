@@ -5,4 +5,10 @@
 #claim .km-content {
     background-color: #ff6e40;
     color: white;
+    padding-top: 60px;
 }
+
+.km-cancel:before, .km-cancel:after {
+     content: '\e807';
+     color: #ff6e40;
+ }

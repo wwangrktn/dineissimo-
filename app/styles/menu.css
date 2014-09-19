@@ -3,7 +3,9 @@
  * Styles for the Menu List page
  *
  *************************************************************************/
-
+#popular .km-content, #favorites .km-content, #categories .km-content {
+    padding-top: 48px;
+}
 .menu-row {
     clear: both;
     border-bottom: 1px solid #ccc;
@@ -22,3 +24,29 @@
     color: black !important;
     height: 20px;
 }
+
+.km-th-large:before, .km-th-large:after {
+    content: '\e803';
+}
+
+ .km-list-bullet:before, .km-list-bullet:after { 
+    content: '\e81b'; 
+}
+#popular a {
+    text-decoration: none;
+}
+
+.menu-block{
+    height: 100%;
+}
+
+.price {
+    display: block;
+    margin-top: 40px;
+    margin-left: 92px;
+}
+.title {
+    margin-left:12px;
+}
+
+

@@ -1,10 +1,18 @@
 <div data-role="view" id="popular" data-title="Menu" data-layout="main" data-model="app.Menu">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
+            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView"  data-icon="th-large" data-align="right" ></a>
+            <a data-role="button" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
+        </div>
+    </header>
     <div data-role="tabstrip">
         <a href="#popular" data-icon="none">Popular</a>
         <a href="#favorites" data-icon="none">Favorites</a>
         <a href="#categories" data-icon="none">Categories</a>
     </div>
-    <ul class="full-width-list"
+    <ul id="popular-list" class="full-width-list"
             data-bind="source: dataSource"
             data-template="menuTemplate">
     </ul>
@@ -31,7 +39,19 @@
 <script type="text/x-kendo-template" id="menuTemplate">
     <div class="row menu-row">
         <a href="\#views/menu-details.html?id=#= data.id #">
-        <img class="menu-img" src="#: data.imgSrc #" />
+            <img class="menu-img" src="#: data.imgSrc #" />
+            
+            <div class="menu-block">
+                <span class="title">#: data.title #</span><br />
+                <span class="price">$#: data.price #</span>
+            <div>
+        </a>
+    </div>
+</script>
+<script type="text/x-kendo-template" id="photoMenuTemplate">
+    <div class="row menu-row">
+        <a href="\#views/menu-details.html?id=#= data.id #">
+        <img class="photo-img" src="#: data.imgSrc #" />
         
         <div class="menu-block">
             <span class="title">#: data.title #</span><br />

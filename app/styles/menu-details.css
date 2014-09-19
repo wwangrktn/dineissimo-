@@ -1,0 +1,4 @@
+.km-left-open:before, .km-left-open:after {
+    content: '\e801';
+    color:white;
+ }

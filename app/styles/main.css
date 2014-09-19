@@ -5,6 +5,42 @@
  .km-icon:after, .km-icon:before {
      font: 1em/1em"icon-font";
  }
+ /***********************************************************
+ *
+ * Individual Icons
+ *
+ ***********************************************************/
+ .km-food:before, .km-food:after {
+     content: '\e80d';
+ }
+ .km-info:before, .km-info:after {
+     content: '\e800';
+ }
+ .km-picture:before, .km-picture:after {
+     content: '\e80f';
+ }
+ .km-video:before, .km-video:after {
+     content: '\e817';
+ }
+ .km-basket:before, .km-basket:after {
+     content: '\e804';
+ }
+ .km-award:before, .km-award:after {
+     content: '\e811';
+ }
+ .km-pencil:before, .km-pencil:after {
+     content: '\e808';
+ }
+ .km-phone-icon:before, .km-phone-icon:after {
+     content: '\e802';
+ }
+ .km-location:before, .km-location:after {
+     content: '\e80a';
+ }
+ .km-menu:before, .km-menu:after {
+     content: '\e80c';
+ }
+
  .km-drawer-button:before, .km-drawer-button:after {
      content: "\E077";
  }
@@ -25,56 +61,89 @@
  .left {
      float: left;
  }
+
+ /*************************************************************************
+  *
+  * Menubar stylings
+  *
+  ************************************************************************/
+.km-navbar {
+    background-color: rgba(93,64,55, 0.92) !important;
+    position:absolute;
+    color:white !important;
+}
+
+.km-flat .km-button {
+    border: none;
+    background: transparent;
+}
+
  /*************************************************************************
  *
  * Styles for the app drawer
  *
  *************************************************************************/
+ #appDrawer .km-content {
+    background-image: url(images/slideoutLogo_2x.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 80%;
+ }
  #appDrawer .km-content, #editProfileDrawer .km-content {
-     background-color: #5d4037;
+    background-color: #5d4037;
  }
  #appDrawer ul {
-     padding-left: 20px;
+    padding-left: 20px;
  }
  #appDrawer li {
-     list-style: none;
-     margin: 10px 0;
-     font-weight: bold;
-     background-color: transparent;
-     box-shadow: none;
-     border: 0px;
-     line-height: 0em;
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0px;
+    line-height: 0em;
  }
  #appDrawer li a:after {
-     box-shadow: none;
-     content: none;
+    box-shadow: none;
+    content: none;
+ }
+ #appDrawer .km-icon, #appDrawer li a:before {
+    margin-right: 18px;
  }
  #appDrawer hr {
-     border-color: black;
+    border-color: black;
  }
  #appDrawer li a {
-     text-decoration: none;
-     color: white;
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
  }
  #user-panel {
-     background-color: #4a332c;
-     height: 130px;
+    background-color: #4a332c;
+    height: 130px;
  }
  #user-panel img {
-     width: 80px;
-     height: 80px;
-     padding: 8px;
-     border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 40px;
+    margin-left: 24px;
  }
  #user-name {
-     position: absolute;
-     top: 50%;
-     margin-left: 12px;
-     margin-top: -34px;
-     color: #a59996;
-     font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-left: 12px;
+    margin-top: -34px;
+    color: #a59996;
+    font-weight: bold;
  }
  #editProfileDrawer input {
-     width: 96%;
-     margin-left: 2%;
+    width: 96%;
+    margin-left: 2%;
+ }
+
+ #edit-link:before {
+    font: 1em/1em"icon-font";
+    content: '\e808';
  }

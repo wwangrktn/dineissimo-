@@ -10,6 +10,7 @@
     <link href="styles/menu.css" rel="stylesheet" />
     <link href="styles/photos.css" rel="stylesheet" />
     <link href="styles/claim.css" rel="stylesheet" />
+    <link href="styles/menu-details.css" rel="stylesheet" />
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
@@ -35,8 +36,8 @@
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-                <a data-role="button" href="views/claim-your-prize.html" data-align="right" data-transition="slide:down"></a>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
+                <a data-role="button" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
             </div>
         </header>
 
@@ -52,7 +53,7 @@
                 <span id="user-name">User Name</span>
                 <ul>
                     <li>
-                        <a data-bind="click: showEditProfile">Edit my profile</a>
+                        <a data-bind="click: showEditProfile" id="edit-link" > Edit my profile</a>
                     </li>
                 </ul>
             </div>
@@ -62,22 +63,22 @@
                 <a href="views/menu.html" data-icon="food">Menu</a>
             </li>
             <li>
-                <a href="views/about-us.html">About us</a>
+                <a href="views/about-us.html" data-icon="info">About us</a>
             </li>
             <li>
-                <a href="views/photos.html">Photos</a>
+                <a href="views/photos.html" data-icon="picture">Photos</a>
             </li>
             <li>
-                <a href="views/videos.html">Videos</a>
+                <a href="views/videos.html" data-icon="video">Videos</a>
             </li>
             <li>
-                <a href="views/shopping-cart.html">Shoping cart</a>
+                <a href="views/shopping-cart.html" data-icon="basket">Shoping cart</a>
             </li>
         </ul>
         <hr />
         <ul data-role="listview">
             <li>
-                <a href="views/claim-your-prize.html" class="orange">Claim your prize</a>
+                <a href="views/claim-your-prize.html" class="orange" data-icon="award">Claim your prize</a>
             </li>
         </ul>
     </div>
