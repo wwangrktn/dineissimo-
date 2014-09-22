@@ -3,7 +3,8 @@
         <div data-role="navbar">
             <span data-role="view-title"></span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
-            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView"  data-icon="th-large" data-align="right" ></a>
+            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, visible: inListView"  data-icon="th-large" data-align="right" ></a>
+            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
             <a data-role="button" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
         </div>
     </header>
@@ -12,9 +13,13 @@
         <a href="#favorites" data-icon="none">Favorites</a>
         <a href="#categories" data-icon="none">Categories</a>
     </div>
-    <ul id="popular-list" class="full-width-list"
-            data-bind="source: dataSource"
+    <ul id="popular-list" data-role="listview"
+            data-bind="source: dataSource, invisible: photoListVisible"
             data-template="menuTemplate">
+    </ul>
+    <ul id="popular-photo-list" data-role="listview"
+            data-bind="source: dataSource, visible: photoListVisible"
+            data-template="photoMenuTemplate">
     </ul>
 </div>
 
@@ -41,6 +46,10 @@
         <a href="\#views/menu-details.html?id=#= data.id #">
             <img class="menu-img" src="#: data.imgSrc #" />
             
+            <div class="menu-buttons">
+                <span class="icon-cart"> </span>
+                <span class="icon-star"></span>
+            </div>
             <div class="menu-block">
                 <span class="title">#: data.title #</span><br />
                 <span class="price">$#: data.price #</span>
@@ -57,6 +66,7 @@
             <span class="title">#: data.title #</span><br />
             <span class="price">$#: data.price #</span>
         <div>
+
         </a>
     </div>
 </script>

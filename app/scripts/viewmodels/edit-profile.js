@@ -6,25 +6,18 @@
 (function (win) {
     win.app = win.app || {};
 
-    win.app.EditProfile = (function () {
+    win.app.EditProfile = kendo.observable({
 
-        var showEditProfile = function () {
+        showEditProfile: function () {
             console.log("showing");
             $("#appDrawer").hide();
             $("#editProfileDrawer").show();
-        };
+        },
 
-        var hideEditProfile = function () {
+        hideEditProfile: function () {
             console.log("hiding");
             $("#appDrawer").show();
             $("#editProfileDrawer").hide();
-        };
-
-        return new kendo.observable({
-            showEditProfile: showEditProfile,
-            updatePhoto: hideEditProfile,
-            deletePhoto: hideEditProfile
-        });
-
-    }());
+        }
+    });
 }(window));

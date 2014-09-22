@@ -5,11 +5,7 @@
 (function (win) {
     win.app = win.app || {};
 
-    win.app.ShoppingCart = (function () {
-
-        return new kendo.observable({
-            title: "Shopping Cart"
-        });
-
-    }());
+    win.app.ShoppingCart = kendo.observable({
+        title: "Shopping Cart"
+    });
 }(window));

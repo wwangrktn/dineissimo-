@@ -32,6 +32,22 @@
  .km-list-bullet:before, .km-list-bullet:after { 
     content: '\e81b'; 
 }
+
+.icon-star:before {
+    padding: 0 12px;
+     font: 1.2em/1.2em"icon-font";
+     content: '\e80e';
+}
+.icon-cart:before {
+    font: 1.2em/1.2em"icon-font";
+    content: '\e804';
+}
+
+.menu-buttons {
+    float:right;
+    margin-top: 50px;
+}
+
 #popular a {
     text-decoration: none;
 }
@@ -43,10 +59,12 @@
 .price {
     display: block;
     margin-top: 40px;
-    margin-left: 92px;
+    margin-left: 90px;
+    font-size: 9pt;
 }
 .title {
-    margin-left:12px;
+    margin-left:10px;
+    font-size: 11pt;
 }
 
 

@@ -5,31 +5,26 @@
 (function (win) {
     win.app = win.app || {};
 
-    win.app.MenuDetails = (function () {
+    win.app.MenuDetails = kendo.observable({
 
-        var ds = new kendo.data.DataSource({
+        dataSource: new kendo.data.DataSource({
             transport: {
                 read: {
                     url: "data/menu.json",
                     dataType: "json"
                 }
             }
-        });
+        }),
 
-        var show = function (e) {
+        show: function (e) {
             var view = e.view;
-            ds.fetch(function () {
+            win.app.MenuDetails.dataSource.fetch(function () {
                 var model = view.model,
-                    item = ds.get(view.params.id);
+                    item = win.app.MenuDetails.dataSource.get(view.params.id);
                 model.set("item", item);
             });
-        };
+        },
 
-        return new kendo.observable({
-            title: "Menu Details",
-            dataSource: ds,
-            show: show
-        });
-
-    }());
+        title: "Menu Details"
+    });
 }(window));

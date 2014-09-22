@@ -5,21 +5,16 @@
 (function (win) {
     win.app = win.app || {};
 
-    win.app.Photos = (function () {
+    win.app.Photos = kendo.observable({
 
-        var ds = new kendo.data.DataSource({
+        dataSource: new kendo.data.DataSource({
             transport: {
                 read: {
                     url: "data/photos.json",
                     dataType: "json"
                 }
             }
-        });
-
-        return new kendo.observable({
-            title: "Photos",
-            dataSource: ds
-        });
-
-    }());
+        }),
+        title: "Photos"
+    });
 }(window));
