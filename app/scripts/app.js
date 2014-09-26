@@ -5,6 +5,18 @@
 (function (win) {
     win.app = (function () {
 
+        // global error handling
+        var showAlert = function (message, title, callback) {
+            navigator.notification.alert(message, callback, title, 'OK');
+        };
+
+        win.addEventListener('error', function (e) {
+            e.preventDefault();
+            var message = e.message + "' from " + e.filename + ":" + e.lineno;
+            showAlert(message, 'Error occurred');
+            return true;
+        });
+
         var onDeviceReady = function () {
             navigator.splashscreen.hide();
         };
