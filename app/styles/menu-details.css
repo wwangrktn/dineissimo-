@@ -1,4 +1,40 @@
 .km-left-open:before, .km-left-open:after {
     content: '\e801';
     color:white;
- }
+}
+
+#details img {
+	width: 100%;
+	z-index: 1;
+}
+
+#menu-details-box {
+	background-color: white;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: -42px;
+	z-index: 999;
+	position: absolute;
+	box-shadow: 0px 0px 23px 10px rgba(0,0,0,0.4);
+}
+
+.details-buttons {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	border: 0;
+	padding: 0;
+	width: 100%;
+}
+.details-buttons li{
+	width: 30%;
+	list-style: none;
+	display: inline;
+	margin-left: 3%;
+	float: left;
+	text-align: center;
+}
+
+#menu-details-box h4 {
+	margin-bottom: 0;
+}

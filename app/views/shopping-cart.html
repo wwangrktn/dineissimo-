@@ -1,10 +1,26 @@
 <div data-role="view" data-title="Shopping Cart" data-layout="main" data-model="app.ShoppingCart">
-	<h1 data-bind="html: title"></h1>
-  	<ul data-role="listview" data-style="inset" data-template="contactsTemplate" data-bind="source: ds"></ul>
+	
+  	<ul id="cart-list" data-role="listview"
+            data-bind="source: cart"
+            data-template="cartTemplate">
+    </ul>
 </div>
 
 <!-- this is the template used by the listview. template items are automatically
      wrapped in an <li> by Kendo UI Mobile -->
-<script type="text/x-kendo-template" id="contactsTemplate">
-  <a data-bind="click: alert">#: data.name #</a>
+<script type="text/x-kendo-template" id="cartTemplate">
+  <div class="row menu-row">
+        <a href="\#views/menu-details.html?id=#= data.id #">
+            <img class="menu-img" src="#: data.imgSrc #" />
+         
+        </a>   
+            <div class="menu-buttons">
+                <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
+                <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
+            </div>
+            <div class="menu-block">
+                <span class="title">#: data.title #</span><br />
+                <span class="price">$#: data.price #</span>
+            <div>
+    </div>
 </script>

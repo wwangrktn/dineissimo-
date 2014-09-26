@@ -67,4 +67,25 @@
     font-size: 11pt;
 }
 
+.photo-menu-box {
+    background-color: white;
+    width: 99%;
+    box-shadow: 0px 0px 23px 10px rgba(0,0,0,0.1);
+}
+
+.photo-menu-box img {
+    width: 100%;
+}
+
+.photo-menu-box h4 {
+    margin: 12px;
+}
+
+.photo-menu-box .menu-block {
+    padding-bottom: 24px;
+}
+
+.photo-price {
+    margin-left: 12px;
+}
 

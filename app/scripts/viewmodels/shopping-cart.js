@@ -6,6 +6,9 @@
     win.app = win.app || {};
 
     win.app.ShoppingCart = kendo.observable({
-        title: "Shopping Cart"
+        title: "Shopping Cart",
+        cart: new kendo.data.DataSource({
+            data: []
+        })
     });
 }(window));

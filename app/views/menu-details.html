@@ -1,13 +1,18 @@
-<div data-role="view" data-show="app.MenuDetails.show" data-layout="main" data-model="app.MenuDetails">
-	<header data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title" data-bind="html: item.title"></span>
-        <a data-role="backbutton"  data-icon="left-open" data-align="left"></a>
-      </div>
+<div id="details" data-role="view" data-show="app.MenuDetails.show" data-layout="main" data-model="app.MenuDetails">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title" data-bind="html: item.title"></span>
+            <a data-role="backbutton" data-icon="left-open" data-align="left"></a>
+        </div>
     </header>
-  <img data-bind="attr: { src: item.imgSrc }" />
-  <div id="menu-details-box">
-  <p data-bind="html: item.description"></p>
-  <span class="price" data-bind="html: item.price" />
-  </div>
+    <img data-bind="attr: { src: item.imgSrc }" />
+    <div id="menu-details-box">
+        <p data-bind="html: item.description"></p>
+        <h4>$<span data-bind="html: item.price" /></h4>
+        <ul class="details-buttons">
+            <li class=""><span class="icon-cart orange"> </span><br />In the cart</li>
+            <li class=""><span class="icon-star orange"> </span><br />Faved</li>
+            <li><span class="icon-share"> </span><br />Shared</li>
+        </ul>
+    </div>
 </div>

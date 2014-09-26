@@ -23,50 +23,57 @@
     </ul>
 </div>
 
-<div data-role="view" id="favorites" data-title="Menu" data-layout="main" data-model="app.Menu">
+<div data-role="view" id="favorites" data-title="Favorites" data-title="Menu" data-layout="main" data-model="app.Menu">
 <div data-role="tabstrip">
         <a href="#popular" data-icon="none">Popular</a>
         <a href="#favorites" data-icon="none">Favorites</a>
         <a href="#categories" data-icon="none">Categories</a>
     </div>
-    <h1>Favorites</h1>
+    <ul id="popular-list" data-role="listview"
+            data-bind="source: favorites"
+            data-template="menuTemplate">
+    </ul>
 </div>
 
-<div data-role="view" id="categories" data-title="Menu" data-layout="main" data-model="app.Menu">
+<div data-role="view" id="categories" data-title="Categories" data-layout="main" data-model="app.Menu">
 <div data-role="tabstrip">
         <a href="#popular" data-icon="none">Popular</a>
         <a href="#favorites" data-icon="none">Favorites</a>
         <a href="#categories" data-icon="none">Categories</a>
     </div>
-    <h1>Categories</h1>
 </div>
 
 <script type="text/x-kendo-template" id="menuTemplate">
     <div class="row menu-row">
         <a href="\#views/menu-details.html?id=#= data.id #">
             <img class="menu-img" src="#: data.imgSrc #" />
-            
+         
+        </a>   
             <div class="menu-buttons">
-                <span class="icon-cart"> </span>
-                <span class="icon-star"></span>
+                <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
+                <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
             </div>
             <div class="menu-block">
                 <span class="title">#: data.title #</span><br />
                 <span class="price">$#: data.price #</span>
             <div>
-        </a>
     </div>
 </script>
 <script type="text/x-kendo-template" id="photoMenuTemplate">
-    <div class="row menu-row">
-        <a href="\#views/menu-details.html?id=#= data.id #">
-        <img class="photo-img" src="#: data.imgSrc #" />
-        
-        <div class="menu-block">
-            <span class="title">#: data.title #</span><br />
-            <span class="price">$#: data.price #</span>
-        <div>
-
-        </a>
+    <div class="row photo-menu-row">
+        <div class="photo-menu-box">
+            <a href="\#views/menu-details.html?id=#= data.id #">
+                <img class="photo-img" src="#: data.imgSrc #" />
+                
+                <div class="menu-block">
+                    <h4>#: data.title #</h4>
+                    <div class="right">
+                        <a href="\#" data-bind="click: addToCart" ><span class="icon-cart orange"> </span></a>
+                        <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star orange"></span></a>
+                    </div>
+                    <span class="photo-price">$#: data.price #</span>
+                <div>
+            </a>
+        </div>
     </div>
 </script>

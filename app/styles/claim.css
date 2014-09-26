@@ -12,3 +12,28 @@
      content: '\e807';
      color: #ff6e40;
  }
+
+.right {
+    float: right;
+}
+
+.claim-img {
+	max-height: 90px;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+
+.bottom-border {
+	border-bottom: 1px solid white;
+}
+#claim p {
+	margin-left: 48px;
+}
+
+#claim .waiver p {
+	margin-left: 3px;
+}
+
+#claim .km-scroll-container {
+	margin-top: -20px;
+}

@@ -16,9 +16,23 @@
             }
         }),
 
+        favorites: new kendo.data.DataSource({
+            data: []
+        }),
+
         photoListVisible: false,
         inListView: true,
         title: "Menu",
+
+        addToFavorites: function (e) {
+            e.preventDefault();
+            win.app.Menu.favorites.add(e.data);
+        },
+
+        addToCart: function (e) {
+            e.preventDefault();
+            win.app.ShoppingCart.cart.add(e.data);
+        },
 
         changeView : function (e) {
             var that = this;

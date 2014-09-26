@@ -8,10 +8,11 @@
 <script type="text/x-kendo-template" id="videoTemplate">
 	<div class="row photo-row">
 		<div class="main-img-crop">
-			<img class="main-img" src="#: data.src #" />
+			<iframe width="320" height="180" src="//www.youtube.com/embed/#: data.src #?rel=0" frameborder="0" allowfullscreen></iframe>
+			
 		</div>
 		<div class="author-block">
-			<img src="" alt="#: data.description #" />
+			<img src="styles/images/videoprofile.png" alt="#: data.description #" />
 	  		<span>by #: data.description #</span>
 	</div>
 </script>
