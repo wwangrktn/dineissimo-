@@ -1,22 +1,26 @@
 [
     {
         "description": "Bob Jones",
-        "src": "77k7xrm9BoY"
+        "url": "http://www.youtube.com/embed/77k7xrm9BoY?rel=0"
     },
     {
         "description": "Sally Jones",
-        "src": "WGd3vVF_RQk"
+        "src": "WGd3vVF_RQk",
+        "url": "http://www.youtube.com/embed/77k7xrm9BoY?rel=0"
     },
     {
         "description": "Walter Smith",
-        "src": "0yOA1WnlpWY"
+        "src": "0yOA1WnlpWY",
+        "url": "http://www.youtube.com/embed/77k7xrm9BoY?rel=0"
     },
     {
         "description": "Michelle Smith",
-        "src": "shHYmOefRNLk"
+        "src": "shHYmOefRNLk",
+        "url": "http://www.youtube.com/embed/77k7xrm9BoY?rel=0"
     },
     {
         "description": "Johnny Ford",
-        "src": "EVuiTbde80k"
+        "src": "EVuiTbde80k",
+        "url": "http://www.youtube.com/embed/77k7xrm9BoY?rel=0"
     }
 ]
