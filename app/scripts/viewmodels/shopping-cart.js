@@ -49,7 +49,6 @@
             if (fromDs.qty > 1) {
                 fromDs.set('qty', fromDs.qty - 1);
             }
-            win.app.ShoppingCart.refresh();
         },
         addOne: function (e) {
             var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
