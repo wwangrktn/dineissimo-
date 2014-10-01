@@ -33,5 +33,82 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/reindeerSausage.png"
+    },
+    {
+        "id": 6,
+        "title": "Beef Sandwich",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Beef_Sandwich.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Chicken Wings",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Chicken_Wings.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Chillie Dogs",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Chillie_Dogs.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Lamb Chops",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Lamb_Chops.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Ribs",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Ribs.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Salmon Eggs Benedict",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Salmon_Eggs_benedict.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Salmon Steak",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Salmon_Steak.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Toasted BLT",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Toasted_BLT.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Tuna Salad Sandwich",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/Tuna_Salad_sandwich.jpg"
+    },
+    {
+        "id": 15,
+        "title": "What_Is_This_#1",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/What_Is_This_1.jpg"
+    },
+    {
+        "id": 16,
+        "title": "What_Is_This_#2",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "price": 14.25,
+        "imgSrc": "styles/images/static-data/What_Is_This_2.jpg"
     }
 ]

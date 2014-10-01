@@ -44,6 +44,8 @@
  .km-drawer-button:before, .km-drawer-button:after {
      content: "\E077";
  }
+
+
  /*************************************************************************
  *
  * Helper styles
@@ -86,8 +88,9 @@
  #appDrawer .km-content {
     background-image: url(images/slideoutLogo_2x.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 80%;
+    background-position-x: 50%;
+    background-position-y: 95%;
+    background-size: 70%;
  }
  #appDrawer .km-content, #editProfileDrawer .km-content {
     background-color: #5d4037;
@@ -138,12 +141,76 @@
     color: #a59996;
     font-weight: bold;
  }
+
+#editProfileDrawer {
+    background-color: #5d4037;
+}
+
  #editProfileDrawer input {
-    width: 96%;
-    margin-left: 2%;
+    width: 92%;
+    margin-left: 4%;
+    height: 2.4em;
+    border: 1px solid #ff6e40;
+ }
+
+ #editProfileDrawer label {
+    margin-left: 4%;
+    padding-top: 40px;
+    padding-bottom: 6px;
+    display: block;
+    color: white;
  }
 
  #edit-link:before {
     font: 1em/1em"icon-font";
     content: '\e808';
  }
+
+ #edit-buttons {
+    list-style: none;
+    padding: 12px;
+ }
+
+ #edit-buttons li {
+    float: left;
+    margin-right: 8px;
+ }
+
+ #edit-buttons li a {
+    text-decoration: none;
+ }
+
+ #update-photo:before { 
+    padding-right: 4px;
+    content: '\e815'; 
+    font: 1em/1em"icon-font";
+} 
+
+#remove-photo:before { 
+    padding-right: 4px;
+    content: '\e814'; 
+    font: 1em/1em"icon-font";
+}
+
+#remove-photo {
+    color: white;
+}
+
+#editProfileDrawer .km-content {
+    height: 76%;
+}
+
+#editProfileDrawer .km-scroll-container {
+    height: 100%;
+}
+
+#bottom-button-panel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff6e40;
+}
+
+#editProfileDrawer #side-header {
+    height: 24%;
+}

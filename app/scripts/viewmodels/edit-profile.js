@@ -18,6 +18,13 @@
             console.log("hiding");
             $("#appDrawer").show();
             $("#editProfileDrawer").hide();
+        },
+
+        profile: {
+            firstName: "Johnny",
+            lastName: "Bravo",
+            email: "johnny@bravocorp.com",
+            profilePic: "styles/images/videoprofile.png"
         }
     });
 }(window));

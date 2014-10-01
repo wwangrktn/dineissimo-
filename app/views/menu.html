@@ -51,7 +51,12 @@
         </a>   
             <div class="menu-buttons">
                 <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
-                <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
+                #if (data.favorited)  { #
+                    <button data-bind="click: addToFavorites" ><span class="icon-star orange"></span></button>
+                # } else { #
+                    <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
+                # } #
+                
             </div>
             <div class="menu-block">
                 <span class="title">#: data.title #</span><br />

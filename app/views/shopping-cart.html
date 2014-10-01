@@ -1,26 +1,54 @@
-<div data-role="view" data-title="Shopping Cart" data-layout="main" data-model="app.ShoppingCart">
-	
-  	<ul id="cart-list" data-role="listview"
-            data-bind="source: cart"
-            data-template="cartTemplate">
-    </ul>
+<div data-role="view" data-title="Shopping Cart" id="cart-view" data-layout="main" data-model="app.ShoppingCart">
+	<div class="list">
+      	<ul id="cart-list" data-role="listview"
+                data-bind="source: cart"
+                data-template="cartTemplate">
+        </ul>
+    </div>
+    <div id="cart-footer">
+        <ul id="cart-buttons">
+            <li>
+                <a id="checkout" href="#checkout" data-transition="overlay:up">Check out</a>
+            </li>
+            <li>
+                <span id="total-text">Total: $<span data-bind="text: total()"></span></span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div data-role="view" data-title="Checkout" id="checkout" data-layout="main" data-model="app.ShoppingCart">
+    <header data-role="header">
+      <div data-role="navbar">
+        <span data-role="view-title" data-bind="html: title" data-icon="back-button"></span>
+        <a data-role="backbutton" data-align="right" data-icon="cancel"></a>
+      </div>
+    </header>
+    <h2>Not Implemented! By Design. Read on….</h2>
+    <p>There are literally 100’s of e-commerce checkout systems on the market today. That would be hard to put into a single, clean, template. Instead, we’ll be reaching out to you via email to provide you with tutorials on how to embed this functionality into your app.</p>
+  </div>
 </div>
 
 <!-- this is the template used by the listview. template items are automatically
      wrapped in an <li> by Kendo UI Mobile -->
 <script type="text/x-kendo-template" id="cartTemplate">
   <div class="row menu-row">
-        <a href="\#views/menu-details.html?id=#= data.id #">
-            <img class="menu-img" src="#: data.imgSrc #" />
-         
-        </a>   
-            <div class="menu-buttons">
-                <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
-                <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
+        <img class="cart-img" src="#: data.imgSrc #" /> 
+        <div class="menu-block">
+            <span class="cart-title">#: data.title #</span><br />
+            <span class="cart-price">$#: data.price #</span>
+        <div>
+        <div class="big-buttons">
+            <div class="remove-box">
+                <span class="icon-trash" data-bind="click: remove"></span>
+                <p>Remove</p>
             </div>
-            <div class="menu-block">
-                <span class="title">#: data.title #</span><br />
-                <span class="price">$#: data.price #</span>
-            <div>
+            <div class="quantity-box">
+                <span class="icon-minus" data-bind="click: removeOne"></span>
+                <span class="qty">#: data.qty #</span>
+                <span class="icon-plus" data-bind="click: addOne"></span>
+                <p>Quantity</p>
+            </div>
+        </div>
     </div>
 </script>

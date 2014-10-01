@@ -1,0 +1,14 @@
+.intro-screen img {
+	height: 100%;
+	width: 100%;
+}
+
+.intro-screen a {
+	padding: 0 !important;
+	border: none !important;
+	margin: 0 !important;
+}
+
+.intro-screen header {
+	display: none;
+}

@@ -12,6 +12,7 @@
     <link href="styles/claim.css" rel="stylesheet" />
     <link href="styles/menu-details.css" rel="stylesheet" />
     <link href="styles/cart.css" rel="stylesheet" />
+    <link href="styles/intro.css" rel="stylesheet" />
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
@@ -38,7 +39,7 @@
             <div data-role="navbar">
                 <span data-role="view-title"></span>
                 <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
-                <a data-role="button" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
+                <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
             </div>
         </header>
 
@@ -50,8 +51,8 @@
     <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="foodamental" data-model="app.EditProfile">
         <div id="side-header" data-role="header">
             <div id="user-panel">
-                <img src="http://www.gravatar.com/avatar" alt="Profile Picture" />
-                <span id="user-name">User Name</span>
+                <img data-bind="attr: { src: profile.profilePic }" alt="Profile Picture" />
+                <span id="user-name" ><span data-bind="text: profile.firstName"></span> <span data-bind="text: profile.lastName"></span></span>
                 <ul>
                     <li>
                         <a data-bind="click: showEditProfile" id="edit-link" > Edit my profile</a>
@@ -84,25 +85,40 @@
         </ul>
     </div>
 
-    <div data-role="drawer" id="editProfileDrawer" class="hidden" style="width:270px">
+    <div data-role="drawer" id="editProfileDrawer" class="hidden" style="width:270px" data-model="app.EditProfile">
         <div id="side-header" data-role="header">
             <div id="user-panel">
                 <img src="http://www.gravatar.com/avatar" alt="Profile Picture" />
-                <ul>
+                <ul id="edit-buttons">
                     <li>
-                        <a data-bind="click: updatePhoto" href="#">Update Photo</a>
+                        <a class="orange" id="update-photo" data-bind="click: updatePhoto" href="#">Update Photo</a>
                     </li>
                     <li>
-                        <a data-bind="click: deletePhoto" href="#">Delete Photo</a>
+                        <a id="remove-photo" data-bind="click: deletePhoto" href="#">Remove Photo</a>
                     </li>
                 </ul>
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" />
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" />
-                <label for="email">e-mail</label>
-                <input type="text" id="email" />
             </div>
+
+        </div>
+
+            <div id="edit-body">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" data-bind="value: profile.firstName"/>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName"  data-bind="value: profile.firstName"/>
+                <label for="email">e-mail</label>
+                <input type="text" id="email" data-bind="value: profile.email" />
+                
+            </div>
+        <div id="bottom-button-panel">
+            <ul id="bottom-buttons">
+                <li>
+                    <a id="update-photo" data-bind="click: updateProfile" href="#">Update</a>
+                </li>
+                <li>
+                    <a id="remove-photo" data-bind="click: cancel" href="#">Cancel</a>
+                </li>
+            </ul>
         </div>
     </div>
 

@@ -25,8 +25,12 @@
         title: "Menu",
 
         addToFavorites: function (e) {
+            console.log('begin');
             e.preventDefault();
-            win.app.Menu.favorites.add(e.data);
+            var fromDs = win.app.Menu.dataSource.get(e.data.id);
+            fromDs.set('favorited', true);
+            win.app.Menu.favorites.add(fromDs);
+            console.log('end');
         },
 
         addToCart: function (e) {
