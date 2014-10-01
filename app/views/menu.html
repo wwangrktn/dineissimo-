@@ -5,7 +5,7 @@
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
             <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, visible: inListView"  data-icon="th-large" data-align="right" ></a>
             <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
-            <a data-role="button" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
+            <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
         </div>
     </header>
     <div data-role="tabstrip">
@@ -46,13 +46,17 @@
 <script type="text/x-kendo-template" id="menuTemplate">
     <div class="row menu-row">
         <a href="\#views/menu-details.html?id=#= data.id #">
-            <img class="menu-img" src="#: data.imgSrc #" />
+            <img width="80" height="80" class="menu-img" src="#: data.imgSrc #" />
          
         </a>   
             <div class="menu-buttons">
-                <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
+                #if (data.incart)  { #
+                    <a href="\#" data-bind="click: addToCart" ><span class="icon-cart orange"> </span></a>
+                # } else { #
+                    <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
+                # } #   
                 #if (data.favorited)  { #
-                    <button data-bind="click: addToFavorites" ><span class="icon-star orange"></span></button>
+                    <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star orange"></span></a>
                 # } else { #
                     <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
                 # } #

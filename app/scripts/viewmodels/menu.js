@@ -25,17 +25,26 @@
         title: "Menu",
 
         addToFavorites: function (e) {
-            console.log('begin');
             e.preventDefault();
             var fromDs = win.app.Menu.dataSource.get(e.data.id);
-            fromDs.set('favorited', true);
-            win.app.Menu.favorites.add(fromDs);
-            console.log('end');
+            if (!fromDs.favorited) {
+                fromDs.set('favorited', true);
+                win.app.Menu.favorites.add(fromDs);
+            }
+            //Note: this is here until we figure out why sync on the ds didn't work
+            $("#popular-list").data("kendoMobileListView").refresh();
         },
 
         addToCart: function (e) {
             e.preventDefault();
-            win.app.ShoppingCart.cart.add(e.data);
+            var fromDs = win.app.Menu.dataSource.get(e.data.id);
+            if (!fromDs.favorited) {
+                fromDs.set('incart', true);
+                fromDs.set('qty', 1);
+                win.app.ShoppingCart.cart.add(fromDs);
+            }
+            //Note: this is here until we figure out why sync on the ds didn't work
+            $("#popular-list").data("kendoMobileListView").refresh();
         },
 
         changeView : function (e) {

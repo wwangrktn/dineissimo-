@@ -35,13 +35,15 @@
                 }
             ]
         }),
-        total: function() {
+        total: 0,
+        refreshTotal: function () {
+            console.log('refreshing')
             var ret = 0;
             $(win.app.ShoppingCart.cart.data()).each(function (index, obj) {
                 
                 ret += (obj.qty * obj.price);
             });
-            return ret;
+            this.set('total', ret);
         },
         removeOne: function (e) {
             var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
@@ -49,10 +51,18 @@
             if (fromDs.qty > 1) {
                 fromDs.set('qty', fromDs.qty - 1);
             }
+
+            //Note: this is here until we figure out why sync on the ds didn't work
+            $("#cart-list").data("kendoMobileListView").refresh()
+            this.refreshTotal();
         },
         addOne: function (e) {
             var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
             fromDs.set('qty', fromDs.qty + 1);
+
+            //Note: this is here until we figure out why sync on the ds didn't work
+            $("#cart-list").data("kendoMobileListView").refresh();
+            this.refreshTotal();
         },
         remove: function (e) {
             var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
