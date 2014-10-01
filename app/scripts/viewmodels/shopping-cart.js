@@ -43,7 +43,7 @@
                 
                 ret += (obj.qty * obj.price);
             });
-            this.set('total', ret);
+            win.app.ShoppingCart.set('total', parseFloat(ret).toFixed(2));
         },
         removeOne: function (e) {
             var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
