@@ -8,10 +8,10 @@
             <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
         </div>
     </header>
-    <div data-role="tabstrip">
-        <a href="#popular" data-icon="none">Popular</a>
-        <a href="#favorites" data-icon="none">Favorites</a>
-        <a href="#categories" data-icon="none">Categories</a>
+    <div class="menu-nav">
+        <a href="#popular" class="active">Popular</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#categories">Categories</a>
     </div>
     <ul id="popular-list" data-role="listview"
             data-bind="source: dataSource, invisible: photoListVisible"
@@ -24,23 +24,72 @@
 </div>
 
 <div data-role="view" id="favorites" data-title="Favorites" data-title="Menu" data-layout="main" data-model="app.Menu">
-<div data-role="tabstrip">
-        <a href="#popular" data-icon="none">Popular</a>
-        <a href="#favorites" data-icon="none">Favorites</a>
-        <a href="#categories" data-icon="none">Categories</a>
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
+            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, visible: inListView"  data-icon="th-large" data-align="right" ></a>
+            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
+            <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
+        </div>
+    </header>
+    <div class="menu-nav">
+        <a href="#popular">Popular</a>
+        <a href="#favorites" class="active">Favorites</a>
+        <a href="#categories">Categories</a>
     </div>
-    <ul id="popular-list" data-role="listview"
-            data-bind="source: favorites"
+    <ul id="favorite-list" data-role="listview"
+            data-bind="source: favorites, visible: favoriteListVisible"
             data-template="menuTemplate">
     </ul>
+    <ul id="favorite-photo-list" data-role="listview"
+            data-bind="source: favorites, visible: favoritePhotoListVisible"
+            data-template="photoMenuTemplate">
+    </ul>
+    <p data-bind="visible: favoritesEmpty">Click the star to add favorites</p>
 </div>
 
 <div data-role="view" id="categories" data-title="Categories" data-layout="main" data-model="app.Menu">
-<div data-role="tabstrip">
-        <a href="#popular" data-icon="none">Popular</a>
-        <a href="#favorites" data-icon="none">Favorites</a>
-        <a href="#categories" data-icon="none">Categories</a>
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
+            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, visible: inListView"  data-icon="th-large" data-align="right" ></a>
+            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
+            <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
+        </div>
+    </header>
+    
+    <div class="menu-nav">
+        <a href="#popular">Popular</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#categories" class="active">Categories</a>
     </div>
+    <div class="category-selectors">
+        <div class="half">
+            <input type="checkbox" id="filter-barbecue" data-bind="events: { change: changeFilter }" checked/> Barbecue<br />
+            <input type="checkbox" id="filter-sandwiches" data-bind="events: { change: changeFilter }" checked /> Sandwiches<br />
+        </div>
+        <div class="half">
+            <input type="checkbox" id="filter-drinks" data-bind="events: { change: changeFilter }" checked /> Drinks<br />
+            <input type="checkbox" id="filter-desserts" data-bind="events: { change: changeFilter }" checked /> Desserts<br />
+        </div>
+        <div class="full">
+            <label for="sort">Sort</label>
+            <select id="sort">
+                <option>cheapest to most expensive</option>
+                <option>most expensive to cheapest</option>
+            </select>
+        </div>
+    </div>
+    <ul id="category-list" data-role="listview"
+            data-bind="source: dataSource, invisible: photoListVisible"
+            data-template="menuTemplate">
+    </ul>
+    <ul id="category-photo-list" data-role="listview"
+            data-bind="source: dataSource, visible: photoListVisible"
+            data-template="photoMenuTemplate">
+    </ul>
 </div>
 
 <script type="text/x-kendo-template" id="menuTemplate">
@@ -51,7 +100,7 @@
         </a>   
             <div class="menu-buttons">
                 #if (data.incart)  { #
-                    <a href="\#" data-bind="click: addToCart" ><span class="icon-cart orange"> </span></a>
+                    <a href="\#" class="orange" data-bind="click: addToCart" >x<span class="icon-cart">#: data.qty # </span></a>
                 # } else { #
                     <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
                 # } #   

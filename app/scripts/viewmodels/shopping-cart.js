@@ -8,7 +8,22 @@
     win.app.ShoppingCart = kendo.observable({
         title: "Shopping Cart",
         cart: new kendo.data.DataSource({
-            data: [
+            transport: {
+                read: function(operation) {
+                    var cashedData = localStorage.getItem("cart");
+
+                    if(cashedData != null || cashedData != undefined) {
+                        operation.success(JSON.parse(cashedData));
+                    }
+                    else {
+                        operation.success([]);
+                    }
+                }
+            } ,
+                change: function(operation) {
+                    console.log('Adding');
+                }
+            /*
                 {
                     "id": 1,
                     "title": "Lobster Roll",
@@ -34,7 +49,10 @@
                     "qty": 3
                 }
             ]
+            */
         }),
+        
+        cartEmpty: true,
         total: 0,
         refreshTotal: function () {
             console.log('refreshing')
@@ -66,7 +84,12 @@
         },
         remove: function (e) {
             var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
-            win.app.ShoppingCart.cart.remove(fromDs);
+            var vm = win.app.ShoppingCart;
+
+            vm.cart.remove(fromDs);
+            if (vm.cart.data().length === 0) {
+                vm.set('cartEmpty', true);
+            }
         }
 
     });

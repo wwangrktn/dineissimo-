@@ -16,11 +16,26 @@
             }
         }),
 
-        favorites: new kendo.data.DataSource({
-            data: []
+        favorites: new kendo.data.extensions.LocalStorageDataSource({
+            itemBase: 'favorites-kendo',
+            schema: {
+                model: {
+                    id: "id",
+                    fields: {
+                        title: { type: "string"},
+                        description: { type: "string"},
+                        price: { type: "number"},
+                        imgSrc: { type: "string"}
+                    }
+                }
+            }
         }),
 
+        favoritesEmpty: true,
+
         photoListVisible: false,
+        favoriteListVisible: false,
+        favoritePhotoListVisible: false,
         inListView: true,
         title: "Menu",
 
@@ -29,10 +44,18 @@
             var fromDs = win.app.Menu.dataSource.get(e.data.id);
             if (!fromDs.favorited) {
                 fromDs.set('favorited', true);
-                win.app.Menu.favorites.add(fromDs);
+                win.app.Menu.get("favorites").add(fromDs);
+                win.app.Menu.get("favorites").sync();
             }
             //Note: this is here until we figure out why sync on the ds didn't work
             $("#popular-list").data("kendoMobileListView").refresh();
+
+            win.app.Menu.set("favoritesEmpty", false);
+            if (win.app.Menu.photoListVisible) {
+                win.app.Menu.set("favoritePhotoListVisible", true);
+            } else {
+                win.app.Menu.set("favoriteListVisible", true);
+            }
         },
 
         addToCart: function (e) {
@@ -45,6 +68,7 @@
             }
             //Note: this is here until we figure out why sync on the ds didn't work
             $("#popular-list").data("kendoMobileListView").refresh();
+            win.app.ShoppingCart.set("cartEmpty", false);
         },
 
         changeView : function (e) {
@@ -54,9 +78,17 @@
             if (icon.hasClass('km-th-large')) {
                 icon.removeClass('km-th-large').addClass('km-list-bullet');
                 that.set("photoListVisible", true);
+                if (!that.favoritesEmpty) {
+                    that.set("favoriteListVisible", false);
+                    that.set("favoritePhotoListVisible", true);
+                }
             } else {
                 icon.removeClass('km-list-bullet').addClass('km-th-large');
                 that.set("photoListVisible", false);
+                if (!that.favoritesEmpty) {
+                    that.set("favoritePhotoListVisible", false);
+                    that.set("favoriteListVisible", true);
+                }
             }
         }
     });

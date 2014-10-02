@@ -80,6 +80,11 @@
     background: transparent;
 }
 
+.km-view-title {
+    text-align: left;
+    padding-left: 42px;
+}
+
  /*************************************************************************
  *
  * Styles for the app drawer
@@ -207,8 +212,43 @@
 #bottom-button-panel {
     position: absolute;
     bottom: 0;
+    height: 36px;
     width: 100%;
     background-color: #ff6e40;
+    margin: 0;
+}
+
+#bottom-buttons {
+  list-style: none;
+  padding: 8px;
+  margin: 0px;
+}
+
+#bottom-buttons li {
+  float: left;
+  width: 45%;
+  
+}
+
+#bottom-buttons li a {
+  text-decoration: none;
+  color: white;
+}
+
+.cancel-li {
+  text-align: right;
+}
+
+#update-profile:before {
+  font: 1em/1em"icon-font";
+  margin-right: 8px;
+  content: '\e816';
+}
+
+#cancel-profile:before {
+  font: 1em/1em"icon-font";
+  margin-right: 8px;
+  content: '\e807';
 }
 
 #editProfileDrawer #side-header {

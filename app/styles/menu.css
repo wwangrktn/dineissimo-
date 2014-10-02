@@ -37,7 +37,7 @@
      font: 1.2em/1.2em"icon-font";
      content: '\e80e';
 }
-.icon-cart:before {
+.icon-cart:after {
     font: 1.2em/1.2em"icon-font";
     content: '\e804';
 }
@@ -88,3 +88,30 @@
     margin-left: 12px;
 }
 
+.menu-nav a {
+    text-align: center;
+    width: 32%;
+    height: 38px;
+    display: block;
+    float: left;
+    padding-top: 12px;
+    text-decoration: none;
+}
+
+.menu-nav a.active {
+    border-bottom: 3px solid #ff6e40;
+}
+
+.category-selectors .full {
+    text-align: center;
+}
+
+.category-selectors .half {
+    width: 48%;
+    float: left;
+    padding: 12px;
+}
+
+.category-selectors input[type="checkbox"] {
+    margin-top: 12px;
+}

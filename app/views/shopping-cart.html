@@ -1,14 +1,15 @@
 <div data-role="view" data-title="Shopping Cart" id="cart-view" data-show="app.ShoppingCart.refreshTotal" data-layout="main" data-model="app.ShoppingCart">
 	<div class="list">
       	<ul id="cart-list" data-role="listview"
-                data-bind="source: cart"
+                data-bind="source: cart, invisible: cartEmpty"
                 data-template="cartTemplate">
         </ul>
+        <p id="empty-cart" data-bind="visible: cartEmpty">Your cart is empty</p>
     </div>
     <div id="cart-footer">
         <ul id="cart-buttons">
             <li>
-                <a id="checkout" href="#checkout" data-transition="overlay:up">Check out</a>
+                <a id="checkout" href="#checkout" data-transition="overlay:down">Check out</a>
             </li>
             <li>
                 <span id="total-text">Total: $<span  data-bind="text: total"></span></span>

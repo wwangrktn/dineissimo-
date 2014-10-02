@@ -7,15 +7,24 @@
     win.app = win.app || {};
 
     win.app.EditProfile = kendo.observable({
+        updatePhoto: function(e) {
+            e.preventDefault();
+            alert("You must uncomment the camera code (line:XXX) to enable this functionality");
+        },
 
-        showEditProfile: function () {
-            console.log("showing");
+        deletePhoto: function(e) {
+            e.preventDefault();
+            alert("You must uncomment the camera code (line:XXX) to enable this functionality");
+        },
+        
+        showEditProfile: function (e) {
+            e.preventDefault();
             $("#appDrawer").hide();
             $("#editProfileDrawer").show();
         },
 
-        hideEditProfile: function () {
-            console.log("hiding");
+        hideEditProfile: function (e) {
+            e.preventDefault();
             $("#appDrawer").show();
             $("#editProfileDrawer").hide();
         },

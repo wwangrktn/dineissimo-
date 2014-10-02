@@ -17,6 +17,7 @@
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/external/kendo.data.localstoragedatasource.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="scripts/app.js"></script>
 
@@ -113,10 +114,10 @@
         <div id="bottom-button-panel">
             <ul id="bottom-buttons">
                 <li>
-                    <a id="update-photo" data-bind="click: updateProfile" href="#">Update</a>
+                    <a id="update-profile" data-bind="click: updateProfile" href="#">Update</a>
                 </li>
-                <li>
-                    <a id="remove-photo" data-bind="click: cancel" href="#">Cancel</a>
+                <li class="cancel-li">
+                    <a id="cancel-profile" data-bind="click: hideEditProfile" href="#">Cancel</a>
                 </li>
             </ul>
         </div>
