@@ -13,7 +13,12 @@
     win.app.EditProfile = kendo.observable({
         updatePhoto: function (e) {
             e.preventDefault();
-            win.navigator.camera.getPicture(debug, debug, { 
+            var that = this;
+            win.navigator.camera.getPicture(
+                success: function (data) {
+                    win.app.alert("setting the profilePic to: " + data.file);
+                    that.profile.set("profilePic", data.file);
+                }, debug, { 
                 quality: 50,
                 destinationType: Camera.DestinationType.FILE_URI,
                 sourceType: Camera.PictureSourceType.CAMERA
