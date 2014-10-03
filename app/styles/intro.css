@@ -1,3 +1,7 @@
+.intro-screen .km-text {
+	height: 100%;
+	display: block;
+}
 .intro-screen img {
 	height: 100%;
 	width: 100%;

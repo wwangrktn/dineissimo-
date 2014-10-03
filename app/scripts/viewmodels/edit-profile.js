@@ -21,6 +21,8 @@
                 },
                 {
                     quality: 50,
+                    targetWidth: 80,
+                    targetHeight: 80,
                     destinationType: Camera.DestinationType.FILE_URI,
                     sourceType: Camera.PictureSourceType.CAMERA
                 }
