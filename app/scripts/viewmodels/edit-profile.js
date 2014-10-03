@@ -27,7 +27,7 @@
 
         deletePhoto: function (e) {
             e.preventDefault();
-            win.alert("You must uncomment the camera code (line:XXX) to enable this functionality");
+            this.profile.set("profilePic", "styles/images/videoprofile.png");
         },
 
         showEditProfile: function (e) {
