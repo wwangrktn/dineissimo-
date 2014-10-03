@@ -28,7 +28,7 @@
             win.open("maps://maps.apple.com/?q=" + this.lat + "," + this.lng);
         },
         blogLaunch: function () {
-            win.open(this.blog, "_blank");
+            win.open(this.blog, "_blank", "location=yes,hidden=no");
         },
         twitterLaunch: function () {
             win.open(this.twitter);
