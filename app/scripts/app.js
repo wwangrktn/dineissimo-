@@ -40,7 +40,8 @@
         document.addEventListener("deviceready",  onDeviceReady);
 
         return {
-            mobileApp: mobileApp
+            mobileApp: mobileApp,
+            alert: showAlert
         };
 
     }());
