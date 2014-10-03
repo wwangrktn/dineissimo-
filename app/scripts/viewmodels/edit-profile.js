@@ -6,6 +6,8 @@
 (function (win) {
     win.app = win.app || {};
 
+    var defaultPic = "styles/images/videoprofile.png";
+
     win.app.EditProfile = kendo.observable({
         updatePhoto: function (e) {
             e.preventDefault();
@@ -27,7 +29,7 @@
 
         deletePhoto: function (e) {
             e.preventDefault();
-            this.profile.set("profilePic", "styles/images/videoprofile.png");
+            this.profile.set("profilePic", defaultPic);
         },
 
         showEditProfile: function (e) {
@@ -44,17 +46,21 @@
 
         updateProfile: function (e) {
             e.preventDefault();
-            var url = "https://194-TGP-611.mktorest.com/rest";
+            var url = "https://194-TGP-611.mktorest.com/rest?email=" + this.profile.email + "&access_token=" + this.profile.access_token;
 
-            url += "?email=" + this.profile.email + "&access_token=" + this.profile.access_token;
-
-            $.post(url, function (data) {
-                if (!data.success) {
-                    win.app.alert("Request had " + data.errors.length + " errors.\nThe first one was: " + data.errors[0].message);
-                } else {
-                    win.app.alert("Success");
-                }
-            });
+            if (win.navigator.simulator) {
+                win.app.alert("Sorry, but you must run this on the device to recieve the prize");
+            } else if (this.profile.profilePic === defaultPic) {
+                win.app.alert("Sorry, but you must change your profile picture to recieve the prize");
+            } else {
+                $.post(url, function (data) {
+                    if (!data.success) {
+                        win.app.alert("Request had " + data.errors.length + " errors.\nThe first one was: " + data.errors[0].message);
+                    } else {
+                        win.app.alert("Success");
+                    }
+                });
+            }
 
         },
 
@@ -62,7 +68,7 @@
             firstName: "Johnny",
             lastName: "Bravo",
             email: "johnny@bravocorp.com",
-            profilePic: "styles/images/videoprofile.png",
+            profilePic: defaultPic,
             access_token: "7e2b0879-14fb-438f-bfe7-78ce01d42d09:sj"
         }
     });
