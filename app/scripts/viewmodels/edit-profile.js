@@ -13,7 +13,7 @@
             win.navigator.camera.getPicture(
                 function (data) {
                     win.app.alert("setting the profilePic from: " + JSON.stringify(data));
-                    that.profile.set("profilePic", data.file);
+                    that.profile.set("profilePic", data);
                 },
                 function (data) {
                     win.app.alert("error: " + data);
