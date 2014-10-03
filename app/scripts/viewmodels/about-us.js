@@ -11,9 +11,19 @@
         phone: "1-888-365-2779",
         email: "support@telerik.com",
         title: "About us",
+        lat: 42.374990,
+        lng: -71.273825,
+        mapUrl: "http://maps.googleapis.com/maps/api/staticmap?center=42.374990,-71.273825&zoom=11&size=320x150",
         description: "Opened Jul 2013, this cafe in downtown LA serves organic, gluten-free, and vegan food without added sugar, yeast, caffeine, or alcohol.  In early-2014 its menu added a few dairy options.",
-    	phoneLaunch: function (e) {
-    		win.app.alert("Phoning");
-    	}
+        phoneLaunch: function () {
+            win.open("tel://" + this.phone);
+        },
+        emailLaunch: function () {
+            win.open("mailto://" + this.email);
+        },
+        directionLaunch: function () {
+            win.open("maps://maps.apple.com/?q=" + this.lat + "," + this.lng);
+        }
+
     });
 }(window));
