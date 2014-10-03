@@ -10,6 +10,9 @@
     win.app.AboutUs = kendo.observable({
         phone: "1-888-365-2779",
         email: "support@telerik.com",
+        twitter: "http://twitter.com/telerik",
+        facebook: "http://facebook.com/telerik",
+        blog: "http://blogs.telerik.com",
         title: "About us",
         lat: 42.374990,
         lng: -71.273825,
@@ -23,6 +26,15 @@
         },
         directionLaunch: function () {
             win.open("maps://maps.apple.com/?q=" + this.lat + "," + this.lng);
+        },
+        blogLaunch: function () {
+            win.open(this.blog);
+        },
+        twitterLaunch: function () {
+            win.open(this.twitter);
+        },
+        facebookLaunch: function () {
+            win.open(this.facebook);
         }
 
     });
