@@ -16,7 +16,7 @@
         };
 
         var onDeviceReady = function () {
-            if (!win.navigator.simulator) {
+            if (win.navigator.simulator) {
                 navigator.splashscreen.hide();
             }
             win.addEventListener('error', function (e) {
