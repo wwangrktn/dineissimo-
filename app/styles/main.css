@@ -5,6 +5,11 @@
  .km-icon:after, .km-icon:before {
      font: 1em/1em"icon-font";
  }
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
  /***********************************************************
  *
  * Individual Icons
