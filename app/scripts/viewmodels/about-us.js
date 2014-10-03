@@ -31,10 +31,10 @@
             win.open(this.blog, "_blank", "location=yes,hidden=no");
         },
         twitterLaunch: function () {
-            win.open(this.twitter);
+            win.open(this.twitter, "_blank", "location=yes,hidden=no");
         },
         facebookLaunch: function () {
-            win.open(this.facebook);
+            win.open(this.facebook, "_blank", "location=yes,hidden=no");
         }
 
     });
