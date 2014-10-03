@@ -12,8 +12,10 @@
             var that = this;
             win.navigator.camera.getPicture(
                 function (data) {
-                    win.app.alert("setting the profilePic from: " + JSON.stringify(data));
-                    that.profile.set("profilePic", data);
+                    var prof = that.profile;
+                    prof.profilePic = data;
+                    that.set("profile", prof);
+                    //TODO: need to refresh the view here
                 },
                 function (data) {
                     win.app.alert("error: " + data);
