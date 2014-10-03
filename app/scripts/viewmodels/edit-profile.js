@@ -6,10 +6,18 @@
 (function (win) {
     win.app = win.app || {};
 
+    function debug (data) {
+        console.log('got back', data);
+    }
+
     win.app.EditProfile = kendo.observable({
         updatePhoto: function (e) {
             e.preventDefault();
-            win.alert("You must uncomment the camera code (line:XXX) to enable this functionality");
+            win.navigator.camera.getPicture(debug, debug, { 
+                quality: 50,
+                destinationType: Camera.DestinationType.FILE_URI,
+                sourceType: Camera.PictureSourceType.CAMERA
+            });
         },
 
         deletePhoto: function (e) {
