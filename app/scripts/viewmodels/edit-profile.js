@@ -1,28 +1,29 @@
 /*jslint browser: true */
-/*global app, kendo */
+/*global app, kendo, Camera */
 "use strict";
 
 
 (function (win) {
     win.app = win.app || {};
 
-    function debug (data) {
-        win.app.alert('got back' + JSON.stringify( data ));
-    }
-
     win.app.EditProfile = kendo.observable({
         updatePhoto: function (e) {
             e.preventDefault();
             var that = this;
             win.navigator.camera.getPicture(
-                success: function (data) {
+                function (data) {
                     win.app.alert("setting the profilePic to: " + data.file);
                     that.profile.set("profilePic", data.file);
-                }, debug, { 
-                quality: 50,
-                destinationType: Camera.DestinationType.FILE_URI,
-                sourceType: Camera.PictureSourceType.CAMERA
-            });
+                },
+                function (data) {
+                    win.app.alert("error: " + data);
+                },
+                {
+                    quality: 50,
+                    destinationType: Camera.DestinationType.FILE_URI,
+                    sourceType: Camera.PictureSourceType.CAMERA
+                }
+            );
         },
 
         deletePhoto: function (e) {
