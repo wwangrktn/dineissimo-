@@ -54,13 +54,14 @@
                 win.app.alert("Sorry, but you must change your profile picture to recieve the prize");
             } else {
                 $.post(url, function (data) {
+                    console.log("data", data);
                     if (!data.success) {
                         win.app.alert("Request had " + data.errors.length + " errors.\nThe first one was: " + data.errors[0].message);
                     } else {
                         win.app.alert("Success");
                     }
                 });
-            }
+            //}
 
         },
 
@@ -69,7 +70,7 @@
             lastName: "Bravo",
             email: "johnny@bravocorp.com",
             profilePic: defaultPic,
-            access_token: "7e2b0879-14fb-438f-bfe7-78ce01d42d09:sj"
+            access_token: "51e12f1d-9be8-4ea3-8c8a-c76e84135b67:sj"
         }
     });
 }(window));

@@ -18,6 +18,11 @@
                     else {
                         operation.success([]);
                     }
+                },
+                create: function(operation) {
+                    console.log('creating');
+                    localStorage.setItem("cart", JSON.stringify(operation.data));
+                    options.success(options.data);
                 }
             } ,
                 change: function(operation) {

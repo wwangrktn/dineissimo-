@@ -18,6 +18,7 @@
 
         favorites: new kendo.data.extensions.LocalStorageDataSource({
             itemBase: 'favorites-kendo',
+            autoSync: true,
             schema: {
                 model: {
                     id: "id",
@@ -44,8 +45,8 @@
             var fromDs = win.app.Menu.dataSource.get(e.data.id);
             if (!fromDs.favorited) {
                 fromDs.set('favorited', true);
-                win.app.Menu.get("favorites").add(fromDs);
-                win.app.Menu.get("favorites").sync();
+                win.app.Menu.favorites.add(fromDs);
+                win.app.Menu.favorites.sync();
             }
             //Note: this is here until we figure out why sync on the ds didn't work
             $("#popular-list").data("kendoMobileListView").refresh();
@@ -65,6 +66,7 @@
                 fromDs.set('incart', true);
                 fromDs.set('qty', 1);
                 win.app.ShoppingCart.cart.add(fromDs);
+                //win.app.ShoppingCart.cart.sync();
             }
             //Note: this is here until we figure out why sync on the ds didn't work
             $("#popular-list").data("kendoMobileListView").refresh();
