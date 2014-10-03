@@ -16,7 +16,7 @@
         };
 
         var onDeviceReady = function () {
-            if (win.navigator.simulator) {
+            if (!win.navigator.simulator) {
                 navigator.splashscreen.hide();
             }
             win.addEventListener('error', function (e) {
@@ -30,7 +30,7 @@
         //Initialize the KendoUI app
         var mobileApp = null;
 
-        if (!win.navigator.simulator) {
+        if (win.navigator.simulator) {
             mobileApp = new kendo.mobile.Application(document.body, { skin: "flat", initial: "views/menu.html" });
         } else {
             mobileApp = new kendo.mobile.Application(document.body, { skin: "flat", initial: "views/intro.html" });
