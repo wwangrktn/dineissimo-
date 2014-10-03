@@ -7,7 +7,7 @@
     win.app = win.app || {};
 
     function debug (data) {
-        console.log('got back', data);
+        win.app.alert('got back' + JSON.stringify( data ));
     }
 
     win.app.EditProfile = kendo.observable({
