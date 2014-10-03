@@ -89,7 +89,7 @@
     <div data-role="drawer" id="editProfileDrawer" class="hidden" style="width:270px" data-model="app.EditProfile">
         <div id="side-header" data-role="header">
             <div id="user-panel">
-                <img src="http://www.gravatar.com/avatar" alt="Profile Picture" />
+                <img data-bind="attr: { src: profile.profilePic }" alt="Profile Picture" />
                 <ul id="edit-buttons">
                     <li>
                         <a class="orange" id="update-photo" data-bind="click: updatePhoto" href="#">Update Photo</a>
