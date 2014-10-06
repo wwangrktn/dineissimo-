@@ -27,7 +27,6 @@
     </header>
     <h2>Not Implemented! By Design. Read on….</h2>
     <p>There are literally 100’s of e-commerce checkout systems on the market today. That would be hard to put into a single, clean, template. Instead, we’ll be reaching out to you via email to provide you with tutorials on how to embed this functionality into your app.</p>
-  </div>
 </div>
 
 <!-- this is the template used by the listview. template items are automatically
@@ -38,18 +37,18 @@
         <div class="menu-block">
             <span class="cart-title">#: data.title #</span><br />
             <span class="cart-price">$#: data.price #</span>
-        <div>
-        <div class="big-buttons">
-            <div class="remove-box">
-                <span class="icon-trash" data-bind="click: remove"></span>
-                <p>Remove</p>
+            <div class="big-buttons">
+                <div class="remove-box">
+                    <span class="icon-trash" data-bind="click: remove"></span>
+                    <p>Remove</p>
+                </div>
+                <div class="quantity-box">
+                    <span class="icon-minus" data-bind="click: removeOne"></span>
+                    <span class="qty">#: data.qty #</span>
+                    <span class="icon-plus" data-bind="click: addOne"></span>
+                    <p>Quantity</p>
+                </div>
             </div>
-            <div class="quantity-box">
-                <span class="icon-minus" data-bind="click: removeOne"></span>
-                <span class="qty">#: data.qty #</span>
-                <span class="icon-plus" data-bind="click: addOne"></span>
-                <p>Quantity</p>
-            </div>
-        </div>
+    	</div>
     </div>
 </script>
