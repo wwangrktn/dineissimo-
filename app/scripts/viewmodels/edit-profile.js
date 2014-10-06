@@ -48,21 +48,30 @@
 
         updateProfile: function (e) {
             e.preventDefault();
-            var url = "https://194-TGP-611.mktorest.com/rest?email=" + this.profile.email + "&access_token=" + this.profile.access_token;
+            var url = "https://194-TGP-611.mktorest.com/"; //rest?email=" + this.profile.email + "&access_token=" + this.profile.access_token;
 
             if (!win.navigator.simulator) {
                 win.app.alert("Sorry, but you must run this on the device to recieve the prize");
             } else if (this.profile.profilePic !== defaultPic) {
                 win.app.alert("Sorry, but you must change your profile picture to recieve the prize");
             } else {
-                $.post(url, function (data) {
-                    console.log("data", data);
-                    if (!data.success) {
-                        win.app.alert("Request had " + data.errors.length + " errors.\nThe first one was: " + data.errors[0].message);
-                    } else {
-                        win.app.alert("Success");
-                    }
-                });
+                var that = this;
+                $.post(url + "identity/oauth/token?grant_type=client_credentials&client_id=3eb1460d-0330-47e0-9835-2feda85e9a56&client_secret=kAoxEwxehZS7VQEzxf2rzBcWugN7gW7n", 
+                    function (data) {
+                        that.profile.access_token = data.access_token;
+                        console.log("profile", that.profile);
+                        $.post(url + "rest?email=" + that.profile.email + "&access_token=" + that.profile.access_token, function (data) {
+                            console.log("data", data);
+                            if (!data.success) {
+                                win.app.alert("Request had " + data.errors.length + " errors.\nThe first one was: " + data.errors[0].message);
+                            } else {
+                                win.app.alert("Success", data);
+                            }
+                        });
+                    });
+/*
+                
+*/
             }
 
         },

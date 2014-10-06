@@ -22,7 +22,7 @@
 
     // Function to create a quasi-unique GUID for localStorage
     var getGuid = function () {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
             var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
             return v.toString(16);
         });
@@ -38,9 +38,11 @@
     // if it doesn't exist, adds that key to the list and saves
     // the list back to localStorage.
     var addKeyIfNew = function (id) {
+        console.log('adding key', id);
         var keys = getKeys(),
-            matchingKey = $.grep(keys, function (key) { return key === id; });
-
+            matchingKey = $.grep(keys, function (key) { return key === id + ""; });
+        console.log('keys', keys);
+        console.log('matchingKey', matchingKey)
         if (!matchingKey.length) {
             keys.push(id);
             localStorage.setItem(itemBase, keys.join(','));
@@ -51,7 +53,6 @@
     var getFromLocalStorage = function () {
         var keys = getKeys(),
             todos = [];
-
         $.each(keys, function (index, value) {
             var item = localStorage.getItem(itemBase + separator + value);
 
@@ -68,7 +69,6 @@
         if (!data[idField]) {
             data[idField] = getGuid();
         }
-
         addKeyIfNew(data[idField]);
         localStorage.setItem(itemBase + separator + data[idField], JSON.stringify(data));
     };
@@ -89,10 +89,30 @@
 
     // Specify a CRUD transport object for our custom Kendo DataSource
     var localTransports = {
-        read: function (options) {
-            var todos = getFromLocalStorage();
-            console.log('reading');
-            options.success(todos);
+        read: function (operation) {
+            var cashedData = getFromLocalStorage();
+            console.log("getting cashedData", cashedData)
+            if (cashedData.length !== 0) {
+                operation.success(cashedData);
+            } 
+            else {
+                $.ajax({ //using jsfiddle's echo service to simulate remote data loading
+                    url: 'data/menu.json',
+                    dataType: "json",
+                    success: function (response) {
+                        //Remove anything that might be hiding
+                        removeFromLocalStorage(itemBase);
+                        //store response
+                        $.each(response, function(index, obj ) {
+                            saveToLocalStorage(obj);
+
+                        });
+                        console.log(response);
+                        //pass the pass response to the DataSource
+                        operation.success(response);
+                    }
+                });
+            }              
         },
         create: function (options) {
             saveToLocalStorage(options.data);

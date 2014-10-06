@@ -16,7 +16,7 @@
         title: "About us",
         lat: 42.374990,
         lng: -71.273825,
-        mapUrl: "http://maps.googleapis.com/maps/api/staticmap?center=42.374990,-71.273825&zoom=11&size=320x150",
+        mapUrl: "http://maps.google.com/maps/api/staticmap?center=42.374923,-71.273964&zoom=16&markers=42.374923,-71.273964&size=320x150",
         description: "Opened Jul 2013, this cafe in downtown LA serves organic, gluten-free, and vegan food without added sugar, yeast, caffeine, or alcohol.  In early-2014 its menu added a few dairy options.",
         phoneLaunch: function () {
             win.open("tel://" + this.phone);

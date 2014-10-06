@@ -10,8 +10,8 @@
     </header>
     <div class="menu-nav">
         <a href="#popular" class="active">Popular</a>
-        <a href="#favorites">Favorites</a>
-        <a href="#categories">Categories</a>
+        <a href="#favorites" data-bind="click: showFavoriteView">Favorites</a>
+        <a href="#categories" data-bind="click: showCategoryView">Categories</a>
     </div>
     <ul id="popular-list" data-role="listview"
             data-bind="source: dataSource, invisible: photoListVisible"
@@ -34,16 +34,16 @@
         </div>
     </header>
     <div class="menu-nav">
-        <a href="#popular">Popular</a>
+        <a href="#popular"  data-bind="click: showMenuView">Popular</a>
         <a href="#favorites" class="active">Favorites</a>
-        <a href="#categories">Categories</a>
+        <a href="#categories" data-bind="click: showCategoryView">Categories</a>
     </div>
     <ul id="favorite-list" data-role="listview"
-            data-bind="source: favorites, visible: favoriteListVisible"
+            data-bind="source: dataSource, visible: favoriteListVisible"
             data-template="menuTemplate">
     </ul>
     <ul id="favorite-photo-list" data-role="listview"
-            data-bind="source: favorites, visible: favoritePhotoListVisible"
+            data-bind="source: dataSource, visible: favoritePhotoListVisible"
             data-template="photoMenuTemplate">
     </ul>
     <p data-bind="visible: favoritesEmpty">Click the star to add favorites</p>
@@ -61,24 +61,24 @@
     </header>
     
     <div class="menu-nav">
-        <a href="#popular">Popular</a>
-        <a href="#favorites">Favorites</a>
+        <a href="#popular"  data-bind="click: showMenuView">Popular</a>
+        <a href="#favorites" data-bind="click: showFavoriteView">Favorites</a>
         <a href="#categories" class="active">Categories</a>
     </div>
     <div class="category-selectors">
         <div class="half">
             <input type="checkbox" id="filter-barbecue" data-bind="events: { change: changeFilter }" checked/> Barbecue<br />
-            <input type="checkbox" id="filter-sandwiches" data-bind="events: { change: changeFilter }" checked /> Sandwiches<br />
+            <input type="checkbox" id="filter-sandwich" data-bind="events: { change: changeFilter }" checked /> Sandwiches<br />
         </div>
         <div class="half">
-            <input type="checkbox" id="filter-drinks" data-bind="events: { change: changeFilter }" checked /> Drinks<br />
-            <input type="checkbox" id="filter-desserts" data-bind="events: { change: changeFilter }" checked /> Desserts<br />
+            <input type="checkbox" id="filter-drink" data-bind="events: { change: changeFilter }" checked /> Drinks<br />
+            <input type="checkbox" id="filter-dessert" data-bind="events: { change: changeFilter }" checked /> Desserts<br />
         </div>
         <div class="full">
             <label for="sort">Sort</label>
-            <select id="sort">
-                <option>cheapest to most expensive</option>
-                <option>most expensive to cheapest</option>
+            <select id="sort" data-bind="events: { change: changeSort }">
+                <option value="asc">cheapest to most expensive</option>
+                <option value="desc">most expensive to cheapest</option>
             </select>
         </div>
     </div>
@@ -105,7 +105,7 @@
                     <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
                 # } #   
                 #if (data.favorited)  { #
-                    <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star orange"></span></a>
+                    <a href="\#" data-bind="click: removeFromFavorites" ><span class="icon-star orange"></span></a>
                 # } else { #
                     <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
                 # } #
@@ -126,8 +126,16 @@
                 <div class="menu-block">
                     <h4>#: data.title #</h4>
                     <div class="right">
-                        <a href="\#" data-bind="click: addToCart" ><span class="icon-cart orange"> </span></a>
-                        <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star orange"></span></a>
+                        #if (data.incart)  { #
+                    <a href="\#" class="orange" data-bind="click: addToCart" >x<span class="icon-cart">#: data.qty # </span></a>
+                # } else { #
+                    <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
+                # } #   
+                #if (data.favorited)  { #
+                    <a href="\#" data-bind="click: removeFromFavorites" ><span class="icon-star orange"></span></a>
+                # } else { #
+                    <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
+                # } #
                     </div>
                     <span class="photo-price">$#: data.price #</span>
                 <div>

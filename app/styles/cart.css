@@ -21,6 +21,7 @@
 .cart-img {
 	float: left;
 	height: 100%;
+	width: 127px;
 	padding-right: 4px;
 }
 

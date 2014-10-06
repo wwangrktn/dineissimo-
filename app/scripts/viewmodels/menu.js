@@ -7,33 +7,36 @@
 
     win.app.Menu = kendo.observable({
 
-        dataSource: new kendo.data.DataSource({
-            transport: {
-                read: {
-                    url: "data/menu.json",
-                    dataType: "json"
-                }
-            }
-        }),
+        dataSource: win.app.storeStock,
 
-        favorites: new kendo.data.extensions.LocalStorageDataSource({
-            itemBase: 'favorites-kendo',
-            autoSync: true,
-            schema: {
-                model: {
-                    id: "id",
-                    fields: {
-                        title: { type: "string"},
-                        description: { type: "string"},
-                        price: { type: "number"},
-                        imgSrc: { type: "string"}
-                    }
-                }
+        favoriteFilter: { field: "favorited", operator: "eq", value: true },
+
+        showFavoriteView: function () {
+
+            this.dataSource.filter(null);
+            this.dataSource.filter(this.favoriteFilter);
+            if (this.dataSource.aggregates().id === undefined) {
+                this.set("favoritesEmpty", true);
+            } else {
+                this.set("favoritesEmpty", false);
             }
-        }),
+        },
+
+        showMenuView: function () {
+            this.dataSource.filter(null);
+        },
+
+        showCategoryView: function () {
+            //TODO: need to change this
+            this.dataSource.filter(null);
+            this.dataSource.sort({ field: "price", dir: "asc"});
+        },
+
+        changeSort: function (e) {
+            this.dataSource.sort({ field: "price", dir: e.currentTarget.value });
+        },
 
         favoritesEmpty: true,
-
         photoListVisible: false,
         favoriteListVisible: false,
         favoritePhotoListVisible: false,
@@ -42,35 +45,48 @@
 
         addToFavorites: function (e) {
             e.preventDefault();
-            var fromDs = win.app.Menu.dataSource.get(e.data.id);
+            var fromDs = this.dataSource.get(e.data.id);
+            console.log("found", fromDs);
             if (!fromDs.favorited) {
                 fromDs.set('favorited', true);
-                win.app.Menu.favorites.add(fromDs);
-                win.app.Menu.favorites.sync();
             }
-            //Note: this is here until we figure out why sync on the ds didn't work
-            $("#popular-list").data("kendoMobileListView").refresh();
 
-            win.app.Menu.set("favoritesEmpty", false);
-            if (win.app.Menu.photoListVisible) {
-                win.app.Menu.set("favoritePhotoListVisible", true);
+            if (this.photoListVisible) {
+                this.set("favoritePhotoListVisible", true);
             } else {
-                win.app.Menu.set("favoriteListVisible", true);
+                this.set("favoriteListVisible", true);
             }
+
+            this.dataSource.sync();
+        },
+
+        removeFromFavorites: function (e) {
+            e.preventDefault();
+            var fromDs = this.dataSource.get(e.data.id);
+            if (fromDs.favorited) {
+                fromDs.set('favorited', false);
+            }
+
+            if (this.dataSource.aggregates().id === undefined) {
+                this.set("favoritesEmpty", true);
+
+                //TODO: this isn't working exactly correct.
+                this.dataSource.filter(this.favoriteFilter);
+            }
+
+            //TODO: sync the 
         },
 
         addToCart: function (e) {
             e.preventDefault();
             var fromDs = win.app.Menu.dataSource.get(e.data.id);
-            if (!fromDs.favorited) {
-                fromDs.set('incart', true);
-                fromDs.set('qty', 1);
-                win.app.ShoppingCart.cart.add(fromDs);
-                //win.app.ShoppingCart.cart.sync();
-            }
-            //Note: this is here until we figure out why sync on the ds didn't work
-            $("#popular-list").data("kendoMobileListView").refresh();
-            win.app.ShoppingCart.set("cartEmpty", false);
+
+            fromDs.set('incart', true);
+            console.log("fromDs.qty", fromDs.qty);
+            var newQ = fromDs.qty === undefined ? 1 : fromDs.qty + 1;
+            fromDs.set('qty', newQ);
+            fromDs.set('itemPrice', fromDs.qty * fromDs.price);
+            this.dataSource.sync();
         },
 
         changeView : function (e) {
@@ -92,6 +108,29 @@
                     that.set("favoriteListVisible", true);
                 }
             }
+        },
+
+        changeFilter : function () {
+
+            var chargeFilter = {
+                logic: 'or',
+                filters: []
+            };
+            if ($("#filter-barbecue").is(":checked")) {
+                chargeFilter.filters.push({field: "type", operator: "eq", value: "barbeque"});
+            }
+            if ($("#filter-drink").is(":checked")) {
+                chargeFilter.filters.push({field: "type", operator: "eq", value: "drinks"});
+            }
+            if ($("#filter-sandwich").is(":checked")) {
+                chargeFilter.filters.push({field: "type", operator: "eq", value: "sandwiches"});
+            }
+            if ($("#filter-dessert").is(":checked")) {
+                chargeFilter.filters.push({field: "type", operator: "eq", value: "desserts"});
+            }
+
+            console.log('filter is', chargeFilter);
+            this.dataSource.filter(chargeFilter);
         }
     });
 }(window));

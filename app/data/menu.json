@@ -5,7 +5,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/lobsterRoll.png",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 2,
@@ -13,7 +16,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/chicken.png",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": true,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 3,
@@ -21,7 +27,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/crabCake.png",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": true,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 4,
@@ -29,7 +38,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/hamburger.png",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 5,
@@ -37,7 +49,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/reindeerSausage.png",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 6,
@@ -45,7 +60,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/Beef_Sandwich.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 7,
@@ -53,7 +71,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/Chicken_Wings.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 8,
@@ -61,7 +82,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/Chillie_Dogs.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 9,
@@ -69,7 +93,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/Lamb_Chops.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 10,
@@ -77,7 +104,10 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/Ribs.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 11,
@@ -85,15 +115,21 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/Salmon_Eggs_benedict.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 12,
         "title": "Salmon Steak",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
-        "price": 14.25,
+        "price": 1.25,
         "imgSrc": "styles/images/static-data/Salmon_Steak.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 13,
@@ -101,30 +137,204 @@
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/Toasted_BLT.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 14,
         "title": "Tuna Salad Sandwich",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
-        "price": 14.25,
+        "price": 4.25,
         "imgSrc": "styles/images/static-data/Tuna_Salad_sandwich.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 15,
-        "title": "What_Is_This_#1",
+        "title": "Chef Special #1",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/What_Is_This_1.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
     },
     {
         "id": 16,
-        "title": "What_Is_This_#2",
+        "title": "Chef Special #2",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 14.25,
         "imgSrc": "styles/images/static-data/What_Is_This_2.jpg",
-        "categories": ["Barbecue", "Drinks", "Sandwitches", "Desserts"]
+        "isBBQ": false,
+        "isDrinks": false,
+        "isSandwiches": true,
+        "isDesserts": false
+    },
+
+    {
+        "id": 17,
+        "title": "Drink #1",
+        "description": "This is Drink #1",
+        "price": 1.99,
+        "imgSrc": "styles/images/static-data/drinks/drink1.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 18,
+        "title": "Drink #2",
+        "description": "This is Drink #2",
+        "price": 2.99,
+        "imgSrc": "styles/images/static-data/drinks/drink2.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 19,
+        "title": "Drink #3",
+        "description": "This is Drink #3",
+        "price": 3.99,
+        "imgSrc": "styles/images/static-data/drinks/drink3.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 20,
+        "title": "Drink #4",
+        "description": "This is Drink #4",
+        "price": 4.99,
+        "imgSrc": "styles/images/static-data/drinks/drink4.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 22,
+        "title": "Drink #5",
+        "description": "This is Drink #5",
+        "price": 5.99,
+        "imgSrc": "styles/images/static-data/drinks/drink5.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 23,
+        "title": "Drink #6",
+        "description": "This is Drink #6",
+        "price": 6.99,
+        "imgSrc": "styles/images/static-data/drinks/drink6.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 24,
+        "title": "Drink #7",
+        "description": "This is Drink #7",
+        "price": 7.99,
+        "imgSrc": "styles/images/static-data/drinks/drink7.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 25,
+        "title": "Drink #8",
+        "description": "This is Drink #8",
+        "price": 8.99,
+        "imgSrc": "styles/images/static-data/drinks/drink8.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 26,
+        "title": "Drink #9",
+        "description": "This is Drink #9",
+        "price": 9.99,
+        "imgSrc": "styles/images/static-data/drinks/drink9.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 27,
+        "title": "Drink #10",
+        "description": "This is Drink #10",
+        "price": 10.99,
+        "imgSrc": "styles/images/static-data/drinks/drink10.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 28,
+        "title": "Drink #11",
+        "description": "This is Drink #11",
+        "price": 11.99,
+        "imgSrc": "styles/images/static-data/drinks/drink11.jpg",
+        "type": "drinks"
+    },
+    {
+        "id": 29,
+        "title": "Drink #12",
+        "description": "This is Drink #12",
+        "price": 12.99,
+        "imgSrc": "styles/images/static-data/drinks/drink12.jpg",
+        "type": "drinks"
+    },
+
+    {
+        "id": 30,
+        "title": "Dessert #1",
+        "description": "This is Dessert #1",
+        "price": 1.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert1.jpg",
+        "type": "deserts"
+    },
+    {
+        "id": 31,
+        "title": "Dessert #2",
+        "description": "This is Dessert #2",
+        "price": 2.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert2.jpg",
+        "type": "deserts"
+    },
+    {
+        "id": 32,
+        "title": "Dessert #3",
+        "description": "This is Dessert #3",
+        "price": 3.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert3.jpg",
+        "type": "deserts"
+    },
+    {
+        "id": 33,
+        "title": "Dessert #4",
+        "description": "This is Dessert #4",
+        "price": 4.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert4.jpg",
+        "type": "deserts"
+    },
+    {
+        "id": 34,
+        "title": "Dessert #5",
+        "description": "This is Dessert #5",
+        "price": 5.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert5.jpg",
+        "type": "deserts"
+    },
+    {
+        "id": 35,
+        "title": "Dessert #6",
+        "description": "This is Dessert #6",
+        "price": 6.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert6.jpg",
+        "type": "deserts"
+    },
+    {
+        "id": 36,
+        "title": "Dessert #7",
+        "description": "This is Dessert #7",
+        "price": 7.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert7.jpg",
+        "type": "deserts"
+    },
+    {
+        "id": 37,
+        "title": "Dessert #8",
+        "description": "This is Dessert #8",
+        "price": 8.50,
+        "imgSrc": "styles/images/static-data/desserts/dessert8.jpg",
+        "type": "deserts"
     }
 ]

@@ -5,96 +5,50 @@
 (function (win) {
     win.app = win.app || {};
 
-    win.app.ShoppingCart = kendo.observable({
-        title: "Shopping Cart",
-        cart: new kendo.data.DataSource({
-            transport: {
-                read: function(operation) {
-                    var cashedData = localStorage.getItem("cart");
-
-                    if(cashedData != null || cashedData != undefined) {
-                        operation.success(JSON.parse(cashedData));
-                    }
-                    else {
-                        operation.success([]);
-                    }
-                },
-                create: function(operation) {
-                    console.log('creating');
-                    localStorage.setItem("cart", JSON.stringify(operation.data));
-                    options.success(options.data);
-                }
-            } ,
-                change: function(operation) {
-                    console.log('Adding');
-                }
-            /*
-                {
-                    "id": 1,
-                    "title": "Lobster Roll",
-                    "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
-                    "price": 14.25,
-                    "imgSrc": "styles/images/static-data/lobsterRoll.png",
-                    "qty": 2
-                },
-                {
-                    "id": 2,
-                    "title": "Chicken",
-                    "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
-                    "price": 14.25,
-                    "imgSrc": "styles/images/static-data/chicken.png",
-                    "qty": 1
-                },
-                {
-                    "id": 3,
-                    "title": "Crab Cakes",
-                    "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
-                    "price": 14.25,
-                    "imgSrc": "styles/images/static-data/crabCake.png",
-                    "qty": 3
-                }
-            ]
-            */
-        }),
-        
-        cartEmpty: true,
+    win.app.ShoppingCart = ({
+        dataSource: win.app.storeStock,
+        cartEmpty: false,
         total: 0,
+
         refreshTotal: function () {
-            console.log('refreshing')
-            var ret = 0;
-            $(win.app.ShoppingCart.cart.data()).each(function (index, obj) {
-                
+
+            win.app.ShoppingCart.dataSource.filter({ field: "incart", operator: "eq", value: true });
+            //win.app.ShoppingCart.dataSource.sync();
+
+            console.log('refreshing total', win.app.ShoppingCart.dataSource.data());
+          /*  var ret = 0;
+            $(win.app.ShoppingCart.dataSource.data()).each(function (index, obj) {
                 ret += (obj.qty * obj.price);
             });
             win.app.ShoppingCart.set('total', parseFloat(ret).toFixed(2));
+            */
         },
         removeOne: function (e) {
-            var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
+            var fromDs = this.dataSource.get(e.data.id);
 
             if (fromDs.qty > 1) {
                 fromDs.set('qty', fromDs.qty - 1);
             }
 
             //Note: this is here until we figure out why sync on the ds didn't work
-            $("#cart-list").data("kendoMobileListView").refresh()
-            this.refreshTotal();
-        },
-        addOne: function (e) {
-            var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
-            fromDs.set('qty', fromDs.qty + 1);
-
-            //Note: this is here until we figure out why sync on the ds didn't work
             $("#cart-list").data("kendoMobileListView").refresh();
             this.refreshTotal();
         },
+        addOne: function (e) {
+            var fromDs = this.dataSource.get(e.data.id);
+            fromDs.set('qty', fromDs.qty + 1);
+            fromDs.set('itemPrice', fromDs.qty * fromDs.price);
+            this.dataSource.sync();
+        },
         remove: function (e) {
-            var fromDs = win.app.ShoppingCart.cart.get(e.data.id);
-            var vm = win.app.ShoppingCart;
-
-            vm.cart.remove(fromDs);
-            if (vm.cart.data().length === 0) {
+            var fromDs = this.dataSource.get(e.data.id);
+            fromDs.set("incart", false);
+            fromDs.set("qty", 0);
+            this.dataSource.sync();
+            
+            /*if (vm.cart.data().length === 0) {
                 vm.set('cartEmpty', true);
-            }
+            }*/
         }
 
     });
