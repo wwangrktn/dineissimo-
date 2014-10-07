@@ -2,7 +2,7 @@
     background-color: #4a332c;
     color: white;
 }
-#claim .km-content {
+#claim .km-content, #claim-simulator .km-content {
     background-color: #ff6e40;
     color: white;
     padding-top: 60px;

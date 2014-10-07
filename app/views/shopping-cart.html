@@ -1,10 +1,10 @@
 <div data-role="view" data-title="Shopping Cart" id="cart-view" data-show="app.ShoppingCart.refreshTotal" data-layout="main" data-model="app.ShoppingCart">
 	<div class="list">
       	<ul id="cart-list" data-role="listview"
-                data-bind="source: dataSource, invisible: cartEmpty"
+                data-bind="source: dataSource, visible: dataSource.aggregates().id.count"
                 data-template="cartTemplate">
         </ul>
-        <p id="empty-cart" data-bind="visible: cartEmpty">Your cart is empty</p>
+        <p id="empty-cart" data-bind="invisible: dataSource.aggregates().id.count">Your cart is empty</p>
     </div>
     <div id="cart-footer">
         <ul id="cart-buttons">

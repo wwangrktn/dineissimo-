@@ -134,7 +134,8 @@
         "title": "Drink #1",
         "description": "This is Drink #1",
         "price": 1.99,
-        "imgSrc": "styles/images/static-data/drinks/drink1.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink1.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink1.jpg",
         "type": "drinks"
     },
     {
@@ -142,7 +143,8 @@
         "title": "Drink #2",
         "description": "This is Drink #2",
         "price": 2.99,
-        "imgSrc": "styles/images/static-data/drinks/drink2.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink2.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink2.jpg",
         "type": "drinks"
     },
     {
@@ -150,7 +152,8 @@
         "title": "Drink #3",
         "description": "This is Drink #3",
         "price": 3.99,
-        "imgSrc": "styles/images/static-data/drinks/drink3.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink3.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink3.jpg",
         "type": "drinks"
     },
     {
@@ -158,7 +161,8 @@
         "title": "Drink #4",
         "description": "This is Drink #4",
         "price": 4.99,
-        "imgSrc": "styles/images/static-data/drinks/drink4.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink4.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink4.jpg",
         "type": "drinks"
     },
     {
@@ -166,7 +170,8 @@
         "title": "Drink #5",
         "description": "This is Drink #5",
         "price": 5.99,
-        "imgSrc": "styles/images/static-data/drinks/drink5.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink5.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink5.jpg",
         "type": "drinks"
     },
     {
@@ -174,7 +179,8 @@
         "title": "Drink #6",
         "description": "This is Drink #6",
         "price": 6.99,
-        "imgSrc": "styles/images/static-data/drinks/drink6.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink6.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink6.jpg",
         "type": "drinks"
     },
     {
@@ -182,7 +188,8 @@
         "title": "Drink #7",
         "description": "This is Drink #7",
         "price": 7.99,
-        "imgSrc": "styles/images/static-data/drinks/drink7.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink7.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink7.jpg",
         "type": "drinks"
     },
     {
@@ -190,7 +197,8 @@
         "title": "Drink #8",
         "description": "This is Drink #8",
         "price": 8.99,
-        "imgSrc": "styles/images/static-data/drinks/drink8.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink8.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink8.jpg",
         "type": "drinks"
     },
     {
@@ -198,7 +206,8 @@
         "title": "Drink #9",
         "description": "This is Drink #9",
         "price": 9.99,
-        "imgSrc": "styles/images/static-data/drinks/drink9.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink9.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink9.jpg",
         "type": "drinks"
     },
     {
@@ -206,7 +215,8 @@
         "title": "Drink #10",
         "description": "This is Drink #10",
         "price": 10.99,
-        "imgSrc": "styles/images/static-data/drinks/drink10.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink10.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink10.jpg",
         "type": "drinks"
     },
     {
@@ -214,7 +224,8 @@
         "title": "Drink #11",
         "description": "This is Drink #11",
         "price": 11.99,
-        "imgSrc": "styles/images/static-data/drinks/drink11.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink11.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink11.jpg",
         "type": "drinks"
     },
     {
@@ -222,7 +233,8 @@
         "title": "Drink #12",
         "description": "This is Drink #12",
         "price": 12.99,
-        "imgSrc": "styles/images/static-data/drinks/drink12.jpg",
+        "imgSrc": "styles/images/static-data/drinks/full/drink12.jpg",
+        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink12.jpg",
         "type": "drinks"
     },
 

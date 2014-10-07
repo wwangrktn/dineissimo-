@@ -12,14 +12,8 @@
         favoriteFilter: { field: "favorited", operator: "eq", value: true },
 
         showFavoriteView: function () {
-
             this.dataSource.filter(null);
             this.dataSource.filter(this.favoriteFilter);
-            if (this.dataSource.aggregates().id === undefined) {
-                this.set("favoritesEmpty", true);
-            } else {
-                this.set("favoritesEmpty", false);
-            }
         },
 
         showMenuView: function () {
@@ -27,7 +21,6 @@
         },
 
         showCategoryView: function () {
-            //TODO: need to change this
             this.dataSource.filter(null);
             this.dataSource.sort({ field: "price", dir: "asc"});
         },
@@ -80,9 +73,7 @@
         addToCart: function (e) {
             e.preventDefault();
             var fromDs = win.app.Menu.dataSource.get(e.data.id);
-
             fromDs.set('incart', true);
-            console.log("fromDs.qty", fromDs.qty);
             var newQ = fromDs.qty === undefined ? 1 : fromDs.qty + 1;
             fromDs.set('qty', newQ);
             fromDs.set('itemPrice', fromDs.qty * fromDs.price);

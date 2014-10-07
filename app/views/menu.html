@@ -13,7 +13,7 @@
         <a href="#favorites" data-bind="click: showFavoriteView">Favorites</a>
         <a href="#categories" data-bind="click: showCategoryView">Categories</a>
     </div>
-    <ul id="popular-list" data-role="listview"
+    <ul id="popular-list" 
             data-bind="source: dataSource, invisible: photoListVisible"
             data-template="menuTemplate">
     </ul>
@@ -39,11 +39,11 @@
         <a href="#categories" data-bind="click: showCategoryView">Categories</a>
     </div>
     <ul id="favorite-list" data-role="listview"
-            data-bind="source: dataSource, visible: favoriteListVisible"
+            data-bind="source: dataSource, visible: dataSource.aggregates().id.count"
             data-template="menuTemplate">
     </ul>
     <ul id="favorite-photo-list" data-role="listview"
-            data-bind="source: dataSource, visible: favoritePhotoListVisible"
+            data-bind="source: dataSource, invisible: dataSource.aggregates().id.count"
             data-template="photoMenuTemplate">
     </ul>
     <p data-bind="visible: favoritesEmpty">Click the star to add favorites</p>
@@ -95,7 +95,7 @@
 <script type="text/x-kendo-template" id="menuTemplate">
     <div class="row menu-row">
         <a href="\#views/menu-details.html?id=#= data.id #">
-            <img width="80" height="80" class="menu-img" src="#: data.imgSrc #" />
+            <img width="80" height="80" class="menu-img" src="#: data.thumbSrc #" />
          
         </a>   
             <div class="menu-buttons">
