@@ -13,7 +13,7 @@
         <a href="#favorites" data-bind="click: showFavoriteView">Favorites</a>
         <a href="#categories" data-bind="click: showCategoryView">Categories</a>
     </div>
-    <ul id="popular-list" 
+    <ul id="popular-list" data-role="listview"
             data-bind="source: dataSource, invisible: photoListVisible"
             data-template="menuTemplate">
     </ul>
