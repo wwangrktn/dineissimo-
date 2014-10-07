@@ -92,17 +92,22 @@
     margin-left: 12px;
 }
 
+.menu-nav {
+    z-index: 999;
+}
+
 .menu-nav a {
     text-align: center;
     width: 32%;
-    height: 38px;
+    height: 32;
     display: block;
     float: left;
     padding-top: 12px;
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
-.menu-nav a.active {
+.menu-nav span.active {
     border-bottom: 3px solid #ff6e40;
 }
 
