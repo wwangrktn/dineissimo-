@@ -56,7 +56,7 @@
                 win.app.alert("Sorry, but you must change your profile picture to recieve the prize");
             } else {
                 var that = this;
-                $.post(url + "identity/oauth/token?grant_type=client_credentials&client_id=3eb1460d-0330-47e0-9835-2feda85e9a56&client_secret=kAoxEwxehZS7VQEzxf2rzBcWugN7gW7n", 
+                $.post(url + "identity/oauth/token?grant_type=client_credentials&client_id=3eb1460d-0330-47e0-9835-2feda85e9a56&client_secret=kAoxEwxehZS7VQEzxf2rzBcWugN7gW7n",
                     function (data) {
                         that.profile.access_token = data.access_token;
                         console.log("profile", that.profile);
@@ -69,11 +69,13 @@
                             }
                         });
                     });
-/*
-                
-*/
             }
 
+        },
+
+        refreshCache: function () {
+            localStorage.clear();
+            app.storeStock.read();
         },
 
         profile: {

@@ -25,7 +25,7 @@
             });
 
             win.app.storeStock.read();
-            
+
             if (!win.navigator.simulator) {
                 navigator.splashscreen.hide();
             }
@@ -34,7 +34,7 @@
         //Initialize the KendoUI app
         var mobileApp = null;
 
-        if (!win.navigator.simulator) {
+        if (win.navigator.simulator) {
             mobileApp = new kendo.mobile.Application(document.body, { skin: "flat", initial: "views/menu.html" });
         } else {
             mobileApp = new kendo.mobile.Application(document.body, { skin: "flat", initial: "views/intro.html" });
@@ -42,14 +42,7 @@
 
         // Create a single list of products, and use filters rather than having seperate ones for favorites, menu, and shopping cart
         var storeStock = new kendo.data.extensions.LocalStorageDataSource({
-              /*  transport: {
-                    read: {
-                        url: "data/menu.json",
-                        dataType: "json"
-                    }
-                },
-                */itemBase: 'items-kendo',
-                //autoSync: true,
+                itemBase: 'items-kendo',
                 schema: {
                     model: {
                         id: "id",
@@ -65,7 +58,7 @@
                         }
                     }
                 },
-                aggregate: [ 
+                aggregate: [
                     { field: "id", aggregate: "count" },
                     { field: "itemPrice", aggregate: "sum" }
                 ]

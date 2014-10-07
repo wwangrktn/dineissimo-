@@ -43,10 +43,10 @@
             data-template="menuTemplate">
     </ul>
     <ul id="favorite-photo-list" data-role="listview"
-            data-bind="source: dataSource, invisible: dataSource.aggregates().id.count"
+            data-bind="source: dataSource, visible: favoritePhotoListVisible"
             data-template="photoMenuTemplate">
     </ul>
-    <p data-bind="visible: favoritesEmpty">Click the star to add favorites</p>
+    <p data-bind="invisible: dataSource.aggregates().id.count">Click the star to add favorites</p>
 </div>
 
 <div data-role="view" id="categories" data-title="Categories" data-layout="main" data-model="app.Menu">
@@ -99,21 +99,21 @@
          
         </a>   
             <div class="menu-buttons">
-                #if (data.incart)  { #
-                    <a href="\#" class="orange" data-bind="click: addToCart" >x<span class="icon-cart">#: data.qty # </span></a>
+                 #if (data.incart)  { #
+                    <span data-role="touch" data-bind="events: { tap: addToCart }" class="orange">x<span class="icon-cart">#: data.qty # </span></span>
                 # } else { #
-                    <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
+                    <span data-role="touch" data-bind="events: { tap: addToCart }"  ><span class="icon-cart"> </span></span>
                 # } #   
                 #if (data.favorited)  { #
-                    <a href="\#" data-bind="click: removeFromFavorites" ><span class="icon-star orange"></span></a>
+                    <span data-role="touch" data-bind="events: { tap: removeFromFavorites }"><span class="icon-star orange"></span></span>
                 # } else { #
-                    <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
+                    <span data-role="touch" data-bind="events: { tap: addToFavorites }"><span class="icon-star"></span></a>
                 # } #
                 
             </div>
             <div class="menu-block">
                 <span class="title">#: data.title #</span><br />
-                <span class="price">$#: data.price #</span>
+                <span class="price">#: kendo.toString(data.price, "c") #</span>
             </div>
     </div>
 </script>
@@ -126,15 +126,15 @@
                 <div class="menu-block">
                     <h4>#: data.title #</h4>
                     <div class="right">
-                        #if (data.incart)  { #
-                    <a href="\#" class="orange" data-bind="click: addToCart" >x<span class="icon-cart">#: data.qty # </span></a>
+                 #if (data.incart)  { #
+                    <span data-role="touch" data-bind="events: { tap: addToCart }" class="orange">x<span class="icon-cart">#: data.qty # </span></span>
                 # } else { #
-                    <a href="\#" data-bind="click: addToCart" ><span class="icon-cart"> </span></a>
+                    <span data-role="touch" data-bind="events: { tap: addToCart }"  ><span class="icon-cart"> </span></span>
                 # } #   
                 #if (data.favorited)  { #
-                    <a href="\#" data-bind="click: removeFromFavorites" ><span class="icon-star orange"></span></a>
+                    <span data-role="touch" data-bind="events: { tap: removeFromFavorites }"><span class="icon-star orange"></span></span>
                 # } else { #
-                    <a href="\#" data-bind="click: addToFavorites" ><span class="icon-star"></span></a>
+                    <span data-role="touch" data-bind="events: { tap: addToFavorites }"><span class="icon-star"></span></a>
                 # } #
                     </div>
                     <span class="photo-price">$#: data.price #</span>

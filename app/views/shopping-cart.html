@@ -12,7 +12,7 @@
                 <a id="checkout" href="#checkout" data-transition="overlay:down">Check out</a>
             </li>
             <li>
-                <span id="total-text">Total: $<span  data-bind="text: dataSource.aggregates().itemPrice.sum"></span></span>
+                <span id="total-text">Total: <span  data-bind="text: dataSource.aggregates().itemPrice.sum"></span></span>
             </li>
         </ul>
     </div>
@@ -22,7 +22,7 @@
     <header data-role="header">
       <div data-role="navbar">
         <span data-role="view-title" data-bind="html: title" data-icon="back-button"></span>
-        <a data-role="backbutton" data-align="right" data-icon="cancel"></a>
+        <a data-role="backbutton" data-align="right" class="fa fa-close orange"></a>
       </div>
     </header>
     <h2>Not Implemented! By Design. Read on….</h2>
@@ -33,9 +33,11 @@
      wrapped in an <li> by Kendo UI Mobile -->
 <script type="text/x-kendo-template" id="cartTemplate">
   <div class="row menu-row">
-        <img class="cart-img" src="#: data.imgSrc #" /> 
+        <div class="cart-img-holder">
+            <img class="cart-img" src="#: data.imgSrc #" /> 
+        </div>
         <div class="menu-block">
-            <span class="cart-title">#: data.title #</span><br />
+            <span class="cart-title">#: data.title #</span><br /><br />
             <span class="cart-price">$#: data.price #</span>
             <div class="big-buttons">
                 <div class="remove-box">

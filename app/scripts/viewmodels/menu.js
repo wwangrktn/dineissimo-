@@ -39,7 +39,6 @@
         addToFavorites: function (e) {
             e.preventDefault();
             var fromDs = this.dataSource.get(e.data.id);
-            console.log("found", fromDs);
             if (!fromDs.favorited) {
                 fromDs.set('favorited', true);
             }

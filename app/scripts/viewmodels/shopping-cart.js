@@ -15,6 +15,7 @@
 
             if (fromDs.qty > 1) {
                 fromDs.set('qty', fromDs.qty - 1);
+                fromDs.set('itemPrice', fromDs.qty * fromDs.price);
             }
             this.refreshTotal();
         },

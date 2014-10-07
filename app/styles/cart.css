@@ -4,7 +4,18 @@
 
 .cart-title {
 	padding-top: 4px;
+	padding-left: 10px;
+	float: left;
 	font-size: 18px;
+	display: block;
+}
+
+
+.cart-price {
+	margin-top: 4px;
+	display: block;
+	padding-left: 10px;
+	float: left;
 }
 
 .remove-box {
@@ -14,29 +25,37 @@
 .big-buttons {
 	background-color: #efefef;
 	display: block;
-	height: 86px;
-	margin-top: 12px;
+	height: 70px;
+	margin-top: 34px;
 }
 
 .cart-img {
-	float: left;
 	height: 100%;
-	width: 127px;
 	padding-right: 4px;
+	margin-left: -20px;
 }
+
+.cart-img-holder {
+	float: left;
+	overflow: hidden;
+	height: 100%;
+	width: 80px;
+}
+
 
 #cart-list li {
 	padding: 0;
 }
 
 #cart-list li .menu-row {
-	height: 123px;
+	height: 140px;
 }
 
 .remove-box p, .quantity-box p {
 	margin-bottom: 0;
 	padding-bottom: 12px;
 	margin-top: 6px;
+	font-size: 12px;
 }
 
 #cart-footer {
@@ -74,17 +93,17 @@
 
 .icon-minus:after {
 	content: '\e812';
-	font: 1.5em/1em"icon-font";
+	font: 1.2em/1em"icon-font";
 }
 
 .icon-plus:after {
 	content: '\e80b';
-	font: 1.5em/1em"icon-font";
+	font: 1.2em/1em"icon-font";
 }
 
 .icon-trash:before {
 	content: '\e814';
-	font: 2em/1em"icon-font";
+	font: 1.2em/1em"icon-font";
 }
 
 .remove-box, .quantity-box {
@@ -94,7 +113,13 @@
 }
 
 .remove-box {
-	margin-left: 8px;
+	margin-right: 8px;
+	padding-top: 22px;
+}
+
+.quantity-box {
+	margin-left: 12px;
+	float: left;
 }
 
 #checkout h2 {
@@ -102,11 +127,7 @@
 }
 
 .qty {
-	font-size: 26px;
-	padding: 0 3px;
+	font-size: 24px;
+	padding: 0 12px;
 }
 
-.cart-price {
-	margin-top: 4px;
-	display: block;
-}

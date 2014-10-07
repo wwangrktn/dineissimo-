@@ -53,7 +53,7 @@
     <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="foodamental" data-model="app.EditProfile">
         <div id="side-header" data-role="header">
             <div id="user-panel">
-                <img data-bind="attr: { src: profile.profilePic }" alt="Profile Picture" />
+                <img data-bind="attr: { src: profile.profilePic }, click: refreshCache" alt="Profile Picture" />
                 <span id="user-name" ><span data-bind="text: profile.firstName"></span> <span data-bind="text: profile.lastName"></span></span>
                 <ul>
                     <li>

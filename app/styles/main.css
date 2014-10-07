@@ -217,10 +217,11 @@ html, body {
 #bottom-button-panel {
     position: absolute;
     bottom: 0;
-    height: 46px;
+    height: 66px;
     width: 100%;
     background-color: #ff6e40;
     margin: 0;
+    padding-top: 20px;
 }
 
 #bottom-buttons {
@@ -242,6 +243,15 @@ html, body {
 
 .cancel-li {
   text-align: right;
+}
+
+#update-profile {
+  padding-left: 20px;
+}
+
+#cancel-profile {
+  padding-left: 60px;
+  opacity: 0.5;
 }
 
 #update-profile:before {

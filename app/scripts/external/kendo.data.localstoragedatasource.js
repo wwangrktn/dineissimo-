@@ -38,11 +38,8 @@
     // if it doesn't exist, adds that key to the list and saves
     // the list back to localStorage.
     var addKeyIfNew = function (id) {
-        console.log('adding key', id);
         var keys = getKeys(),
             matchingKey = $.grep(keys, function (key) { return key === id + ""; });
-        console.log('keys', keys);
-        console.log('matchingKey', matchingKey)
         if (!matchingKey.length) {
             keys.push(id);
             localStorage.setItem(itemBase, keys.join(','));
@@ -91,7 +88,6 @@
     var localTransports = {
         read: function (operation) {
             var cashedData = getFromLocalStorage();
-            console.log("getting cashedData", cashedData)
             if (cashedData.length !== 0) {
                 operation.success(cashedData);
             } 
@@ -107,7 +103,6 @@
                             saveToLocalStorage(obj);
 
                         });
-                        console.log(response);
                         //pass the pass response to the DataSource
                         operation.success(response);
                     }
@@ -116,19 +111,16 @@
         },
         create: function (options) {
             saveToLocalStorage(options.data);
-            console.log('creating');
 
             options.success(options.data);
         },
         update: function (options) {
             saveToLocalStorage(options.data);
-            console.log('updating');
 
             options.success(options.data);
         },
         destroy: function (options) {
             removeFromLocalStorage(options.data);
-            console.log('destroying');
 
             options.success(options.data);
         }
