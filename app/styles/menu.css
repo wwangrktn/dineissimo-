@@ -6,8 +6,10 @@
 #popular, #favorites, #categories {
     height: 100%;
 }
-
-#popular li, #favorites li, #categories li {
+#popular ul, #favorites ul, #categories ul {
+    margin-top: 34px;
+}
+#popular li, #favorites li, #categories li, #no-fav-msg {
     clear:both;
 }
 #popular .km-content, #favorites .km-content, #categories .km-content {

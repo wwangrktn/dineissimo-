@@ -50,9 +50,9 @@
             e.preventDefault();
             var url = "https://194-TGP-611.mktorest.com/"; //rest?email=" + this.profile.email + "&access_token=" + this.profile.access_token;
 
-            if (!win.navigator.simulator) {
+            if (win.navigator.simulator) {
                 win.app.alert("Sorry, but you must run this on the device to recieve the prize");
-            } else if (this.profile.profilePic !== defaultPic) {
+            } else if (this.profile.profilePic === defaultPic) {
                 win.app.alert("Sorry, but you must change your profile picture to recieve the prize");
             } else {
                 var that = this;
@@ -64,8 +64,8 @@
                                  {
                                     email: that.profile.email,
                                     firstName: that.profile.fistName,
-                                    postalCode: "11111",
-                                    RESTAPI: true
+                                  //  postalCode: "11111",
+                                    Rest100KAppSubmit: true
                                  }   
                             ]
                         };

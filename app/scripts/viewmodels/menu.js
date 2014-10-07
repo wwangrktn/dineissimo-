@@ -26,6 +26,7 @@
         },
         showMenuView: function () {
             console.log("start show");
+            win.app.Menu.dataSource.filter({});
           //  win.app.Menu.popularList.refresh();
             console.log("end show");
         },

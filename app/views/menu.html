@@ -46,7 +46,7 @@
             data-bind="source: dataSource, visible: favoritePhotoListVisible"
             data-template="photoMenuTemplate">
     </ul>
-    <p data-bind="invisible: dataSource.aggregates().id.count">Click the star to add favorites</p>
+    <p id="no-fav-msg" data-bind="invisible: dataSource.aggregates().id.count">Click the star to add favorites</p>
 </div>
 
 <div data-role="view" id="categories" data-title="Categories" data-layout="main" data-model="app.Menu">
