@@ -3,7 +3,7 @@
      src: url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype");
  }
  .km-icon:after, .km-icon:before {
-     font: 1em/1em"icon-font";
+     font: 1em/1em"FontAwesome";
  }
 
 html, body {
@@ -16,25 +16,25 @@ html, body {
  *
  ***********************************************************/
  .km-food:before, .km-food:after {
-     content: '\e80d';
+     content: '\f0f5';
  }
  .km-info:before, .km-info:after {
-     content: '\e800';
+     content: '\f05a';
  }
  .km-picture:before, .km-picture:after {
-     content: '\e80f';
+     content: '\f03e';
  }
  .km-video:before, .km-video:after {
-     content: '\e817';
+     content: '\f008';
  }
  .km-basket:before, .km-basket:after {
-     content: '\e804';
+     content: '\f07a';
  }
  .km-award:before, .km-award:after {
-     content: '\e811';
+     content: '\f091';
  }
  .km-pencil:before, .km-pencil:after {
-     content: '\e808';
+     content: '\f040';
  }
  .km-phone-icon:before, .km-phone-icon:after {
      content: '\e802';
@@ -43,11 +43,11 @@ html, body {
      content: '\e80a';
  }
  .km-menu:before, .km-menu:after {
-     content: '\e80c';
+     content: '\f0c9';
  }
 
  .km-drawer-button:before, .km-drawer-button:after {
-     content: "\E077";
+     content: "\f0c9";
  }
 
 

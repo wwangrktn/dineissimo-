@@ -23,7 +23,7 @@
         },
 
         showMenuView: function () {
-            this.dataSource.filter(null);
+            app.Menu.dataSource.filter(null);
         },
 
         showCategoryView: function () {
@@ -129,7 +129,10 @@
                 chargeFilter.filters.push({field: "type", operator: "eq", value: "desserts"});
             }
 
-            console.log('filter is', chargeFilter);
+            //check to see if they are all not checked and create a filter that will return nothing
+            if (chargeFilter.filters.length === 0) {
+                chargeFilter.filters.push({field: "type", operator: "eq", value: "unicorn"});
+            }
             this.dataSource.filter(chargeFilter);
         }
     });

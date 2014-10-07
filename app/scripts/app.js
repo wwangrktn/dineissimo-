@@ -16,9 +16,6 @@
         };
 
         var onDeviceReady = function () {
-            if (!win.navigator.simulator) {
-                navigator.splashscreen.hide();
-            }
             win.addEventListener('erroring', function (e) {
                 e.preventDefault();
                 console.log("Error", e);
@@ -28,6 +25,10 @@
             });
 
             win.app.storeStock.read();
+            
+            if (!win.navigator.simulator) {
+                navigator.splashscreen.hide();
+            }
         };
 
         //Initialize the KendoUI app

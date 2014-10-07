@@ -25,11 +25,12 @@
 }
 
 .km-th-large:before, .km-th-large:after {
+    font: 1em/1em"icon-font";
     content: '\e803';
 }
 
  .km-list-bullet:before, .km-list-bullet:after { 
-    content: '\e81b'; 
+    content: '\f0ca'; 
 }
 
 .icon-star:before {
@@ -47,7 +48,7 @@
     margin-top: 50px;
 }
 
-#popular a {
+#popular a, #favorites a, #categories a {
     text-decoration: none;
 }
 

@@ -10,29 +10,14 @@
     width: 100%;
 }
 
-.icon small {
+.fa small {
 	padding-left: 30px;
 }
 
-.icon:before {
-
-     font: 1.2em/1.2em"icon-font";
-     color: #ff6e40;
+.fa:before {
      margin-right: 18px;
      margin-bottom: -18px;
 }
-
-.place-icon-pre:before {
-     content: '\e80a';
- }
-
- .mail-icon-pre:before {
-     content: '\e81a';
- }
-
- .phone-icon-pre:before {
-     content: '\e802';
- }
 
 #about-body img {
     width: 100%;
