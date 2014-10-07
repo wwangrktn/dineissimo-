@@ -2,26 +2,26 @@
     {
         "userName": "Bob Jones",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/interior1.jpg"
+        "src": "styles/images/interior/Interior1.jpg"
     },
     {
         "userName": "Sally Jones",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/interior2.jpg"
+        "src": "styles/images/interior/Interior2.jpg"
     },
     {
         "userName": "Walter Smith",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/interior3.jpg"
+        "src": "styles/images/interior/Interior3.jpg"
     },
     {
         "userName": "Michelle Smith",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/interior4.jpg"
+        "src": "styles/images/interior/Interior4.jpg"
     },
     {
         "userName": "Johnny Ford",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/interior5.jpg"
+        "src": "styles/images/interior/Interior5.jpg"
     }
 ]

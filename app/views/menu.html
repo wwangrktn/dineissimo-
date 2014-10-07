@@ -1,4 +1,4 @@
-<div data-role="view" id="popular" data-title="Menu" data-layout="main" data-show="app.Menu.showMenuView" data-model="app.Menu">
+<div data-role="view" id="popular" data-title="Menu" data-layout="main" data-init="app.Menu.init" data-show="app.Menu.showMenuView" data-model="app.Menu">
     <header data-role="header">
         <div data-role="navbar">
             <span data-role="view-title"></span>
@@ -14,7 +14,7 @@
         <a href="#categories" data-bind="click: showCategoryView">Categories</a>
     </div>
     <ul id="popular-list" data-role="listview"
-            data-bind="source: dataSource, invisible: photoListVisible"
+            data-bind="source:dataSource, invisible: photoListVisible"
             data-template="menuTemplate">
     </ul>
     <ul id="popular-photo-list" data-role="listview"

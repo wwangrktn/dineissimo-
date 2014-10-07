@@ -34,7 +34,7 @@
         return keysList ? keysList.split(',') : [];
     };
 
-    // Checks the localStorage key list for the current id and,
+    // Checks the localStorage key list for the current id and, 
     // if it doesn't exist, adds that key to the list and saves
     // the list back to localStorage.
     var addKeyIfNew = function (id) {
@@ -48,6 +48,7 @@
 
     // Fetches an array of objects from localStorage
     var getFromLocalStorage = function () {
+        console.log("getting from local");
         var keys = getKeys(),
             todos = [];
         $.each(keys, function (index, value) {
@@ -87,8 +88,10 @@
     // Specify a CRUD transport object for our custom Kendo DataSource
     var localTransports = {
         read: function (operation) {
+            console.log('reading');
             var cashedData = getFromLocalStorage();
             if (cashedData.length !== 0) {
+                console.log("grabbed", cashedData.length);
                 operation.success(cashedData);
             } 
             else {
@@ -110,11 +113,13 @@
             }              
         },
         create: function (options) {
+            console.log('creating');
             saveToLocalStorage(options.data);
 
             options.success(options.data);
         },
         update: function (options) {
+            console.log('updating', options.data);
             saveToLocalStorage(options.data);
 
             options.success(options.data);

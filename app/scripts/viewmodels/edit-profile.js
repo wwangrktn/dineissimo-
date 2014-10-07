@@ -59,13 +59,28 @@
                 $.post(url + "identity/oauth/token?grant_type=client_credentials&client_id=3eb1460d-0330-47e0-9835-2feda85e9a56&client_secret=kAoxEwxehZS7VQEzxf2rzBcWugN7gW7n",
                     function (data) {
                         that.profile.access_token = data.access_token;
-                        console.log("profile", that.profile);
-                        $.post(url + "rest?email=" + that.profile.email + "&access_token=" + that.profile.access_token, function (data) {
-                            console.log("data", data);
-                            if (!data.success) {
-                                win.app.alert("Request had " + data.errors.length + " errors.\nThe first one was: " + data.errors[0].message);
-                            } else {
-                                win.app.alert("Success", data);
+                        var body = {
+                            "input": [
+                                 {
+                                    email: that.profile.email,
+                                    firstName: that.profile.fistName,
+                                    postalCode: "11111",
+                                    RESTAPI: true
+                                 }   
+                            ]
+                        };
+                        $.ajax({
+                            url: url + "rest/v1/leads.json?access_token=" + that.profile.access_token,
+                            type: "POST",
+                            contentType : 'application/json',
+                            data: JSON.stringify(body),
+                            success: function (data) {
+                                console.log("data", data);
+                                if (!data.success) {
+                                    win.app.alert("Request had " + data.errors.length + " errors.\nThe first one was: " + data.errors[0].message);
+                                } else {
+                                    win.app.alert("Success", data);
+                                }
                             }
                         });
                     });

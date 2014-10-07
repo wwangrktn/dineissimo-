@@ -10,14 +10,24 @@
         dataSource: win.app.storeStock,
 
         favoriteFilter: { field: "favorited", operator: "eq", value: true },
-
+        popularList: null,
         showFavoriteView: function () {
             this.dataSource.filter(null);
             this.dataSource.filter(this.favoriteFilter);
         },
 
+        init: function() {
+           /* console.log("start init");
+              win.app.Menu.popularList = $("#popular-list").kendoMobileListView({
+                dataSource: win.app.Menu.dataSource,
+               template: $('#menuTemplate').html()
+            }).data("kendoMobileListView");  
+            console.log("end init");*/
+        },
         showMenuView: function () {
-            app.Menu.dataSource.filter(null);
+            console.log("start show");
+          //  win.app.Menu.popularList.refresh();
+            console.log("end show");
         },
 
         showCategoryView: function () {
@@ -37,19 +47,23 @@
         title: "Menu",
 
         addToFavorites: function (e) {
+            console.log("one");
             e.preventDefault();
             var fromDs = this.dataSource.get(e.data.id);
             if (!fromDs.favorited) {
                 fromDs.set('favorited', true);
             }
 
+            console.log("two");
             if (this.photoListVisible) {
                 this.set("favoritePhotoListVisible", true);
             } else {
                 this.set("favoriteListVisible", true);
             }
 
+            console.log("three");
             this.dataSource.sync();
+            console.log("four");
         },
 
         removeFromFavorites: function (e) {
@@ -107,7 +121,7 @@
                 filters: []
             };
             if ($("#filter-barbecue").is(":checked")) {
-                chargeFilter.filters.push({field: "type", operator: "eq", value: "barbeque"});
+                chargeFilter.filters.push({field: "type", operator: "eq", value: "barbeque"}); 
             }
             if ($("#filter-drink").is(":checked")) {
                 chargeFilter.filters.push({field: "type", operator: "eq", value: "drinks"});

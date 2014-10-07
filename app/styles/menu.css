@@ -6,6 +6,10 @@
 #popular, #favorites, #categories {
     height: 100%;
 }
+
+#popular li, #favorites li, #categories li {
+    clear:both;
+}
 #popular .km-content, #favorites .km-content, #categories .km-content {
     padding-top: 48px;
 }
@@ -104,10 +108,9 @@
     float: left;
     padding-top: 12px;
     text-decoration: none;
-    margin-bottom: 1em;
 }
 
-.menu-nav span.active {
+.menu-nav a.active {
     border-bottom: 3px solid #ff6e40;
 }
 

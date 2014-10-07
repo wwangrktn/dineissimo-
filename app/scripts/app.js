@@ -23,7 +23,6 @@
                 showAlert(message, 'Error occurred');
                 return true;
             });
-
             win.app.storeStock.read();
 
             if (!win.navigator.simulator) {
