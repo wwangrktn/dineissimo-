@@ -89,6 +89,7 @@
         },
 
         refreshCache: function () {
+            console.log("refreshing cache");
             localStorage.clear();
             app.storeStock.read();
         },
