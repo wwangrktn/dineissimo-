@@ -13,7 +13,6 @@
 .main-img-crop {
     max-height: 200px;
     overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .author-block img {
