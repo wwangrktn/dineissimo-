@@ -22,6 +22,7 @@
                 var model = view.model,
                     item = win.app.MenuDetails.dataSource.get(view.params.id);
                 model.set("item", item);
+                everliveImages.responsiveAll();
             });
         },
 

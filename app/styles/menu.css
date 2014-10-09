@@ -19,10 +19,8 @@
     clear: both;
     height: 80px;
 }
-.menu-img {
+.menu-row a {
     float: left;
-    height: 80px;
-    width: 80px;
 }
 .km-tabstrip {
     height: 20px;

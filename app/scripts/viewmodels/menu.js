@@ -14,26 +14,47 @@
         showFavoriteView: function () {
             this.dataSource.filter(null);
             this.dataSource.filter(this.favoriteFilter);
+            everliveImages.responsiveAll();
         },
 
-        init: function() {
+        setupImageHandlers: function(selector) {
+            $(selector).each(function() {
+                $(this).data("kendoMobileListView")
+                    .bind("dataBound", everliveImages.responsiveAll);
+            });
+        },
+
+        popularInit: function() {
            /* console.log("start init");
               win.app.Menu.popularList = $("#popular-list").kendoMobileListView({
                 dataSource: win.app.Menu.dataSource,
                template: $('#menuTemplate').html()
             }).data("kendoMobileListView");  
             console.log("end init");*/
+
+            win.app.Menu.setupImageHandlers("#popular-list, #popular-photo-list");
         },
+
+        favoritesInit: function() {
+            win.app.Menu.setupImageHandlers("#favorite-list, #favorite-photo-list");
+        },
+
+        categoriesInit: function() {
+            win.app.Menu.setupImageHandlers("#category-list, #category-photo-list");
+        },
+
         showMenuView: function () {
             console.log("start show");
             win.app.Menu.dataSource.filter({});
-          //  win.app.Menu.popularList.refresh();
+            // win.app.Menu.popularList.refresh();
             console.log("end show");
+            everliveImages.responsiveAll();
         },
 
         showCategoryView: function () {
             this.dataSource.filter(null);
             this.dataSource.sort({ field: "price", dir: "asc"});
+            everliveImages.responsiveAll();
         },
 
         changeSort: function (e) {
@@ -113,6 +134,7 @@
                     that.set("favoriteListVisible", true);
                 }
             }
+            everliveImages.responsiveAll();
         },
 
         changeFilter : function () {

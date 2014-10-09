@@ -1,18 +1,20 @@
-<div data-role="view" data-title="Photos" data-layout="main" data-model="app.Photos">
+<div data-role="view" data-title="Photos" data-layout="main" data-model="app.Photos" data-after-show="app.Photos.init">
     <ul class="full-width-list"
+            data-role="listview"
+            id="photo-list"
             data-bind="source: dataSource"
             data-template="photoTemplate">
     </ul>
 </div>
 
 <script type="text/x-kendo-template" id="photoTemplate">
-	<div class="row photo-row">
-		<div class="main-img-crop">
-			<img class="main-img" src="#: data.src #" />
-		</div>
-		<div class="author-block">
-			<img src="#: data.userImg #" alt="#: data.userName #" />
-	  		<span>by #: data.userName #</span>
-	  	</div>
-	</div>
+    <div class="row photo-row">
+        <div class="main-img-crop">
+            <img class="main-img resimgs" data-src="#: data.src #" />
+        </div>
+        <div class="author-block">
+            <img src="#: data.userImg #" alt="#: data.userName #" />
+            <span>by #: data.userName #</span>
+        </div>
+    </div>
 </script>

@@ -15,6 +15,10 @@
                 }
             }
         }),
-        title: "Photos"
+        title: "Photos",
+        init: function() {
+            $("#photo-list").data("kendoMobileListView")
+                .bind("dataBound", everliveImages.responsiveAll);
+        }
     });
 }(window));

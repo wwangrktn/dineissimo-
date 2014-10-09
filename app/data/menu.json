@@ -4,8 +4,7 @@
         "title": "Lobster Roll",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 1.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich1.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich1.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a0a8e570-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
     {
@@ -13,8 +12,7 @@
         "title": "Reindeer Sausage",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 2.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich2.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich2.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a0be1b20-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
     {
@@ -22,8 +20,7 @@
         "title": "Beef Sandwich",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 3.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich3.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich3.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a0d63700-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
     {
@@ -31,8 +28,7 @@
         "title": "Chillie Dogs",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 4.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich4.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich4.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a13239b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
     {
@@ -40,8 +36,7 @@
         "title": "Salmon Eggs Benedict",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 5.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich5.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich5.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a1a9b3a0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
     {
@@ -49,8 +44,7 @@
         "title": "Toasted BLT",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 6.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich6.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich6.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a20b5ba0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
     {
@@ -58,8 +52,7 @@
         "title": "Chef Special #2",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 7.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich7.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich7.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a28805b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
     {
@@ -67,8 +60,7 @@
         "title": "Tuna Salad Sandwich",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 8.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich8.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich8.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a2df2660-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches"
     },
 
@@ -77,8 +69,7 @@
         "title": "Chicken",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 1.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque1.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque1.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/96463470-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
     {
@@ -86,8 +77,7 @@
         "title": "Crab Cakes",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 2.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque2.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque2.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/965ffe00-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
     {
@@ -95,8 +85,7 @@
         "title": "Hamburger",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 3.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque3.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque3.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/967c86b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
     {
@@ -104,8 +93,7 @@
         "title": "Chicken Wings",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 4.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque4.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque4.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/96923190-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
     {
@@ -113,8 +101,7 @@
         "title": "Lamb Chops",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 5.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque5.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque5.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/96fc6510-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
     {
@@ -122,8 +109,7 @@
         "title": "Ribs",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 6.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque6.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque6.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/97558190-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
     {
@@ -131,8 +117,7 @@
         "title": "Salmon Steak",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 8.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque7.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque7.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/97e42d00-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
     {
@@ -140,8 +125,7 @@
         "title": "Chef Special #1",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
         "price": 9.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque8.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque8.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/98571310-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque"
     },
 
@@ -150,8 +134,7 @@
         "title": "Drink #1",
         "description": "This is Drink #1",
         "price": 1.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink1.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink1.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9c14de60-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -159,8 +142,7 @@
         "title": "Drink #2",
         "description": "This is Drink #2",
         "price": 2.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink2.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink2.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9c64ac10-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -168,8 +150,7 @@
         "title": "Drink #3",
         "description": "This is Drink #3",
         "price": 3.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink3.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink3.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9cd54830-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -177,8 +158,7 @@
         "title": "Drink #4",
         "description": "This is Drink #4",
         "price": 4.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink4.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink4.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9d2b5770-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -186,8 +166,7 @@
         "title": "Drink #5",
         "description": "This is Drink #5",
         "price": 5.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink5.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink5.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9db484a0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -195,8 +174,7 @@
         "title": "Drink #6",
         "description": "This is Drink #6",
         "price": 6.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink6.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink6.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9e301d40-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -204,8 +182,7 @@
         "title": "Drink #7",
         "description": "This is Drink #7",
         "price": 7.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink7.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink7.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9e9ac5f0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -213,8 +190,7 @@
         "title": "Drink #8",
         "description": "This is Drink #8",
         "price": 8.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink8.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink8.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9f2fda00-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -222,8 +198,7 @@
         "title": "Drink #9",
         "description": "This is Drink #9",
         "price": 9.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink9.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink9.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9f4cfef0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -231,8 +206,7 @@
         "title": "Drink #10",
         "description": "This is Drink #10",
         "price": 10.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink10.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink10.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9f941a10-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -240,8 +214,7 @@
         "title": "Drink #11",
         "description": "This is Drink #11",
         "price": 11.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink11.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink11.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9ff302f0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
     {
@@ -249,8 +222,7 @@
         "title": "Drink #12",
         "description": "This is Drink #12",
         "price": 12.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink12.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink12.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a044f380-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks"
     },
 
@@ -259,8 +231,7 @@
         "title": "Dessert #1",
         "description": "This is Dessert #1",
         "price": 1.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert1.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert1.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/98da9af0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     },
     {
@@ -268,8 +239,7 @@
         "title": "Dessert #2",
         "description": "This is Dessert #2",
         "price": 2.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert2.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert2.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9922ee90-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     },
     {
@@ -277,8 +247,7 @@
         "title": "Dessert #3",
         "description": "This is Dessert #3",
         "price": 3.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert3.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert3.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/999119b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     },
     {
@@ -286,8 +255,7 @@
         "title": "Dessert #4",
         "description": "This is Dessert #4",
         "price": 4.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert4.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert4.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9a0956f0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     },
     {
@@ -295,8 +263,7 @@
         "title": "Dessert #5",
         "description": "This is Dessert #5",
         "price": 5.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert5.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert5.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9a670750-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     },
     {
@@ -304,8 +271,7 @@
         "title": "Dessert #6",
         "description": "This is Dessert #6",
         "price": 6.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert6.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert6.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9ac490a0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     },
     {
@@ -313,8 +279,7 @@
         "title": "Dessert #7",
         "description": "This is Dessert #7",
         "price": 7.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert7.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert7.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9b17e0c0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     },
     {
@@ -322,8 +287,7 @@
         "title": "Dessert #8",
         "description": "This is Dessert #8",
         "price": 8.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert8.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert8.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9b7283e0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts"
     }
 ]
