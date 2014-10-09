@@ -11,11 +11,6 @@
 
         favoriteFilter: { field: "favorited", operator: "eq", value: true },
         popularList: null,
-        showFavoriteView: function () {
-            this.dataSource.filter(null);
-            this.dataSource.filter(this.favoriteFilter);
-            everliveImages.responsiveAll();
-        },
 
         setupImageHandlers: function(selector) {
             $(selector).each(function() {
@@ -48,13 +43,19 @@
             win.app.Menu.dataSource.filter({});
             // win.app.Menu.popularList.refresh();
             console.log("end show");
-            everliveImages.responsiveAll();
+            setTimeout(everliveImages.responsiveAll);
+        },
+
+        showFavoriteView: function () {
+            this.dataSource.filter(null);
+            this.dataSource.filter(this.favoriteFilter);
+            setTimeout(everliveImages.responsiveAll);
         },
 
         showCategoryView: function () {
             this.dataSource.filter(null);
             this.dataSource.sort({ field: "price", dir: "asc"});
-            everliveImages.responsiveAll();
+            setTimeout(everliveImages.responsiveAll);
         },
 
         changeSort: function (e) {
