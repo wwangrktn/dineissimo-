@@ -74,7 +74,10 @@
         return {
             mobileApp: mobileApp,
             alert: showAlert,
-            storeStock: storeStock
+            storeStock: storeStock,
+            debug:  function () {
+                //Helper function to run debug code on a device. 
+            },
         };
 
     }());

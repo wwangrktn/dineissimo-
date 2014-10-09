@@ -87,7 +87,8 @@
             }
 
         },
-
+        
+        
         refreshCache: function () {
             console.log("refreshing cache");
             localStorage.clear();
