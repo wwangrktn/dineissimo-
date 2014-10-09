@@ -38,6 +38,13 @@
             e.preventDefault();
             $("#appDrawer").hide();
             $("#editProfileDrawer").show();
+            
+            //This is a workaround to fix the issues with the soft keyboard on android.
+            var total = $("#editProfileDrawer .km-scroll-container").height();
+            var topPart = $("#edit-body").height();
+            var margin = (total - topPart - 66);
+            $("#bottom-button-panel").css("margin-top", margin + "px");
+            
         },
 
         hideEditProfile: function (e) {
@@ -88,6 +95,8 @@
 
         },
         
+        fixFooter: function(e) {
+        },
         
         refreshCache: function () {
             console.log("refreshing cache");
