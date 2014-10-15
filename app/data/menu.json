@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Lobster Roll",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 1.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich1.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich1.jpg",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "title": "Reindeer Sausage",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 2.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich2.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich2.jpg",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "title": "Beef Sandwich",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 3.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich3.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich3.jpg",
@@ -28,8 +28,8 @@
     },
     {
         "id": 4,
-        "title": "Chillie Dogs",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "title": "Chili Dogs",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 4.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich4.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich4.jpg",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "title": "Salmon Eggs Benedict",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 5.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich5.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich5.jpg",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "title": "Toasted BLT",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 6.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich6.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich6.jpg",
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "title": "Chef Special #2",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 7.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich7.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich7.jpg",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "title": "Tuna Salad Sandwich",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 8.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich8.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich8.jpg",
@@ -75,7 +75,7 @@
     {
         "id": 9,
         "title": "Chicken",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 1.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque1.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque1.jpg",
@@ -84,7 +84,7 @@
     {
         "id": 10,
         "title": "Crab Cakes",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 2.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque2.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque2.jpg",
@@ -93,7 +93,7 @@
     {
         "id": 11,
         "title": "Hamburger",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 3.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque3.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque3.jpg",
@@ -102,7 +102,7 @@
     {
         "id": 12,
         "title": "Chicken Wings",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 4.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque4.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque4.jpg",
@@ -111,7 +111,7 @@
     {
         "id": 13,
         "title": "Lamb Chops",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 5.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque5.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque5.jpg",
@@ -120,7 +120,7 @@
     {
         "id": 14,
         "title": "Ribs",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 6.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque6.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque6.jpg",
@@ -129,7 +129,7 @@
     {
         "id": 15,
         "title": "Salmon Steak",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 8.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque7.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque7.jpg",
@@ -138,7 +138,7 @@
     {
         "id": 16,
         "title": "Chef Special #1",
-        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best, most simply incredible Maine lobser roll in the city.  We prefer ours cold with mayout. Something, something Star Wars...",
+        "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 9.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque8.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque8.jpg",
@@ -184,7 +184,7 @@
     {
         "id": 22,
         "title": "Expresso",
-        "description": "For that even quicker pick up.",
+        "description": "For that even quicker pick me up.",
         "price": 5.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink5.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink5.jpg",
@@ -192,7 +192,7 @@
     },
     {
         "id": 23,
-        "title": "Watermellon Juice",
+        "title": "Watermelon Juice",
         "description": "The sweet taste of the south",
         "price": 6.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink6.jpg",
@@ -210,7 +210,7 @@
     },
     {
         "id": 25,
-        "title": "Berry Smoothy",
+        "title": "Berry Smoothie",
         "description": "Delicious and great for you",
         "price": 8.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink8.jpg",
@@ -219,7 +219,7 @@
     },
     {
         "id": 26,
-        "title": "Yogurt based Smoothies",
+        "title": "Yogurt-based smoothies",
         "description": "Try our wide range of these tasty treats",
         "price": 9.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink9.jpg",
@@ -238,7 +238,7 @@
     {
         "id": 28,
         "title": "Iced Tea",
-        "description": "Now in both Sweet and unsweatened versions",
+        "description": "Now in both sweet and unsweatened versions",
         "price": 11.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink11.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink11.jpg",
@@ -247,7 +247,7 @@
     {
         "id": 29,
         "title": "Water",
-        "description": "The original Classic",
+        "description": "The original classic",
         "price": 12.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink12.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink12.jpg",
@@ -256,7 +256,7 @@
 
     {
         "id": 30,
-        "title": "Custerd Pie",
+        "title": "Custard Pie",
         "description": "Great tasting and great for you",
         "price": 1.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert1.jpg",
@@ -266,7 +266,7 @@
     {
         "id": 31,
         "title": "Chocolate Cake",
-        "description": "Who doesn't love this classic",
+        "description": "Who doesn't love this classic?",
         "price": 2.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert2.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert2.jpg",
@@ -284,7 +284,7 @@
     {
         "id": 33,
         "title": "Berry Cake",
-        "description": "Heavenly combination of fruit and sweet",
+        "description": "Heavenly combination of fruity and sweet",
         "price": 4.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert4.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert4.jpg",
@@ -310,7 +310,7 @@
     },
     {
         "id": 36,
-        "title": "Jello Mould",
+        "title": "Jello",
         "description": "Almost as much fun to play with as it is to eat",
         "price": 7.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert7.jpg",
