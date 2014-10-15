@@ -6,7 +6,8 @@
         "price": 1.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich1.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich1.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "price": 2.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich2.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich2.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "price": 3.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich3.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich3.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "price": 4.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich4.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich4.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "price": 5.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich5.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich5.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "price": 6.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich6.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich6.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "price": 7.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich7.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich7.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
     {
         "id": 8,
@@ -69,7 +76,8 @@
         "price": 8.25,
         "imgSrc": "styles/images/static-data/sandwiches/full/sandwich8.jpg",
         "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich8.jpg",
-        "type": "sandwiches"
+        "type": "sandwiches",
+        "qty": 0
     },
 
     {
@@ -79,7 +87,8 @@
         "price": 1.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque1.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque1.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
     {
         "id": 10,
@@ -88,7 +97,8 @@
         "price": 2.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque2.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque2.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
     {
         "id": 11,
@@ -97,7 +107,8 @@
         "price": 3.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque3.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque3.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
     {
         "id": 12,
@@ -106,7 +117,8 @@
         "price": 4.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque4.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque4.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
     {
         "id": 13,
@@ -115,7 +127,8 @@
         "price": 5.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque5.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque5.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
     {
         "id": 14,
@@ -124,7 +137,8 @@
         "price": 6.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque6.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque6.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
     {
         "id": 15,
@@ -133,7 +147,8 @@
         "price": 8.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque7.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque7.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
     {
         "id": 16,
@@ -142,7 +157,8 @@
         "price": 9.75,
         "imgSrc": "styles/images/static-data/barbeque/full/barbeque8.jpg",
         "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque8.jpg",
-        "type": "barbeque"
+        "type": "barbeque",
+        "qty": 0
     },
 
     {
@@ -152,7 +168,8 @@
         "price": 1.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink1.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink1.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 18,
@@ -161,7 +178,8 @@
         "price": 2.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink2.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink2.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 19,
@@ -170,7 +188,8 @@
         "price": 3.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink3.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink3.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 20,
@@ -179,7 +198,8 @@
         "price": 4.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink4.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink4.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 22,
@@ -188,7 +208,8 @@
         "price": 5.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink5.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink5.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 23,
@@ -197,7 +218,8 @@
         "price": 6.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink6.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink6.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 24,
@@ -206,7 +228,8 @@
         "price": 7.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink7.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink7.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 25,
@@ -215,7 +238,8 @@
         "price": 8.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink8.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink8.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 26,
@@ -224,7 +248,8 @@
         "price": 9.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink9.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink9.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 27,
@@ -233,7 +258,8 @@
         "price": 10.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink10.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink10.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 28,
@@ -242,7 +268,8 @@
         "price": 11.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink11.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink11.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
     {
         "id": 29,
@@ -251,7 +278,8 @@
         "price": 12.99,
         "imgSrc": "styles/images/static-data/drinks/full/drink12.jpg",
         "thumbSrc": "styles/images/static-data/drinks/thumbs/drink12.jpg",
-        "type": "drinks"
+        "type": "drinks",
+        "qty": 0
     },
 
     {
@@ -261,7 +289,8 @@
         "price": 1.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert1.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert1.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     },
     {
         "id": 31,
@@ -270,7 +299,8 @@
         "price": 2.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert2.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert2.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     },
     {
         "id": 32,
@@ -279,7 +309,8 @@
         "price": 3.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert3.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert3.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     },
     {
         "id": 33,
@@ -288,7 +319,8 @@
         "price": 4.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert4.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert4.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     },
     {
         "id": 34,
@@ -297,7 +329,8 @@
         "price": 5.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert5.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert5.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     },
     {
         "id": 35,
@@ -306,7 +339,8 @@
         "price": 6.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert6.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert6.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     },
     {
         "id": 36,
@@ -315,7 +349,8 @@
         "price": 7.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert7.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert7.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     },
     {
         "id": 37,
@@ -324,6 +359,7 @@
         "price": 8.50,
         "imgSrc": "styles/images/static-data/desserts/full/dessert8.jpg",
         "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert8.jpg",
-        "type": "desserts"
+        "type": "desserts",
+        "qty": 0
     }
 ]

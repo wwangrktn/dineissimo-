@@ -18,9 +18,9 @@
 
         show: function (e) {
             var view = e.view;
-            win.app.MenuDetails.dataSource.fetch(function () {
+            win.app.Menu.dataSource.fetch(function () {
                 var model = view.model,
-                    item = win.app.MenuDetails.dataSource.get(view.params.id);
+                    item = win.app.Menu.dataSource.get(view.params.id);
                 model.set("item", item);
             });
         },
