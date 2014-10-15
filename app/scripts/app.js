@@ -3,6 +3,8 @@
 "use strict";
 
 (function (win) {
+    everliveImages.init("eyD4rLcMGB8J6ljO");
+
     win.app = (function () {
 
         // global error handling

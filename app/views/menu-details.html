@@ -5,7 +5,7 @@
             <a data-role="backbutton" class="fa fa-chevron-left" data-align="left"></a>
         </div>
     </header>
-    <img data-bind="attr: { src: item.imgSrc }" />
+    <img class="resimgs" data-bind="attr: { data-src: item.imgSrc }" />
     <div id="menu-details-box">
         <p data-bind="html: item.description"></p>
         <h4>$<span data-bind="html: item.price" /></h4>

@@ -4,8 +4,7 @@
         "title": "Lobster Roll",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 1.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich1.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich1.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a0a8e570-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -14,8 +13,7 @@
         "title": "Reindeer Sausage",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 2.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich2.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich2.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a0be1b20-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -24,8 +22,7 @@
         "title": "Beef Sandwich",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 3.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich3.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich3.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a0d63700-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -34,8 +31,7 @@
         "title": "Chili Dogs",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 4.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich4.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich4.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a13239b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -44,8 +40,7 @@
         "title": "Salmon Eggs Benedict",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 5.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich5.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich5.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a1a9b3a0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -54,8 +49,7 @@
         "title": "Toasted BLT",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 6.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich6.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich6.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a20b5ba0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -64,8 +58,7 @@
         "title": "Chef Special #2",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 7.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich7.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich7.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a28805b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -74,8 +67,7 @@
         "title": "Tuna Salad Sandwich",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 8.25,
-        "imgSrc": "styles/images/static-data/sandwiches/full/sandwich8.jpg",
-        "thumbSrc": "styles/images/static-data/sandwiches/thumbs/sandwich8.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a2df2660-4f0d-11e4-808d-09ddc7aae25e",
         "type": "sandwiches",
         "qty": 0
     },
@@ -85,8 +77,7 @@
         "title": "Chicken",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 1.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque1.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque1.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/96463470-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -95,8 +86,7 @@
         "title": "Crab Cakes",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 2.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque2.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque2.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/965ffe00-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -105,8 +95,7 @@
         "title": "Hamburger",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 3.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque3.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque3.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/967c86b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -115,8 +104,7 @@
         "title": "Chicken Wings",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 4.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque4.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque4.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/96923190-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -125,8 +113,7 @@
         "title": "Lamb Chops",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 5.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque5.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque5.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/96fc6510-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -135,8 +122,7 @@
         "title": "Ribs",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 6.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque6.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque6.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/97558190-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -145,8 +131,7 @@
         "title": "Salmon Steak",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 8.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque7.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque7.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/97e42d00-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -155,8 +140,7 @@
         "title": "Chef Special #1",
         "description": "Chef Michael Serpa and crew pack them in every day from lunch 'til close to get a taste of their delicious oysters and the best Maine lobtser roll in the city.  We prefer ours cold with mayo.",
         "price": 9.75,
-        "imgSrc": "styles/images/static-data/barbeque/full/barbeque8.jpg",
-        "thumbSrc": "styles/images/static-data/barbeque/thumbs/barbeque8.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/98571310-4f0d-11e4-808d-09ddc7aae25e",
         "type": "barbeque",
         "qty": 0
     },
@@ -166,8 +150,7 @@
         "title": "Chai Tea",
         "description": "What better to warm you up on a cold day.",
         "price": 1.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink1.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink1.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9c14de60-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -176,8 +159,7 @@
         "title": "Orange Juice",
         "description": "Sun kissed and delicious",
         "price": 2.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink2.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink2.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9c64ac10-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -186,8 +168,7 @@
         "title": "Red Wine",
         "description": "After a hard day, everyone needs a little unwinding",
         "price": 3.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink3.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink3.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9cd54830-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -196,8 +177,7 @@
         "title": "Caramel Latte",
         "description": "For that quick pick me up",
         "price": 4.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink4.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink4.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9d2b5770-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -206,8 +186,7 @@
         "title": "Expresso",
         "description": "For that even quicker pick me up.",
         "price": 5.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink5.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink5.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9db484a0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -216,8 +195,7 @@
         "title": "Watermelon Juice",
         "description": "The sweet taste of the south",
         "price": 6.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink6.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink6.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9e301d40-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -226,18 +204,16 @@
         "title": "Mai Tai",
         "description": "The Mai Tai is an alcoholic cocktail based on rum, Curaçao liqueur, and lime juice, associated with Polynesian-style settings.",
         "price": 7.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink7.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink7.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9e9ac5f0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
-        "qty": 0
+        "qty": 0    
     },
     {
         "id": 25,
         "title": "Berry Smoothie",
         "description": "Delicious and great for you",
         "price": 8.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink8.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink8.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9f2fda00-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -246,8 +222,7 @@
         "title": "Yogurt-based smoothies",
         "description": "Try our wide range of these tasty treats",
         "price": 9.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink9.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink9.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9f4cfef0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -256,8 +231,7 @@
         "title": "Lemon Water",
         "description": "Crisp and clean classic",
         "price": 10.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink10.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink10.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9f941a10-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -266,8 +240,7 @@
         "title": "Iced Tea",
         "description": "Now in both sweet and unsweatened versions",
         "price": 11.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink11.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink11.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9ff302f0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -276,8 +249,7 @@
         "title": "Water",
         "description": "The original classic",
         "price": 12.99,
-        "imgSrc": "styles/images/static-data/drinks/full/drink12.jpg",
-        "thumbSrc": "styles/images/static-data/drinks/thumbs/drink12.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/a044f380-4f0d-11e4-808d-09ddc7aae25e",
         "type": "drinks",
         "qty": 0
     },
@@ -287,8 +259,7 @@
         "title": "Custard Pie",
         "description": "Great tasting and great for you",
         "price": 1.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert1.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert1.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/98da9af0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     },
@@ -297,8 +268,7 @@
         "title": "Chocolate Cake",
         "description": "Who doesn't love this classic?",
         "price": 2.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert2.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert2.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9922ee90-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     },
@@ -307,8 +277,7 @@
         "title": "Smarties and Pudding",
         "description": "Two great treats together at last",
         "price": 3.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert3.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert3.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/999119b0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     },
@@ -317,8 +286,7 @@
         "title": "Berry Cake",
         "description": "Heavenly combination of fruity and sweet",
         "price": 4.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert4.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert4.jpg",
+        "imgSrc": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9a0956f0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     },
@@ -327,8 +295,7 @@
         "title": "Chocolate Chip Cookies",
         "description": "To dip or not to dip, the ultimate question",
         "price": 5.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert5.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert5.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9a670750-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     },
@@ -337,8 +304,7 @@
         "title": "Layer Cake",
         "description": "For when one level of cake is just not enough",
         "price": 6.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert6.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert6.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9ac490a0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     },
@@ -347,8 +313,7 @@
         "title": "Jello",
         "description": "Almost as much fun to play with as it is to eat",
         "price": 7.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert7.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert7.jpg",
+        "imgSrc": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9b17e0c0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     },
@@ -357,8 +322,7 @@
         "title": "Assorted Fruit",
         "description": "Dessert for people on a diet",
         "price": 8.50,
-        "imgSrc": "styles/images/static-data/desserts/full/dessert8.jpg",
-        "thumbSrc": "styles/images/static-data/desserts/thumbs/dessert8.jpg",
+        "imgSrc": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9b7283e0-4f0d-11e4-808d-09ddc7aae25e",
         "type": "desserts",
         "qty": 0
     }

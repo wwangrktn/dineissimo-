@@ -2,26 +2,26 @@
     {
         "userName": "Bob Jones",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/Interior1.jpg"
+        "src": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/93f2a780-4f0d-11e4-808d-09ddc7aae25e"
     },
     {
         "userName": "Sally Jones",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/Interior2.jpg"
+        "src": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/9473be60-4f0d-11e4-808d-09ddc7aae25e"
     },
     {
         "userName": "Walter Smith",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/Interior3.jpg"
+        "src": "https://bs2.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/94da9680-4f0d-11e4-808d-09ddc7aae25e"
     },
     {
         "userName": "Michelle Smith",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/Interior4.jpg"
+        "src": "https://bs3.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/95676d30-4f0d-11e4-808d-09ddc7aae25e"
     },
     {
         "userName": "Johnny Ford",
         "userImg": "http://www.gravatar.com/avatar",
-        "src": "styles/images/interior/Interior5.jpg"
+        "src": "https://bs1.cdn.telerik.com/v1/eyD4rLcMGB8J6ljO/95ef13c0-4f0d-11e4-808d-09ddc7aae25e"
     }
 ]

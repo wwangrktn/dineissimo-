@@ -1,4 +1,4 @@
-<div data-role="view" id="popular" data-title="Menu" data-layout="main" data-init="app.Menu.init" data-show="app.Menu.showMenuView" data-model="app.Menu">
+<div data-role="view" id="popular" data-title="Menu" data-layout="main" data-init="app.Menu.popularInit" data-show="app.Menu.showMenuView" data-model="app.Menu">
     <header data-role="header">
         <div data-role="navbar">
             <span data-role="view-title"></span>
@@ -23,7 +23,7 @@
     </ul>
 </div>
 
-<div data-role="view" id="favorites" data-title="Favorites" data-title="Menu" data-layout="main" data-model="app.Menu">
+<div data-role="view" id="favorites" data-title="Favorites" data-title="Menu" data-layout="main" data-model="app.Menu" data-init="app.Menu.favoritesInit">
     <header data-role="header">
         <div data-role="navbar">
             <span data-role="view-title"></span>
@@ -49,7 +49,7 @@
     <p id="no-fav-msg" data-bind="invisible: dataSource.aggregates().id.count">Click the star to add favorites</p>
 </div>
 
-<div data-role="view" id="categories" data-title="Categories" data-layout="main" data-model="app.Menu">
+<div data-role="view" id="categories" data-title="Categories" data-layout="main" data-model="app.Menu" data-init="app.Menu.categoriesInit">
     <header data-role="header">
         <div data-role="navbar">
             <span data-role="view-title"></span>
@@ -95,7 +95,7 @@
 <script type="text/x-kendo-template" id="menuTemplate">
     <div class="row menu-row">
         <a href="\#views/menu-details.html?id=#= data.id #">
-            <img width="80" height="80" class="menu-img" src="#: data.thumbSrc #" />
+            <img width="80" height="80" class="resimgs" data-src="#: data.imgSrc #" />
          
         </a>   
             <div class="menu-buttons">
@@ -121,7 +121,7 @@
     <div class="row photo-menu-row">
         <div class="photo-menu-box">
             <a href="\#views/menu-details.html?id=#= data.id #">
-                <img class="photo-img" src="#: data.imgSrc #" />
+                <img class="photo-img resimgs" data-src="#: data.imgSrc #" />
                 
                 <div class="menu-block">
                     <h4>#: data.title #</h4>
