@@ -1,22 +1,27 @@
 [
     {
         "description": "How to Make Fancy Tartar Sauce",
-        "url": "http://www.youtube.com/embed/77k7xrm9BoY?rel=0"
+        "url": "http://www.youtube.com/embed/77k7xrm9BoY?rel=0",
+        "videoId": "77k7xrm9BoY"
     },
     {
         "description": "Salmon Patties with Fresh Wild Salmon",
-        "url": "http://www.youtube.com/embed/WGd3vVF_RQk?rel=0&autoplay=0&controls=1"
+        "url": "http://www.youtube.com/embed/WGd3vVF_RQk?rel=0&autoplay=0&controls=1",
+        "videoId": "WGd3vVF_RQk"
     },
     {
         "description": "How to Make Great Depression-Style Sweet Pickles",
-        "url": "http://www.youtube.com/embed/0yOA1WnlpWY?rel=0&autoplay=0&controls=1"
+        "url": "http://www.youtube.com/embed/0yOA1WnlpWY?rel=0&autoplay=0&controls=1",
+        "videoId": "0yOA1WnlpWY"
     },
     {
         "description": "Pasta with Bacon, Lettuce (Arugula), and Tomato Sauce",
-        "url": "http://www.youtube.com/embed/irC0tkR9jwA?rel=0&autoplay=0&controls=1"
+        "url": "http://www.youtube.com/embed/irC0tkR9jwA?rel=0&autoplay=0&controls=1",
+        "videoId": "irC0tkR9jwA"
     },
     {
         "description": "How to Make the World's Sexiest Caprese Salad",
-        "url": "http://www.youtube.com/embed/EVuiTbde80k?rel=0&autoplay=0&controls=1"
+        "url": "http://www.youtube.com/embed/EVuiTbde80k?rel=0&autoplay=0&controls=1",
+        "videoId": "EVuiTbde80k"
     }
 ]

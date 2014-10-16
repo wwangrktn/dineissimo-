@@ -8,8 +8,13 @@
 <script type="text/x-kendo-template" id="videoTemplate">
 	<div class="row photo-row">
 		<div class="main-img-crop">
-			<iframe data-bind="{attr: {width: playerWidth}}" height="180" src="#: data.url #" frameborder="0" allowfullscreen></iframe>
-			
+            #if(kendo.support.mobileOS.android) { #
+                 <a href="vnd.youtube:#: data.videoId #">
+                    <img src="http://img.youtube.com/vi/#: data.videoId #/0.jpg" data-bind="{attr: {width: playerWidth}}" height="180" />
+                </a>
+            #} else { #
+			    <iframe data-bind="{attr: {width: playerWidth}}" height="180" src="#: data.url #" frameborder="0" allowfullscreen></iframe>
+			#}#
 		</div>
 		<div class="author-block">
 			<img src="styles/images/videoprofile.png" alt="#: data.description #" />
