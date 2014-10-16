@@ -19,10 +19,18 @@
         mapUrl: "http://maps.google.com/maps/api/staticmap?center=42.374923,-71.273964&zoom=16&markers=42.374923,-71.273964&size=320x150",
         description: "Opened Jul 2013, this cafe in downtown LA serves organic, gluten-free, and vegan food without added sugar, yeast, caffeine, or alcohol.  In early-2014 its menu added a few dairy options.",
         phoneLaunch: function () {
-            win.open("tel://" + this.phone);
+            if(device.platform.toLowerCase() === "android"){
+                  navigator.app.loadUrl("tel:" + this.phone, { openExternal:true } ); 
+             } else {
+                  win.open("tel://" + this.phone);
+             }
         },
         emailLaunch: function () {
-            win.open("mailto://" + this.email);
+            if(device.platform.toLowerCase() === "android"){
+                  navigator.app.loadUrl("mailto:" + this.email, { openExternal:true } ); 
+             } else {
+                  win.open("mailto://" + this.email);
+             }
         },
         directionLaunch: function () {
             if (kendo.support.mobileOS.android || kendo.support.mobileOS.wp) {

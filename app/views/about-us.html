@@ -1,7 +1,7 @@
 <div data-role="view" data-title="About Us" data-layout="main" id="about-body" data-model="app.AboutUs">
  <img src="styles/images/roastbeefLogo_2x.png">
   <p data-bind="text: description"></p>
-  <h4 class="fa fa-map-marker orange">get directions</h4>
+  <h4 data-role="touch" data-bind="events: { tap: directionLaunch }" class="fa fa-map-marker orange">get directions</h4>
   <div data-role="touch" data-bind="events: { tap: directionLaunch }"><img data-bind="attr: { src: mapUrl }" id="map" /></div>
   <h4 data-role="touch" data-bind="events: { tap: phoneLaunch }" class="fa fa-phone orange">call us<br /><small data-bind="text: phone"></small></h4>
   <h4 data-role="touch" data-bind="events: { tap: emailLaunch }" class="fa fa-envelope-o orange">mail us<br /><small data-bind="text: email"></small></h4>
