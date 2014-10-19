@@ -3,15 +3,12 @@
  * Styles for the Menu List page
  *
  *************************************************************************/
-#popular, #favorites, #categories {
-    height: 100%;
-}
 
 #popular li, #favorites li, #categories li, #no-fav-msg {
     clear:both;
 }
 #popular .km-content, #favorites .km-content, #categories .km-content {
-    padding-top: 48px;
+    padding-bottom: 48px;
 }
 .menu-row {
     clear: both;

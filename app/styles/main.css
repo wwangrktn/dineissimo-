@@ -75,8 +75,7 @@ html, body {
   *
   ************************************************************************/
 .km-navbar {
-    background-color: rgba(93,64,55, 0.92) !important;
-    position:absolute;
+    background-color: rgba(93,64,55,1) !important;
     color:white !important;
 }
 
@@ -275,3 +274,5 @@ html, body {
 #editProfileDrawer #side-header {
     height: 24%;
 }
+
+

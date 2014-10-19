@@ -6,6 +6,7 @@
     win.app = win.app || {};
 
     var favoriteFilter = { field: "favorited", operator: "eq", value: true },
+        categoryFilter,
         menuNav;
 
     win.app.Menu = kendo.observable({
@@ -25,8 +26,12 @@
             });
         },
 
-        popularInit: function() {
+        initMenuView: function() {
             win.app.Menu.setupImageHandlers("#popular-list", "#popular-photo-list");
+        },
+
+        hideMenuView: function() {
+            win.app.storeStock.sync();
         },
 
         changeSort: function (e) {
@@ -55,6 +60,8 @@
                 var favorited = fromDs.favorited;
 
                 fromDs.set("favorited", !favorited);
+
+                ds.sync();
             });
         },
 
@@ -63,13 +70,14 @@
         },
 
         addToCart: function (e) {
-            e.preventDefault();
-            var fromDs = win.app.Menu.dataSource.get(e.data.id);
-            fromDs.set('incart', true);
-            var newQ = fromDs.qty === undefined ? 1 : fromDs.qty + 1;
-            fromDs.set('qty', newQ);
-            fromDs.set('itemPrice', fromDs.qty * fromDs.price);
-            this.dataSource.sync();
+            setTimeout(function() {
+                e.preventDefault();
+                var fromDs = win.app.Menu.dataSource.get(e.data.id);
+                fromDs.set('incart', true);
+                var newQ = fromDs.qty === undefined ? 1 : fromDs.qty + 1;
+                fromDs.set('qty', newQ);
+                fromDs.set('itemPrice', fromDs.qty * fromDs.price);
+            });
         },
 
         changeView : function (e) {
@@ -89,12 +97,13 @@
                 this.dataSource.filter(favoriteFilter);    
             }
             if (target === "categories") {
-                if (currentFilter) {
-                    this.dataSource.filter({});
+                if (categoryFilter && categoryFilter.filters.length > 0) {
+                    this.dataSource.filter(categoryFilter);
                 }
             }
 
             this.set("currentView", target);
+
             menuNav.title(title);
 
         },
@@ -113,33 +122,32 @@
 
             setTimeout(function(){
 
-                var chargeFilter = {
-                    logic: 'or',
-                    filters: []
-                };
+                categoryFilter = { logic: 'or', filters: [] };
 
                 if (that.get('show.bbq')) {
-                    chargeFilter.filters.push({field: "type", operator: "eq", value: "barbeque"}); 
+                    categoryFilter.filters.push({field: "type", operator: "eq", value: "barbeque"}); 
                 }
 
                 if (that.get('show.drinks')) {
-                    chargeFilter.filters.push({field: "type", operator: "eq", value: "drinks"});
+                    categoryFilter.filters.push({field: "type", operator: "eq", value: "drinks"});
                 }
                 
                 if (that.get('show.sandwiches')) {
-                    chargeFilter.filters.push({field: "type", operator: "eq", value: "sandwiches"});
+                    categoryFilter.filters.push({field: "type", operator: "eq", value: "sandwiches"});
                 }
                 
                 if (that.get('show.desserts')) {
-                    chargeFilter.filters.push({field: "type", operator: "eq", value: "desserts"});
+                    categoryFilter.filters.push({field: "type", operator: "eq", value: "desserts"});
                 }
 
                 //check to see if they are all not checked and create a filter that will return nothing
-                if (chargeFilter.filters.length === 0) {
-                    chargeFilter.filters.push({field: "type", operator: "eq", value: "unicorn"});
+                if (categoryFilter.filters.length === 0) {
+                    categoryFilter.filters.push({field: "type", operator: "eq", value: "unicorn"});
                 }
                 
-                that.dataSource.filter(chargeFilter);
+                console.log(categoryFilter);
+
+                that.dataSource.filter(categoryFilter);
             });
             
         }

@@ -1,4 +1,4 @@
-<div data-role="view" id="popular" data-title="Menu" data-layout="main" data-init="app.Menu.popularInit" data-show="app.Menu.showMenuView" data-model="app.Menu">
+<div data-role="view" id="popular" data-title="Menu" data-layout="main" data-init="app.Menu.initMenuView" data-model="app.Menu">
     <header data-role="header">
         <div data-role="navbar" id="menu-navbar">
             <span data-role="view-title"></span>
@@ -9,32 +9,24 @@
         </div>
     </header>
     <div id="menu-nav" data-role="tabstrip" data-bind="events: { select: changeView }">
-        <a data-target="popular">Popular</a>
-        <a data-target="favorites">Favorites</a>
-        <a data-target="categories">Categories</a>
+        <a data-target="popular" data-title="Popular">Popular</a>
+        <a data-target="favorites" data-title="Favorites">Favorites</a>
+        <a data-target="categories" data-title="Categories">Categories</a>
     </div>    
     <div class="category-selectors" data-bind="visible: categoriesVisible">
-        <div class="half">
-            <ul data-role="listview">
-                <li>Barbecue <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.bbq" data-on-label="Yes" data-off-label="No" data-filter="bbq" /></li>
-                <li>Sandwiches <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.sandwiches" data-on-label="Yes" data-off-label="No" data-filter="sandwich" /></li>
-            </ul>    
-        </div>
-        <div class="half">
-            <ul data-role="listview">
-                <li>Drinks <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.drinks" data-on-label="Yes" data-off-label="No" data-filter="drinks" /></li>
-                <li>Desserts <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.desserts" data-on-label="Yes" data-off-label="No" data-filter="desert" /></li>    
-            </ul>
-        </div>
         <ul data-role="listview">
+            <li>Barbecue <input data-role="switch" data-bind="events: { change: changeFilter }, checked: show.bbq" data-on-label="Yes" data-off-label="No" data-filter="bbq" /></li>
+            <li>Sandwiches <input data-role="switch" data-bind="events: { change: changeFilter }, checked: show.sandwiches" data-on-label="Yes" data-off-label="No" data-filter="sandwich" /></li>
+            <li>Drinks <input data-role="switch" data-bind="events: { change: changeFilter }, checked: show.drinks" data-on-label="Yes" data-off-label="No" data-filter="drinks" /></li>
+            <li>Desserts <input data-role="switch" data-bind="events: { change: changeFilter }, checked: show.desserts" data-on-label="Yes" data-off-label="No" data-filter="desert" /></li>    
             <li>
-                Sort
-                <select id="sort" data-bind="events: { change: changeSort }">
-                    <option value="asc">price: low to high</option>
-                    <option value="desc">price: high to low</option>
-                </select>
-            </li>
-        </ul>
+            Sort
+            <select id="sort" data-bind="events: { change: changeSort }">
+                <option value="asc">price: low to high</option>
+                <option value="desc">price: high to low</option>
+            </select>
+        </li>
+        </ul>    
     </div>
     <ul id="popular-list" data-role="listview"
             data-bind="source:dataSource, visible: inListView"
