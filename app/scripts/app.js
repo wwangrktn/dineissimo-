@@ -69,6 +69,9 @@
                         }
                     }
                 },
+                change: function (e) {
+                    console.log(e);
+                },
                 aggregate: [
                     { field: "id", aggregate: "count" },
                     { field: "itemPrice", aggregate: "sum" }

@@ -8,64 +8,12 @@
             <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
         </div>
     </header>
-    <div class="menu-nav">
-        <a href="#popular" class="active">Popular</a>
-        <a href="#favorites" data-bind="click: showFavoriteView">Favorites</a>
-        <a href="#categories" data-bind="click: showCategoryView">Categories</a>
-    </div>
-    <ul id="popular-list" data-role="listview"
-            data-bind="source:dataSource, invisible: photoListVisible"
-            data-template="menuTemplate">
-    </ul>
-    <ul id="popular-photo-list" data-role="listview"
-            data-bind="source: dataSource, visible: photoListVisible"
-            data-template="photoMenuTemplate">
-    </ul>
-</div>
-
-<div data-role="view" id="favorites" data-title="Favorites" data-title="Menu" data-layout="main" data-model="app.Menu" data-init="app.Menu.favoritesInit">
-    <header data-role="header">
-        <div data-role="navbar">
-            <span data-role="view-title"></span>
-            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
-            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, visible: inListView"  data-icon="th-large" data-align="right" ></a>
-            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
-            <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
-        </div>
-    </header>
-    <div class="menu-nav">
-        <a href="#popular"  data-bind="click: showMenuView">Popular</a>
-        <a href="#favorites" class="active">Favorites</a>
-        <a href="#categories" data-bind="click: showCategoryView">Categories</a>
-    </div>
-    <ul id="favorite-list" data-role="listview"
-            data-bind="source: dataSource, visible: dataSource.aggregates().id.count"
-            data-template="menuTemplate">
-    </ul>
-    <ul id="favorite-photo-list" data-role="listview"
-            data-bind="source: dataSource, visible: favoritePhotoListVisible"
-            data-template="photoMenuTemplate">
-    </ul>
-    <p id="no-fav-msg" data-bind="invisible: dataSource.aggregates().id.count">Click the star to add favorites</p>
-</div>
-
-<div data-role="view" id="categories" data-title="Categories" data-layout="main" data-model="app.Menu" data-init="app.Menu.categoriesInit">
-    <header data-role="header">
-        <div data-role="navbar">
-            <span data-role="view-title"></span>
-            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
-            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, visible: inListView"  data-icon="th-large" data-align="right" ></a>
-            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
-            <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
-        </div>
-    </header>
-    
-    <div class="menu-nav">
-        <a href="#popular"  data-bind="click: showMenuView">Popular</a>
-        <a href="#favorites" data-bind="click: showFavoriteView">Favorites</a>
-        <a href="#categories" class="active">Categories</a>
-    </div>
-    <div class="category-selectors">
+    <div id="menu-nav" data-role="tabstrip" data-bind="events: { select: changeView }">
+        <a data-target="popular">Popular</a>
+        <a data-target="favorites">Favorites</a>
+        <a data-target="categories">Categories</a>
+    </div>    
+    <div class="category-selectors" data-bind="visible: categoriesVisible">
         <div class="half">
             <input type="checkbox" id="filter-barbecue" data-bind="events: { change: changeFilter }" checked/> Barbecue<br />
             <input type="checkbox" id="filter-sandwich" data-bind="events: { change: changeFilter }" checked /> Sandwiches<br />
@@ -82,15 +30,39 @@
             </select>
         </div>
     </div>
-    <ul id="category-list" data-role="listview"
-            data-bind="source: dataSource, invisible: photoListVisible"
+    <!-- <div id="popular" data-bind="visible: currentView.popular"> -->
+    <ul id="popular-list" data-role="listview"
+            data-bind="source:dataSource, invisible: photoListVisible"
             data-template="menuTemplate">
     </ul>
-    <ul id="category-photo-list" data-role="listview"
-            data-bind="source: dataSource, visible: photoListVisible"
-            data-template="photoMenuTemplate">
-    </ul>
+        <!-- <ul id="popular-photo-list" data-role="listview"
+                data-bind="source: dataSource, visible: photoListVisible"
+                data-template="photoMenuTemplate" data-auto-bind="false">
+        </ul> -->
+    <!-- </div> -->
+    <!-- <div id="favorites" data-bind="visible: currentView.favorites"> -->
+        <!-- <ul id="favorite-list" data-role="listview"
+                data-bind="source: favoritesDataSource"
+                data-template="menuTemplate">
+        </ul>
+        <ul id="favorite-photo-list" data-role="listview"
+                data-bind="source: favoritesDataSource, visible: favoritePhotoListVisible"
+                data-template="photoMenuTemplate" data-auto-bind-"false">
+        </ul> -->
+        <!-- <p id="no-fav-msg">Click the star to add favorites</p> -->
+    <!-- </div> -->
+    <!-- <div id="categories" data-bind="visible: currentView.categories"> -->
+        <!-- <ul id="category-list" data-role="listview"
+                data-bind="source: categoriesDataSource, invisible: photoListVisible"
+                data-template="menuTemplate" data-auto-bind="true">
+        </ul>
+        <ul id="category-photo-list" data-role="listview"
+                data-bind="source: categoriesDataSource, visible: photoListVisible"
+                data-template="photoMenuTemplate" data-auto-bind="false">
+        </ul> -->
+    <!-- </div> -->
 </div>
+    
 
 <script type="text/x-kendo-template" id="menuTemplate">
     <div class="row menu-row">

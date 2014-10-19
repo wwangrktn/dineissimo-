@@ -6,9 +6,7 @@
 #popular, #favorites, #categories {
     height: 100%;
 }
-#popular ul, #favorites ul, #categories ul {
-    margin-top: 34px;
-}
+
 #popular li, #favorites li, #categories li, #no-fav-msg {
     clear:both;
 }
@@ -38,6 +36,10 @@
 
  .km-list-bullet:before, .km-list-bullet:after { 
     content: '\f0ca'; 
+}
+
+.icon-star {
+    font-size: 20px;
 }
 
 .icon-star:before {
@@ -96,22 +98,16 @@
     margin-left: 12px;
 }
 
-.menu-nav {
-    z-index: 999;
+#menu-nav .km-button {
+    font-size: 20px;
 }
 
-.menu-nav a {
-    text-align: center;
-    width: 32%;
-    height: 32;
-    display: block;
-    float: left;
-    padding-top: 12px;
-    text-decoration: none;
-}
-
-.menu-nav a.active {
+#menu-nav .km-state-active {
     border-bottom: 3px solid #ff6e40;
+}
+
+#menu-nav span.km-icon {
+    display: none;
 }
 
 .category-selectors .full {
