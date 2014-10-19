@@ -5,7 +5,8 @@
 (function (win) {
     win.app = win.app || {};
 
-    var favoriteFilter = { field: "favorited", operator: "eq", value: true };
+    var favoriteFilter = { field: "favorited", operator: "eq", value: true },
+        menuNav;
 
     win.app.Menu = kendo.observable({
 
@@ -25,19 +26,20 @@
         },
 
         popularInit: function() {
-            win.app.Menu.setupImageHandlers("#popular-list");
+            win.app.Menu.setupImageHandlers("#popular-list", "#popular-photo-list");
         },
 
         changeSort: function (e) {
             this.dataSource.sort({ field: "price", dir: e.currentTarget.value });
         },
 
-        favoritesEmpty: true,
-        photoListVisible: false,
-        favoriteListVisible: false,
-        favoritePhotoListVisible: false,
-        inListView: true,
         title: "Menu",
+        inListView: true,
+
+        toggleListViews: function() {
+            var inListView = this.get("inListView");
+            this.set("inListView", !inListView);
+        },
 
         addToFavorites: function (e) {
 
@@ -49,18 +51,10 @@
 
             setTimeout(function() {
 
-                // console.profile('Add To Favorites');
-
                 var fromDs = that.dataSource.get(id);
                 var favorited = fromDs.favorited;
 
                 fromDs.set("favorited", !favorited);
-
-                // if (that.photoListVisible) {
-                //     that.set("favoritePhotoListVisible", true);
-                // } else {
-                //     that.set("favoriteListVisible", true);
-                // }
             });
         },
 
@@ -80,19 +74,29 @@
 
         changeView : function (e) {
         
-            var target = e.item.data("target");
+            menuNav = menuNav || $("#menu-navbar").data("kendoMobileNavBar");
+
+            var target = e.item.data("target"),
+                title = e.item.data("title"),
+                currentFilter = this.dataSource.filter();
 
             if (target === "popular") {
-                this.dataSource.filter({});
+                if (currentFilter) {
+                    this.dataSource.filter({});
+                }
             }
             if (target === "favorites") {
                 this.dataSource.filter(favoriteFilter);    
             }
             if (target === "categories") {
-                this.dataSource.filter({});
+                if (currentFilter) {
+                    this.dataSource.filter({});
+                }
             }
 
             this.set("currentView", target);
+            menuNav.title(title);
+
         },
 
         show: {

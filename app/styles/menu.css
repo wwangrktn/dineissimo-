@@ -110,10 +110,6 @@
     display: none;
 }
 
-.category-selectors .full {
-    text-align: center;
-}
-
 .category-selectors .half {
     width: 50%;
     float: left;
@@ -125,4 +121,13 @@
 
 .menu-filter span{
     display: inline-block;
+}
+
+.km-flat .km-switch-handle, .km-flat .k-slider-selection, .km-flat .km-switch-background {
+    color: #FF6E40;
+}
+
+.km-flat .category-selectors .km-list>li {
+    border-style: none;
+    border-width: 0 0 1px 0;
 }

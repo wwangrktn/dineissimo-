@@ -1,10 +1,10 @@
 <div data-role="view" id="popular" data-title="Menu" data-layout="main" data-init="app.Menu.popularInit" data-show="app.Menu.showMenuView" data-model="app.Menu">
     <header data-role="header">
-        <div data-role="navbar">
+        <div data-role="navbar" id="menu-navbar">
             <span data-role="view-title"></span>
             <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="menu"></a>
-            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, visible: inListView"  data-icon="th-large" data-align="right" ></a>
-            <a data-role="button" href="#" id="view-changer" data-bind="click: changeView, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
+            <a data-role="button" id="view-changer" data-bind="click: toggleListViews, visible: inListView"  data-icon="th-large" data-align="right" ></a>
+            <a data-role="button" id="view-changer" data-bind="click: toggleListViews, invisible: inListView"  data-icon="list-bullet" data-align="right" ></a>
             <a data-role="button" class="orange" href="views/claim-your-prize.html" data-icon="award" data-align="right" data-transition="overlay:down"></a>
         </div>
     </header>
@@ -18,35 +18,32 @@
             <ul data-role="listview">
                 <li>Barbecue <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.bbq" data-on-label="Yes" data-off-label="No" data-filter="bbq" /></li>
                 <li>Sandwiches <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.sandwiches" data-on-label="Yes" data-off-label="No" data-filter="sandwich" /></li>
-            </ul>
-        </div>  
+            </ul>    
+        </div>
         <div class="half">
             <ul data-role="listview">
                 <li>Drinks <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.drinks" data-on-label="Yes" data-off-label="No" data-filter="drinks" /></li>
-                <li>Desserts <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.desserts" data-on-label="Yes" data-off-label="No" data-filter="desert" /></li>
+                <li>Desserts <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.desserts" data-on-label="Yes" data-off-label="No" data-filter="desert" /></li>    
             </ul>
         </div>
-        <div>
-            <ul data-role="listview">
-                <li>
-                    Sort
-                    <select id="sort" data-bind="events: { change: changeSort }">
-                        <option value="asc">cheapest to most expensive</option>
-                        <option value="desc">most expensive to cheapest</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
+        <ul data-role="listview">
+            <li>
+                Sort
+                <select id="sort" data-bind="events: { change: changeSort }">
+                    <option value="asc">price: low to high</option>
+                    <option value="desc">price: high to low</option>
+                </select>
+            </li>
+        </ul>
     </div>
-    <!-- <div id="popular" data-bind="visible: currentView.popular"> -->
     <ul id="popular-list" data-role="listview"
-            data-bind="source:dataSource, invisible: photoListVisible"
+            data-bind="source:dataSource, visible: inListView"
             data-template="menuTemplate">
     </ul>
-        <!-- <ul id="popular-photo-list" data-role="listview"
-                data-bind="source: dataSource, visible: photoListVisible"
-                data-template="photoMenuTemplate" data-auto-bind="false">
-        </ul> -->
+    <ul id="popular-photo-list" data-role="listview"
+            data-bind="source: dataSource, invisible: inListView"
+            data-template="photoMenuTemplate">
+    </ul>
     </div>
 </div>
     
