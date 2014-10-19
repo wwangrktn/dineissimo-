@@ -29,7 +29,7 @@
         },
 
         changeSort: function (e) {
-            this.categoriesDataSource.sort({ field: "price", dir: e.currentTarget.value });
+            this.dataSource.sort({ field: "price", dir: e.currentTarget.value });
         },
 
         favoritesEmpty: true,
@@ -88,30 +88,45 @@
             if (target === "favorites") {
                 this.dataSource.filter(favoriteFilter);    
             }
+            if (target === "categories") {
+                this.dataSource.filter({});
+            }
 
             this.set("currentView", target);
         },
 
-        changeFilter : function () {
+        show: {
+            bbq: true,
+            drinks: true,
+            sandwiches: true,
+            desserts: true
+        },
+
+
+        changeFilter : function (e) {
 
             var that = this;
 
-            setTimeout(function() {
+            setTimeout(function(){
 
                 var chargeFilter = {
                     logic: 'or',
                     filters: []
                 };
-                if ($("#filter-barbecue").is(":checked")) {
+
+                if (that.get('show.bbq')) {
                     chargeFilter.filters.push({field: "type", operator: "eq", value: "barbeque"}); 
                 }
-                if ($("#filter-drink").is(":checked")) {
+
+                if (that.get('show.drinks')) {
                     chargeFilter.filters.push({field: "type", operator: "eq", value: "drinks"});
                 }
-                if ($("#filter-sandwich").is(":checked")) {
+                
+                if (that.get('show.sandwiches')) {
                     chargeFilter.filters.push({field: "type", operator: "eq", value: "sandwiches"});
                 }
-                if ($("#filter-dessert").is(":checked")) {
+                
+                if (that.get('show.desserts')) {
                     chargeFilter.filters.push({field: "type", operator: "eq", value: "desserts"});
                 }
 
@@ -121,9 +136,7 @@
                 }
                 
                 that.dataSource.filter(chargeFilter);
-
             });
-
             
         }
     });

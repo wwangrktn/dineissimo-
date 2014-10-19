@@ -15,19 +15,27 @@
     </div>    
     <div class="category-selectors" data-bind="visible: categoriesVisible">
         <div class="half">
-            <input type="checkbox" id="filter-barbecue" data-bind="events: { change: changeFilter }" checked/> Barbecue<br />
-            <input type="checkbox" id="filter-sandwich" data-bind="events: { change: changeFilter }" checked /> Sandwiches<br />
-        </div>
+            <ul data-role="listview">
+                <li>Barbecue <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.bbq" data-on-label="Yes" data-off-label="No" data-filter="bbq" /></li>
+                <li>Sandwiches <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.sandwiches" data-on-label="Yes" data-off-label="No" data-filter="sandwich" /></li>
+            </ul>
+        </div>  
         <div class="half">
-            <input type="checkbox" id="filter-drink" data-bind="events: { change: changeFilter }" checked /> Drinks<br />
-            <input type="checkbox" id="filter-dessert" data-bind="events: { change: changeFilter }" checked /> Desserts<br />
+            <ul data-role="listview">
+                <li>Drinks <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.drinks" data-on-label="Yes" data-off-label="No" data-filter="drinks" /></li>
+                <li>Desserts <input id="mobile-switch" data-role="switch" data-bind="events: { change: changeFilter }, checked: show.desserts" data-on-label="Yes" data-off-label="No" data-filter="desert" /></li>
+            </ul>
         </div>
-        <div class="full">
-            <label for="sort">Sort</label>
-            <select id="sort" data-bind="events: { change: changeSort }">
-                <option value="asc">cheapest to most expensive</option>
-                <option value="desc">most expensive to cheapest</option>
-            </select>
+        <div>
+            <ul data-role="listview">
+                <li>
+                    Sort
+                    <select id="sort" data-bind="events: { change: changeSort }">
+                        <option value="asc">cheapest to most expensive</option>
+                        <option value="desc">most expensive to cheapest</option>
+                    </select>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- <div id="popular" data-bind="visible: currentView.popular"> -->
@@ -39,28 +47,7 @@
                 data-bind="source: dataSource, visible: photoListVisible"
                 data-template="photoMenuTemplate" data-auto-bind="false">
         </ul> -->
-    <!-- </div> -->
-    <!-- <div id="favorites" data-bind="visible: currentView.favorites"> -->
-        <!-- <ul id="favorite-list" data-role="listview"
-                data-bind="source: favoritesDataSource"
-                data-template="menuTemplate">
-        </ul>
-        <ul id="favorite-photo-list" data-role="listview"
-                data-bind="source: favoritesDataSource, visible: favoritePhotoListVisible"
-                data-template="photoMenuTemplate" data-auto-bind-"false">
-        </ul> -->
-        <!-- <p id="no-fav-msg">Click the star to add favorites</p> -->
-    <!-- </div> -->
-    <!-- <div id="categories" data-bind="visible: currentView.categories"> -->
-        <!-- <ul id="category-list" data-role="listview"
-                data-bind="source: categoriesDataSource, invisible: photoListVisible"
-                data-template="menuTemplate" data-auto-bind="true">
-        </ul>
-        <ul id="category-photo-list" data-role="listview"
-                data-bind="source: categoriesDataSource, visible: photoListVisible"
-                data-template="photoMenuTemplate" data-auto-bind="false">
-        </ul> -->
-    <!-- </div> -->
+    </div>
 </div>
     
 
