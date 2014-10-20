@@ -110,7 +110,7 @@
             this.set("currentView", target);
 
             menuNav.title(title);
-
+            setTimeout(everliveImages.responsiveAll);
         },
 
         show: {
