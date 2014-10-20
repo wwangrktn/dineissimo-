@@ -74,9 +74,10 @@
         },
 
         addToCart: function (e) {
+            e.preventDefault();
+            var id = e.data.id;
             setTimeout(function() {
-                e.preventDefault();
-                var fromDs = win.app.Menu.dataSource.get(e.data.id);
+                var fromDs = win.app.Menu.dataSource.get(id);
                 fromDs.set('incart', true);
                 var newQ = fromDs.qty === undefined ? 1 : fromDs.qty + 1;
                 fromDs.set('qty', newQ);
