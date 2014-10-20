@@ -85,6 +85,8 @@
 
         changeView : function (e) {
         
+            win.app.mobileApp.showLoading();
+                    
             menuNav = menuNav || $("#menu-navbar").data("kendoMobileNavBar");
 
             var target = e.item.data("target"),
@@ -109,6 +111,10 @@
 
             menuNav.title(title);
             setTimeout(everliveImages.responsiveAll);
+
+            win.app.mobileApp.hideLoading();
+        
+            
         },
 
         show: {
