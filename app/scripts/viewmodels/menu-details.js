@@ -18,11 +18,13 @@
 
         show: function (e) {
             var view = e.view;
-            win.app.Menu.dataSource.fetch(function () {
-                var model = view.model,
-                    item = win.app.Menu.dataSource.get(view.params.id);
-                model.set("item", item);
-                everliveImages.responsiveAll();
+            setTimeout(function() {
+                win.app.Menu.dataSource.fetch(function () {
+                    var model = view.model,
+                        item = win.app.Menu.dataSource.get(view.params.id);
+                    model.set("item", item);
+                    everliveImages.responsiveAll();
+                });
             });
         },
 
