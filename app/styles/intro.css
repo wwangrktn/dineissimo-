@@ -26,3 +26,11 @@
 .intro-screen header {
 	display: none;
 }
+
+.intro-page > img {
+  width: 100%;
+}
+
+#intro .km-content.km-stretched-view {
+  background-color: #5D4037;
+}

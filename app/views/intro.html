@@ -1,17 +1,13 @@
-<div data-role="view" id="intro-1" class="intro-screen" data-model="app.Intro">
-  <div data-role="scrollview"></div>
-    <a data-role="button" href="#intro-2" data-transition="slide">
-    	<img id="img1" src="styles/images/Intro-Screen-1.png" data-role="touch" data-enable-swipe="true" data-swipe="app.Intro.handleSwipe" />
-    </a>
+<div data-role="view" data-model="app.Intro" data-stretch="true" id="intro">
+    <div data-role="scrollview" data-content-height="100%" data-enable-pager="false">
+        <div data-role="page" class="intro-page">
+            <img src="styles/images/Intro-Screen-1.png">
+        </div>
+        <div data-role="page" class="intro-page">
+            <img src="styles/images/Intro-Screen-2.png">
+        </div>
+        <div data-role="page" class="intro-page">
+            <img data-role="touch" data-bind="events: { tap: goToMenu }" src="styles/images/Intro-Screen-3.png">
+        </div>
+    </div>
 </div>
-<div data-role="view" id="intro-2" class="intro-screen" data-stretch="true" data-model="app.Intro">
-    <a data-role="button"  href="#intro-3" data-transition="slide">
-    	<img id="img2" src="styles/images/Intro-Screen-2.png" data-role="touch" data-enable-swipe="true" data-swipe="app.Intro.handleSwipe" />
-    </a>
-</div>
-<div data-role="view" id="intro-3" class="intro-screen" data-stretch="true" data-model="app.Intro">
-    <a data-role="button" href="views/menu.html" data-transition="slide">
-    	<img id="img3" src="styles/images/Intro-Screen-3.png" data-role="touch" data-enable-swipe="true" data-swipe="app.Intro.handleSwipe" />
-    </a>
-</div>
-

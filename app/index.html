@@ -54,7 +54,7 @@
     </div>
 
     <!-- application drawer and contents -->
-    <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="foodamental" data-model="app.EditProfile">
+    <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="foodamental" data-model="app.EditProfile" data-views="['popular', 'about-us', 'claim', 'details', 'popular', 'photos', 'cart-view', 'thanks', 'videos']">
         <div id="side-header" data-role="header">
             <div id="user-panel">
                 <img data-bind="attr: { src: profile.profilePic }, click: refreshCache" alt="Profile Picture" />
@@ -91,7 +91,7 @@
         </ul>
     </div> 
 
-    <div data-role="drawer" id="editProfileDrawer" class="hidden" style="width:270px" data-model="app.EditProfile">
+    <div data-role="drawer" id="editProfileDrawer" class="hidden" style="width:270px" data-model="app.EditProfile" data-views="[data-views="['popular', 'about-us', 'claim', 'details', 'popular', 'photos', 'cart-view', 'thanks', 'videos']">
         <div id="side-header" data-role="header">
             <div id="user-panel">
                 <img data-bind="attr: { src: profile.profilePic }" alt="Profile Picture" />

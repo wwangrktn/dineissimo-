@@ -30,6 +30,10 @@
             win.app.Menu.setupImageHandlers("#popular-list", "#popular-photo-list");
         },
 
+        showMenuView: function() {
+            win.app.mobileApp.hideLoading();
+        },
+
         hideMenuView: function() {
             win.app.storeStock.sync();
         },
