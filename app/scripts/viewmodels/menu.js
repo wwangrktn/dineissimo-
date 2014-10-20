@@ -64,8 +64,6 @@
                 var favorited = fromDs.favorited;
 
                 fromDs.set("favorited", !favorited);
-
-                ds.sync();
             });
         },
 
