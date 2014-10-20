@@ -17,7 +17,7 @@
                     that.profile.set("profilePic", data);
                 },
                 function (data) {
-                    win.app.alert("error: " + data);
+                    //win.app.alert("error: " + data);
                 },
                 {
                     quality: 50,
