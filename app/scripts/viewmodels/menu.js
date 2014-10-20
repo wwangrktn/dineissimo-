@@ -18,16 +18,16 @@
             return this.get("currentView") === "categories";
         },
 
-        setupImageHandlers: function(selector) {
-            $(selector).each(function() {
-                $(this).data("kendoMobileListView")
-                    .bind("dataBound", everliveImages.responsiveAll)
-                    .bind("itemChange", everliveImages.responsiveAll);
-            });
+        refreshImages: function() {
+            setTimeout(everliveImages.responsiveAll);
         },
 
         initMenuView: function() {
-            win.app.Menu.setupImageHandlers("#popular-list", "#popular-photo-list");
+            $("#popular-list", "#popular-photo-list").each(function() {
+                $(this).data("kendoMobileListView")
+                    .bind("dataBound", win.app.Menu.refreshImages)
+                    .bind("itemChange", win.app.Menu.refreshImages);
+            });
         },
 
         showMenuView: function() {
@@ -48,6 +48,7 @@
         toggleListViews: function() {
             var inListView = this.get("inListView");
             this.set("inListView", !inListView);
+            win.app.Menu.refreshImages();
         },
 
         addToFavorites: function (e) {
@@ -64,6 +65,7 @@
                 var favorited = fromDs.favorited;
 
                 fromDs.set("favorited", !favorited);
+                win.app.Menu.refreshImages();
             });
         },
 
@@ -80,6 +82,7 @@
                 var newQ = fromDs.qty === undefined ? 1 : fromDs.qty + 1;
                 fromDs.set('qty', newQ);
                 fromDs.set('itemPrice', fromDs.qty * fromDs.price);
+                win.app.Menu.refreshImages();
             });
         },
 
@@ -108,7 +111,7 @@
             this.set("currentView", target);
 
             menuNav.title(title);
-            setTimeout(everliveImages.responsiveAll);
+            win.app.Menu.refreshImages();
         },
 
         show: {
@@ -147,10 +150,9 @@
                 if (categoryFilter.filters.length === 0) {
                     categoryFilter.filters.push({field: "type", operator: "eq", value: "unicorn"});
                 }
-                
-                console.log(categoryFilter);
 
                 that.dataSource.filter(categoryFilter);
+                win.app.Menu.refreshImages();
             });
             
         }
