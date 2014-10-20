@@ -29,11 +29,11 @@
         </ul>    
     </div>
     <ul id="popular-list" data-role="listview"
-            data-bind="source:dataSource, visible: inListView"
+            data-bind="source:dataSource, visible: inListView, events: { dataBound: refreshImages, change: refreshImages }"
             data-template="menuTemplate">
     </ul>
     <ul id="popular-photo-list" data-role="listview"
-            data-bind="source: dataSource, invisible: inListView"
+            data-bind="source: dataSource, invisible: inListView, events: { dataBound: refreshImages, change: refreshImages }"
             data-template="photoMenuTemplate">
     </ul>
 </div>
