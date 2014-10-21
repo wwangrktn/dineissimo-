@@ -79,9 +79,6 @@
         },
 
         changeView : function (e) {
-        
-            win.app.mobileApp.showLoading();
-                    
             menuNav = menuNav || $("#menu-navbar").data("kendoMobileNavBar");
 
             var target = e.item.data("target"),
@@ -107,7 +104,6 @@
             menuNav.title(title);
 
             win.app.Menu.refreshImages();
-            win.app.mobileApp.hideLoading();
         },
 
         show: {
