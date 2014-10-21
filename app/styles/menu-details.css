@@ -6,6 +6,7 @@
 #details img {
 	width: 100%;
 	z-index: 1;
+    max-height: 250px;
 }
 
 #menu-details-box {

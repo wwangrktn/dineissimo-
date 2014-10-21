@@ -97,12 +97,14 @@
                 if (categoryFilter && categoryFilter.filters.length > 0) {
                     this.dataSource.filter(categoryFilter);
                 }
+                else {
+                    this.dataSource.filter({});
+                }
             }
 
             this.set("currentView", target);
 
             menuNav.title(title);
-
             win.app.Menu.refreshImages();
         },
 
