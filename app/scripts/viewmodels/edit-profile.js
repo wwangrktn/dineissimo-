@@ -56,8 +56,10 @@
         updateProfile: function (e) {
             e.preventDefault();
             var url = "https://194-TGP-611.mktorest.com/"; //rest?email=" + this.profile.email + "&access_token=" + this.profile.access_token;
-
-            if (win.navigator.simulator) {
+            c
+            if (this.profile.fistName == "" || this.profile.lastName == "" || this.profile.email == "") {
+                win.app.alert("You must complete all fields to participate in the contest");
+            } else if (win.navigator.simulator) {
                 win.app.alert("Sorry, but you must run this on the device to recieve the prize");
             } else if (this.profile.profilePic === defaultPic) {
                 win.app.alert("Sorry, but you must change your profile picture to recieve the prize");
