@@ -22,14 +22,6 @@
             setTimeout(everliveImages.responsiveAll);
         },
 
-        initMenuView: function() {
-            $("#popular-list", "#popular-photo-list").each(function() {
-                $(this).data("kendoMobileListView")
-                    .bind("dataBound", win.app.Menu.refreshImages)
-                    .bind("itemChange", win.app.Menu.refreshImages);
-            });
-        },
-
         showMenuView: function() {
             win.app.mobileApp.hideLoading();
         },
