@@ -36,6 +36,7 @@
 
         title: "Menu",
         inListView: true,
+        showEmptyFavorites: false,
 
         toggleListViews: function() {
             var inListView = this.get("inListView");
@@ -84,6 +85,8 @@
             var target = e.item.data("target"),
                 title = e.item.data("title"),
                 currentFilter = this.dataSource.filter();
+            
+            this.set("showEmptyFavorites", false);
 
             if (target === "popular") {
                 if (currentFilter) {
@@ -92,6 +95,9 @@
             }
             if (target === "favorites") {
                 this.dataSource.filter(favoriteFilter);    
+                if (this.dataSource.total() === 0) {
+                    this.set("showEmptyFavorites", true);
+                }
             }
             if (target === "categories") {
                 if (categoryFilter && categoryFilter.filters.length > 0) {

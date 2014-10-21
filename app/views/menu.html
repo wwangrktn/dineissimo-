@@ -36,6 +36,7 @@
             data-bind="source: dataSource, invisible: inListView, events: { dataBound: refreshImages, change: refreshImages }"
             data-template="photoMenuTemplate">
     </ul>
+    <p id="empty-favorites" class="orange" data-bind="visible: showEmptyFavorites">You haven't favorited any items.</p>
 </div>
 
     
