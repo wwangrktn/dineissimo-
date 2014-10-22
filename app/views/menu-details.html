@@ -1,12 +1,15 @@
-<div id="details" data-role="view" data-show="app.MenuDetails.show" data-model="app.MenuDetails">
+<div id="details" data-role="view" data-show="app.MenuDetails.show" data-hide="app.MenuDetails.hide" data-model="app.MenuDetails">
+    <div data-bind="invisible: loaded">
+        <p id="details-loading" class="orange">Loading...</p>
+    </div>
     <header data-role="header">
         <div data-role="navbar">
-            <span data-role="view-title" data-bind="html: item.title"></span>
+            <span data-role="view-title" id="details-title" data-bind="html: item.title"></span>
             <a data-role="backbutton" class="fa fa-chevron-left" data-align="left"></a>
         </div>
     </header>
-    <img class="resimgs" data-bind="attr: { data-src: item.imgSrc }" />
-    <div id="menu-details-box">
+    <img class="resimgs" data-bind="attr: { data-src: item.imgSrc }, visible: loaded" />
+    <div id="menu-details-box" data-bind="visible: loaded">
         <p data-bind="html: item.description"></p>
         <h4>$<span data-bind="html: item.price" /></h4>
         <ul class="details-buttons">

@@ -23,6 +23,7 @@
         },
 
         showMenuView: function() {
+            win.app.Menu.refreshImages();
             win.app.mobileApp.hideLoading();
         },
 
