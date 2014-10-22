@@ -8,7 +8,7 @@
 
 @media screen and (max-height: 548px) {
 
-    .intro-screen .km-text {
+    .intro-page > img {
         height: 548px !important;
     }
 }
