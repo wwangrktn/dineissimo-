@@ -1,13 +1,12 @@
-<div data-role="view" data-model="app.Intro" data-stretch="true" id="intro">
-    <div data-role="scrollview" data-content-height="100%" data-enable-pager="false">
-        <div data-role="page" class="intro-page">
-            <img src="styles/images/Intro-Screen-1.png">
+<div data-role="view" data-model="app.Intro" id="intro">
+    <div id="intro-scroller" data-role="scrollview" data-content-height="100%" data-enable-pager="false">
+        <div id="intro-1" data-stretch="true" data-role="page" class="intro-page" >
+            
         </div>
-        <div data-role="page" class="intro-page">
-            <img src="styles/images/Intro-Screen-2.png">
+        <div id="intro-2" data-stretch="true" data-role="page" class="intro-page">
         </div>
-        <div data-role="page" class="intro-page">
-            <img data-role="touch" data-bind="events: { tap: goToMenu }" src="styles/images/Intro-Screen-3.png">
+        <div id="intro-3" data-stretch="true" data-role="page" class="intro-page">
+            <div id="intro-3-touch" data-role="touch" data-bind="events: { tap: goToMenu }"></div>
         </div>
     </div>
 </div>
