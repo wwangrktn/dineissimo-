@@ -14,15 +14,15 @@
             var fromDs = this.dataSource.get(e.data.id);
 
             if (fromDs.qty > 1) {
-                fromDs.set('qty', fromDs.qty - 1);
-                fromDs.set('itemPrice', fromDs.qty * fromDs.price);
+                fromDs.set("qty", fromDs.qty - 1);
+                fromDs.set("itemPrice", fromDs.qty * fromDs.price);
             }
             this.refreshTotal();
         },
         addOne: function (e) {
             var fromDs = this.dataSource.get(e.data.id);
-            fromDs.set('qty', fromDs.qty + 1);
-            fromDs.set('itemPrice', fromDs.qty * fromDs.price);
+            fromDs.set("qty", fromDs.qty + 1);
+            fromDs.set("itemPrice", fromDs.qty * fromDs.price);
             this.dataSource.sync();
         },
         remove: function (e) {
