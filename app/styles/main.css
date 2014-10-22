@@ -84,7 +84,7 @@ html, body {
     background: transparent;
 }
 
-.km-flat .km-button[data-rel="drawer"] {
+.km-navbar .km-button[data-align="left"] {
     /* Increase the clickable area that opens the drawer */
     border-right: 85px solid transparent;
     border-bottom: 5px solid transparent;
