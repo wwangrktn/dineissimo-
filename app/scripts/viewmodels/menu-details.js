@@ -7,6 +7,8 @@
 
     win.app.MenuDetails = kendo.observable({
 
+        loaded: false,
+
         dataSource: new kendo.data.DataSource({
             transport: {
                 read: {
@@ -16,14 +18,23 @@
             }
         }),
 
+        hide: function() {
+            win.app.MenuDetails.set( "loaded", false );
+        },
+
         show: function (e) {
             var view = e.view;
+            $( "#details-title" ).addClass( "invisible" );
             setTimeout(function() {
                 win.app.Menu.dataSource.fetch(function () {
                     var model = view.model,
                         item = win.app.Menu.dataSource.get(view.params.id);
                     model.set("item", item);
                     everliveImages.responsiveAll();
+                    setTimeout(function() {
+                        $( "#details-title" ).removeClass( "invisible" );
+                        win.app.MenuDetails.set( "loaded", true );
+                    });
                 });
             });
         },
