@@ -15,9 +15,13 @@
             win.navigator.camera.getPicture(
                 function (data) {
                     that.profile.set("profilePic", data);
+                    if(kendo.support.mobileOS.android) 
+                        $("#firstName").focus();
                 },
                 function (data) {
-                    //win.app.alert("error: " + data);
+                    console.log("error: " + data);
+                    if(kendo.support.mobileOS.android) 
+                        $("#firstName").focus();
                 },
                 {
                     quality: 50,
