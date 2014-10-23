@@ -1,0 +1,107 @@
+.km-on-wp .km-icon:after, .km-on-wp #edit-link:before {
+   color:transparent;
+   background-image:url("wp8_icons_white.png") !important; 
+    background-size: cover;
+}
+
+.km-on-wp .fa.orange:before {
+    background-image:url("wp8_icons_orange.png") !important; 
+}
+
+.km-on-wp .icon-star:before,
+.km-on-wp .icon-cart:after,
+.km-on-wp .fa:before {
+    color:transparent;
+    background-image:url("wp8_icons_black.png") !important;
+    padding: 0 6px;
+    background-size: cover;
+}
+.km-on-wp .km-view-title {
+    padding-left: 54px;
+}
+.km-on-wp .km-menu:after {
+    background-position-x: 3%;
+}
+
+.km-on-wp .km-th-large:after {
+    background-position-x: 8%;
+}
+
+.km-on-wp .km-award:after {
+    background-position-x: 13%;
+}
+
+.km-on-wp .icon-star:before, .km-on-wp .fa-star-o:before {
+    background-position-x: 17.5%;
+}
+
+.km-on-wp .icon-cart:after, .km-on-wp .fa-shopping-cart:before {
+    background-position-x: 22.2%;
+}
+
+.km-on-wp .fa-share-square-o:before {
+    background-position-x: 28%;
+}
+.km-on-wp .fa-chevron-left { padding: 0;
+   margin-top: 18px;}
+.km-on-wp .fa-chevron-left:before {
+   background-image:url("wp8_icons_white.png") !important;
+   background-position-x: 32%; 
+}
+
+.km-on-wp #edit-link:before {
+   background-position-x: 36.5%;  
+}
+
+.km-on-wp .km-food:after {
+    background-position-x: 42%;
+}
+
+.km-on-wp .km-info:after {
+    background-position-x: 46% !important;
+}
+.km-on-wp .km-picture:after {
+    background-position-x: 51% !important;
+}
+.km-on-wp .km-video:after {
+    background-position-x: 56% !important;
+}
+
+.km-on-wp .km-basket:after {
+    background-position-x: 22.6% !important;
+}
+
+.km-on-wp .fa-close:before {
+    background-position-x: 75%;
+}
+
+.km-on-wp .fa-map-marker:before {
+    background-position-x: 78.4%;
+}
+
+.km-on-wp .fa-phone:before {
+    background-position-x: 82.2%;
+}
+
+.km-on-wp .fa-envelope-o:before {
+    background-position-x: 87.6%;
+}
+
+.km-on-wp .fa-twitter:before {
+    background-position-x: 92%;
+}
+.km-on-wp .fa-facebook:before {
+    background-position-x: 95%;
+}
+.km-on-wp .fa-rss:before {
+    background-position-x: 100%;
+}
+
+.km-on-wp #edit-buttons li a {
+    font-size: 0.8em;
+}
+
+.km-on-wp #edit-buttons {
+    padding: 0px;
+    padding-left: 12px;
+}
