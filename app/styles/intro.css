@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+#intro-scroller {
+    background-color:#5F3F35;
+}
+
 @media screen and (max-height: 548px) {
     .intro-page {
         height: 548px !important;

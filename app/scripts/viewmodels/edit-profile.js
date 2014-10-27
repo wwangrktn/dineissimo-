@@ -14,6 +14,7 @@
             var that = this;
             win.navigator.camera.getPicture(
                 function (data) {
+                    console.log("success called");
                     that.profile.set("profilePic", data);
                     if(kendo.support.mobileOS.android) 
                         $("#firstName").focus();

@@ -7,6 +7,7 @@
 
     win.app = (function () {
 
+        
         // global error handling
         var showAlert = function (message, title, callback) {
 
@@ -26,25 +27,24 @@
                 return true;
             });
             win.app.storeStock.read();
-
+            
+            //Initialize the KendoUI app 
+            var mobileApp = new kendo.mobile.Application(document.body, {
+                skin: "flat",
+                initial: win.navigator.simulator ? "views/menu.html" : "views/intro.html",
+                init: function() {
+                    // Increase the click threshold for responsiveness
+                    // See http://www.telerik.com/forums/click-event-does-not-fire-reliably
+                    kendo.UserEvents.defaultThreshold(50);
+                }
+            });
+            
+            win.app.mobileApp = mobileApp;
+            
             if (!win.navigator.simulator) {
                 navigator.splashscreen.hide();
             }
         };
-
-        //console.log("win.navigator", window.navigator);
-        //showAlert("We are running in simulator?:" + win.navigator.simulator);
-
-        //Initialize the KendoUI app        
-        var mobileApp = new kendo.mobile.Application(document.body, {
-            skin: "flat",
-            initial: win.navigator.simulator ? "views/menu.html" : "views/intro.html",
-            init: function() {
-                // Increase the click threshold for responsiveness
-                // See http://www.telerik.com/forums/click-event-does-not-fire-reliably
-                kendo.UserEvents.defaultThreshold(50);
-            }
-        });
 
         if (!win.navigator.simulator) {
             //seem to have issues if this isn't set to false
@@ -70,7 +70,7 @@
                     }
                 },
                 change: function (e) {
-                    console.log(e);
+                    //console.log(e);
                 },
                 aggregate: [
                     { field: "id", aggregate: "count" },
@@ -82,7 +82,6 @@
         document.addEventListener("deviceready",  onDeviceReady);
 
         return {
-            mobileApp: mobileApp,
             alert: showAlert,
             storeStock: storeStock,
             debug:  function () {
