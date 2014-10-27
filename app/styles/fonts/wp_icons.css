@@ -98,10 +98,24 @@
 }
 
 .km-on-wp #edit-buttons li a {
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .km-on-wp #edit-buttons {
     padding: 0px;
-    padding-left: 12px;
+    padding-left: 2px;
+    margin-top: -16px;
+    margin-bottom: 0px;
+}
+
+.km-on-wp #first-label {
+    padding-top: 0px;
+}
+
+.km-on-wp #bottom-button-panel {
+    margin-top: 192px !important;
+}
+
+.km-on-wp #update-profile:before, .km-on-wp #cancel-profile:before  {
+     content: none;   
 }
