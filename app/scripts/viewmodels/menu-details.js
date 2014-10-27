@@ -31,10 +31,14 @@
                         item = win.app.Menu.dataSource.get(view.params.id);
                     model.set("item", item);
                     everliveImages.responsiveAll();
-                    setTimeout(function() {
-                        $( "#details-title" ).removeClass( "invisible" );
-                        win.app.MenuDetails.set( "loaded", true );
+                    
+                    $("#detail-img").one("load", function(e) {
+                        setTimeout(function() {
+                            $( "#details-title" ).removeClass( "invisible" );
+                            win.app.MenuDetails.set( "loaded", true );
+                        }); 
                     });
+                    
                 });
             });
         },

@@ -8,7 +8,7 @@
             <a data-role="backbutton" class="fa fa-chevron-left" data-align="left"></a>
         </div>
     </header>
-    <img class="resimgs" data-bind="attr: { data-src: item.imgSrc }, visible: loaded" />
+    <img id="detail-img" class="resimgs" data-bind="attr: { data-src: item.imgSrc }, visible: loaded" />
     <div id="menu-details-box" data-bind="visible: loaded">
         <p data-bind="html: item.description"></p>
         <h4>$<span data-bind="html: item.price" /></h4>
