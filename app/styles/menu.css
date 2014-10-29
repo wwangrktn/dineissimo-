@@ -65,12 +65,17 @@
 .price {
     display: block;
     margin-top: 40px;
-    margin-left: 90px;
+    margin-left: 10px;
     font-size: 9pt;
+    
 }
 .title {
     margin-left:10px;
     font-size: 11pt;
+}
+
+.text-link{
+    width: 140px !important;
 }
 
 .photo-menu-box {

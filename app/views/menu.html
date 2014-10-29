@@ -61,8 +61,10 @@
                 
             </div>
             <div class="menu-block">
-                <span class="title">#: data.title #</span><br />
-                <span class="price">#: kendo.toString(data.price, "c") #</span>
+                <a class="text-link" href="\#views/menu-details.html?id=#= data.id #">
+                    <span class="title">#: data.title #</span><br />
+                    <span class="price">#: kendo.toString(data.price, "c") #</span>
+                </a>
             </div>
     </div>
 </script>

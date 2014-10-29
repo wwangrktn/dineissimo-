@@ -28,7 +28,7 @@
 
 .details-buttons {
 	position: relative;
-	display: inline-block;
+	display: none;
 	list-style: none;
 	border: 0;
 	padding: 0;
