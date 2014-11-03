@@ -17,20 +17,20 @@ Backend services are like a database for your app; you can create 'types' which 
 1. Click the 'key' icon in the backend services panel and make a note of the API Key which allows your app to feed data to this backend. You're going to need this in a minute. 
 2. Next, enable Everlive, another name for the Backend Service, in the index.html file by adding this line above the scripts/app.js included file: 
 
-``
+```
 <script src="https://bs-static.cdn.telerik.com/1.2.5/everlive.all.min.js"></script>
-``
+```
 
 3. Add the following code to scripts/app.js in the device ready function and under win.app.storeStock.read();
 
-``
+```
 var apiKey = "your-api-key";
       win.app.el = new Everlive({
           apiKey: apiKey,
           url: '//api.everlive.com/v1/',
           scheme: 'https'
        });
-``
+```
 Make sure to change the string 'your-api-key' to the API key that you noted above. Now your app is configured to read and write data from and to the backend.		  
 		
 ### Step 3: Convert the 'Edit my Profile' form to save user details to the backend
@@ -40,7 +40,8 @@ In this step, we're going to add some fields to the User type so that we can sav
 
 Now, let's add some css and edit the form fields. In styles/main.css, add the following css snippet to make the form scroll and place the submit buttons at its bottom: 
 
-``#bottom-panel {
+```
+#bottom-panel {
     bottom: 0;
     height: 66px;
     width: 100%;
@@ -48,11 +49,12 @@ Now, let's add some css and edit the form fields. In styles/main.css, add the fo
     margin: 0;
     padding-top: 20px;
     margin-top:20px;
-}``
+}
+```
 
 Next, redo the 'Edit my Profile' form in index.html, replacing the "edit-body" div with the following markup:
 
-``
+```
 <div id="edit-body">
     <label for="firstName">First Name</label>
     <input type="text" id="firstName" data-bind="value: profile.firstName"/>
@@ -75,7 +77,7 @@ Next, redo the 'Edit my Profile' form in index.html, replacing the "edit-body" d
         </ul>
     </div>
 </div>
-``
+```
 			
 Your form should look like this:
 
@@ -83,7 +85,7 @@ Your form should look like this:
 			
 Finally, add a snippet to the updateProfile function in scripts/viewmodels/edit-profile.js right under  e.preventDefault():
 
-``
+```
 if (this.profile.firstName === "" || this.profile.lastName === "" || this.profile.username === "" || this.profile.email === "" || this.profile.password === "") {
                 win.app.alert("Please complete all fields.");                
             }
@@ -94,7 +96,7 @@ if (this.profile.firstName === "" || this.profile.lastName === "" || this.profil
             function() {
                 win.app.alert("Unfortunately we were unable to create your account.");
             });
-``
+```
 			
 In this function, we watch for the updateProfile click and then check to see that all the form fields are filled in. If they are, we we send the user's information to the backend where it is saved in the Users type. You can see the new user's information by refreshing the type's table:
 
