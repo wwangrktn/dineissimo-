@@ -12,6 +12,22 @@
         updatePhoto: function (e) {
             e.preventDefault();
             var that = this;
+            var opts = kendo.support.mobileOS.ios ? 
+                {
+                    quality: 50,
+                    //targetWidth: 80,
+                    //targetHeight: 80,
+                    destinationType: Camera.DestinationType.FILE_URI,
+                    sourceType: Camera.PictureSourceType.CAMERA
+                }
+                :
+                {
+                    quality: 50,
+                    targetWidth: 80,
+                    targetHeight: 80,
+                    destinationType: Camera.DestinationType.FILE_URI,
+                    sourceType: Camera.PictureSourceType.CAMERA
+                };;
             win.navigator.camera.getPicture(
                 function (data) {
                     console.log("success called");
@@ -24,13 +40,7 @@
                     if(kendo.support.mobileOS.android) 
                         $("#firstName").focus();
                 },
-                {
-                    quality: 50,
-                    //targetWidth: 80,
-                    //targetHeight: 80,
-                    destinationType: Camera.DestinationType.FILE_URI,
-                    sourceType: Camera.PictureSourceType.CAMERA
-                }
+                opts
             );
         },
 
