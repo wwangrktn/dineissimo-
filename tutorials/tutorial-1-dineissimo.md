@@ -23,7 +23,7 @@ The Dineissimo app has several style sheets: a base kendo mobile style sheet and
 ```
 It’s time to change up the color scheme. It’s pretty straightforward to change any app’s colors manually by changing its css. Maybe you want to change the color scheme from brown to reflect the organic nature of the restaurant’s offerings, or change it to a fast-food type color palette. Take a look at a very useful website for designers, [ColourLovers](http://www.colourlovers.com), and search for ‘restaurant’. You’ll find all sorts of inspiration. Use a palette called  ‘[Cuisine](http://www.colourlovers.com/palette/1972507/Cuisine)’.
 
-![Cuisine](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-1-1.png)
+![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-1.png)
 
 ### Step 2: Alter the CSS:
 
@@ -57,7 +57,7 @@ Finally, change the #userPanel background color to orange:
 
 Nice! It’s so cheery! You could continue to make more changes if you like, for example to darken some of the fonts so they show up better. 
 
-![Cuisine](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-1-2.png)
+![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-2.png)
 
 ## [Intermediate: Change the icons](id:intermediate)
 
@@ -67,12 +67,12 @@ Diving deeper into the css, we can start really customizing our app to use a dif
 
 Visit [Icomoon](http://www.icomoon.io) and in the font library, select ‘icomoon’. Click on the eight icons mentioned above and click the ‘font’ button:
 
-![Cuisine](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-1-3.png)
+![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-3.png)
 
 
 Download a zip file of these icons by clicking the ‘download’ button. Expand the zip file and move the four files in the font folder to your app’s styles/font folder. These will be called icomoon.eot, icomoon.svg, icomoon.ttf, and icomoon.woff. 
 
-![files](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-1-5.png)
+![files](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-5.png)
 
 
 ### Step 2: Install the icons
@@ -126,7 +126,7 @@ and one more, down around line 177:
 ```
 When you save your changes, you’ll see your new icons in the simulator:
 
-![Cuisine](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-1-4.png)
+![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-4.png)
 
 ### Step 3: Replace the remaining icons:
 

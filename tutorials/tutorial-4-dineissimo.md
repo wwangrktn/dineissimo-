@@ -8,7 +8,7 @@ The Telerik AppBuilder Platform includes a lot of great functionality to help ap
 
 First, in the in-browser Platform, enable backend services for your Dineissimo app by clicking the "Create Backend Services" button:
 
-![](https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_1.png)
+![](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_1.png)
 
 Backend services are like a database for your app; you can create 'types' which correlate to database tables and configure datatypes and permissions as needed. For our purposes, we are going to use the ready-built Users type, with a few tweaks to make it work with our app's form.
 
@@ -81,7 +81,7 @@ Next, redo the 'Edit my Profile' form in index.html, replacing the "edit-body" d
 			
 Your form should look like this:
 
-![](https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_3.png)
+![](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_3.png)
 			
 Finally, add a snippet to the updateProfile function in scripts/viewmodels/edit-profile.js right under  e.preventDefault():
 
@@ -100,13 +100,13 @@ if (this.profile.firstName === "" || this.profile.lastName === "" || this.profil
 			
 In this function, we watch for the updateProfile click and then check to see that all the form fields are filled in. If they are, we we send the user's information to the backend where it is saved in the Users type. You can see the new user's information by refreshing the type's table:
 
-![](https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_5.png)
+![](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_5.png)
 
 ### Step 4: Edit the Welcome Email Template
 
 Now, some real magic happens in the background. Each app in Appbuilder comes configured with four standard emails by default: Welcome, Verify Account, Reset Password, and Password Reset templates. If a new user is created and the user has an email address, the system sends out a welcome email. It's quite nice! However, the template expects the user to have a 'Display Name' which we do not have in the Dineissimo app, so we need to edit the Email template to avoid any gaps in the email that is sent. Click 'Email' in the left navigation and click on 'Welcome Email':
 
-![](https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_4.png)
+![](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_4.png)
 
 Click 'edit' in the Email panel and change {{User:DisplayName}} to {{User:FirstName}} {{User:LastName}}. Do this in the html as well as the text email boxes for consistency. Save this change and test your work by adding your email address to the app's form that we just built in the simulator and clicking 'update'. You should receive a lovely personalized email!
 

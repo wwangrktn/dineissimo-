@@ -12,12 +12,12 @@ For the first part of this tutorial, you will work on the AppBuilder in-browser 
 
 First, install the Social Share plugin into the project in-browser. Click on the plugins link in the Project Navigator.
 
-![Platform](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-2-1.png)
+![Platform](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-1.png)
 
 
 Scroll down to ‘Other Plugins’ and click ‘Install’. A modal window shows the Packages in the Plugins Marketplace and you can search for ‘SocialSharing’. Highlight that plugin and click ‘install’. AppBuilder installs the plugin into your Plugins folder. 
 
-![Platform](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-2-2.png)
+![Platform](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-2.png)
 
 With this plugin installed, you’re now ready to use it within your Dineissimo app. 
 
@@ -71,7 +71,7 @@ this.onError
 
 Click Run on the device of your choice to see how the small buttons look. You can click on a menu item and on the detail page you’ll see the Twitter and Facebook graphic. Clicking on those graphics, unfortunately, doesn’t trigger the Social Share plugin - to really see the plugin in action, we have to build on device. Let’s look at why this doesn’t work, and what you need to do to see this plugin in action.
 
-![Simulator](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-2-3.png)
+![Simulator](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-3.png)
 
 ## Ninja: Test the plugin on device 
 
@@ -91,12 +91,12 @@ For Windows Phone: [http://docs.telerik.com/platform/appbuilder/publishing-your-
 
 Once you have completed your setup, you can click ‘build’ and the interface will walk you through installing the app to your connected device. A QR code is produced by AppBuilder; use a QR reader on your device to download the freshly-built app. 
 
-![QR Code](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-2-5.png)
+![QR Code](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-5.png)
 
 
 Find the Twitter and Facebook buttons, and test your integration of the social plugin. You can edit the sendTweet and sendToFacebook functions to change the message sent.
 
-![Social Share Demo](https://raw.githubusercontent.com/jlooper/images/master/dineissimo-2-4.png)
+![Social Share Demo](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-4.png)
 
 
 As a further challenge, try integrating more parts of the Social Share plugin. You can make it send an Email or an SMS, or integrate with WhatsApp. Give it a try!

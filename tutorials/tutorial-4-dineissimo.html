@@ -1004,7 +1004,7 @@ body .markdown-body
 <p>The Telerik AppBuilder Platform includes a lot of great functionality to help app developers interact with their app users, including backend services, push notifications, cloud code functions, and email templates that make communication easy. In this tutorial, we&rsquo;ll build out the &lsquo;Edit my Profile&rsquo; screen to allow users to register in the app&rsquo;s backend services, and send an email welcoming the user to the Dineissimo app.</p>
 <h3 id="step-1-enable-the-backend"><a name="user-content-step-1-enable-the-backend" href="#step-1-enable-the-backend" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 1: Enable the backend</h3>
 <p>First, in the in-browser Platform, enable backend services for your Dineissimo app by clicking the &ldquo;Create Backend Services&rdquo; button:</p>
-<p><img alt="" src="https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_1.png" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_1.png" /></p>
 <p>Backend services are like a database for your app; you can create &lsquo;types&rsquo; which correlate to database tables and configure datatypes and permissions as needed. For our purposes, we are going to use the ready-built Users type, with a few tweaks to make it work with our app&rsquo;s form.</p>
 <h3 id="step-2-get-your-api-key-and-enable-everlive"><a name="user-content-step-2-get-your-api-key-and-enable-everlive" href="#step-2-get-your-api-key-and-enable-everlive" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 2: Get your API Key and enable Everlive</h3>
 <ol>
@@ -1067,7 +1067,7 @@ body .markdown-body
 </code></pre>
 
 <p>Your form should look like this:</p>
-<p><img alt="" src="https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_3.png" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_3.png" /></p>
 <p>Finally, add a snippet to the updateProfile function in scripts/viewmodels/edit-profile.js right under  e.preventDefault():</p>
 <pre><code>if (this.profile.firstName === &quot;&quot; || this.profile.lastName === &quot;&quot; || this.profile.username === &quot;&quot; || this.profile.email === &quot;&quot; || this.profile.password === &quot;&quot;) {
                 win.app.alert(&quot;Please complete all fields.&quot;);                
@@ -1082,10 +1082,10 @@ body .markdown-body
 </code></pre>
 
 <p>In this function, we watch for the updateProfile click and then check to see that all the form fields are filled in. If they are, we we send the user&rsquo;s information to the backend where it is saved in the Users type. You can see the new user&rsquo;s information by refreshing the type&rsquo;s table:</p>
-<p><img alt="" src="https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_5.png" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_5.png" /></p>
 <h3 id="step-4-edit-the-welcome-email-template"><a name="user-content-step-4-edit-the-welcome-email-template" href="#step-4-edit-the-welcome-email-template" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 4: Edit the Welcome Email Template</h3>
 <p>Now, some real magic happens in the background. Each app in Appbuilder comes configured with four standard emails by default: Welcome, Verify Account, Reset Password, and Password Reset templates. If a new user is created and the user has an email address, the system sends out a welcome email. It&rsquo;s quite nice! However, the template expects the user to have a &lsquo;Display Name&rsquo; which we do not have in the Dineissimo app, so we need to edit the Email template to avoid any gaps in the email that is sent. Click &lsquo;Email&rsquo; in the left navigation and click on &lsquo;Welcome Email&rsquo;:</p>
-<p><img alt="" src="https://raw.githubusercontent.com/jlooper/tutorials/master/dineissimo_4_4.png" /></p>
+<p><img alt="" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo_4_4.png" /></p>
 <p>Click &lsquo;edit&rsquo; in the Email panel and change {{User:DisplayName}} to {{User:FirstName}} {{User:LastName}}. Do this in the html as well as the text email boxes for consistency. Save this change and test your work by adding your email address to the app&rsquo;s form that we just built in the simulator and clicking &lsquo;update&rsquo;. You should receive a lovely personalized email!</p>
 <h2 id="ninja-mode"><a name="user-content-ninja-mode" href="#ninja-mode" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Ninja mode</h2>
 <p>The email templates included in AppBuilder are nice looking, but you can use your ninja skills and css to personalize them even more. Click on &lsquo;html&rsquo; in the panel where the email template is displayed and try to change the css to make it resemble the color scheme of the Dineissimo app. Now it will look really personalized and awesome!</p></article></body></html>
