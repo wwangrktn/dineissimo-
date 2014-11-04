@@ -19,11 +19,14 @@ The Dineissimo app has several style sheets: a base kendo mobile style sheet and
     <link href="styles/claim.css" rel="stylesheet" />
     <link href="styles/menu-details.css" rel="stylesheet" />
     <link href="styles/cart.css" rel="stylesheet" />
+    <link href="styles/thanks.css" rel="stylesheet" />
     <link href="styles/intro.css" rel="stylesheet" />
+    <link href="styles/fonts/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="styles/fonts/wp_icons.css" rel="stylesheet" />
 ```
 It’s time to change up the color scheme. It’s pretty straightforward to change any app’s colors manually by changing its css. Maybe you want to change the color scheme from brown to reflect the organic nature of the restaurant’s offerings, or change it to a fast-food type color palette. Take a look at a very useful website for designers, [ColourLovers](http://www.colourlovers.com), and search for ‘restaurant’. You’ll find all sorts of inspiration. Use a palette called  ‘[Cuisine](http://www.colourlovers.com/palette/1972507/Cuisine)’.
 
-![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-1.png)
+![Cuisine](dineissimo-1-1.png)
 
 ### Step 2: Alter the CSS:
 
@@ -33,7 +36,6 @@ The palette has its colors listed in both Hex format and RGB. Using the colors l
 ```
  .km-navbar {
      background-color: rgba(204,63,53, 0.92) !important;
-     position:absolute;
      color:white !important;
  }
 ```
@@ -77,7 +79,7 @@ Download a zip file of these icons by clicking the ‘download’ button. Expand
 
 ### Step 2: Install the icons
 
-Next, look at styles/main.css. The font icons are formatted here. Change the @font-face style to reference the new files you imported:
+Next, look at styles/main.css again. The font icons are formatted here. Change the @font-face style to reference the new files you imported:
 
 ```
 @font-face {
@@ -116,7 +118,7 @@ Edit the icon styles so they reflect your new icons:
  }
  ```
 
-and one more, down around line 177:
+and one more, down around line 179:
 
 ```
 #edit-link:before {
@@ -126,7 +128,7 @@ and one more, down around line 177:
 ```
 When you save your changes, you’ll see your new icons in the simulator:
 
-![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-4.png)
+![Cuisine](dineissimo-1-4.png)
 
 ### Step 3: Replace the remaining icons:
 
@@ -163,13 +165,14 @@ First, create a folder called /sass in the /styles folder. We’re going to ask 
 Next, we need to convert our plain-vanilla css into the Sass language in that /sass folder. You need to save them as .scss files. Copy all the css files from the css folder and paste them into the sass folder. Change the file names from your command-line:
 
 ```
- for files in *.css
+for files in *.css
 do
 mv "$files" "${files%.css}.scss"
 done
 ```
 
 Now, let’s create a styles.scss file in the /sass folder. We’re going to build this file by including all the .scss files in the right order:
+
 
 ```
 @import "main";
@@ -179,6 +182,7 @@ Now, let’s create a styles.scss file in the /sass folder. We’re going to bui
 @import "claim";
 @import "menu-details";
 @import "cart";
+@import "thanks";
 @import "intro";
 
 ```

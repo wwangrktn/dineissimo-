@@ -1013,17 +1013,19 @@ body .markdown-body
     &lt;link href=&quot;styles/claim.css&quot; rel=&quot;stylesheet&quot; /&gt;
     &lt;link href=&quot;styles/menu-details.css&quot; rel=&quot;stylesheet&quot; /&gt;
     &lt;link href=&quot;styles/cart.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link href=&quot;styles/thanks.css&quot; rel=&quot;stylesheet&quot; /&gt;
     &lt;link href=&quot;styles/intro.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link href=&quot;styles/fonts/fontawesome/css/font-awesome.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link href=&quot;styles/fonts/wp_icons.css&quot; rel=&quot;stylesheet&quot; /&gt;
 </code></pre>
 
 <p>It’s time to change up the color scheme. It’s pretty straightforward to change any app’s colors manually by changing its css. Maybe you want to change the color scheme from brown to reflect the organic nature of the restaurant’s offerings, or change it to a fast-food type color palette. Take a look at a very useful website for designers, <a href="http://www.colourlovers.com">ColourLovers</a>, and search for ‘restaurant’. You’ll find all sorts of inspiration. Use a palette called  ‘<a href="http://www.colourlovers.com/palette/1972507/Cuisine">Cuisine</a>’.</p>
-<p><img alt="Cuisine" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-1.png" /></p>
+<p><img alt="Cuisine" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-1-1.png" /></p>
 <h3 id="step-2-alter-the-css"><a name="user-content-step-2-alter-the-css" href="#step-2-alter-the-css" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 2: Alter the CSS:</h3>
 <p>You can use the first red color for the header.<br />
 The palette has its colors listed in both Hex format and RGB. Using the colors listed in the Cuisine palette on ColourLovers, copy the red RGB value (204,63,53) and paste it in main.css in the class .km-navbar to override the base color of the top navbar:</p>
 <pre><code> .km-navbar {
      background-color: rgba(204,63,53, 0.92) !important;
-     position:absolute;
      color:white !important;
  }
 </code></pre>
@@ -1052,7 +1054,7 @@ The palette has its colors listed in both Hex format and RGB. Using the colors l
 <p>Download a zip file of these icons by clicking the ‘download’ button. Expand the zip file and move the four files in the font folder to your app’s styles/font folder. These will be called icomoon.eot, icomoon.svg, icomoon.ttf, and icomoon.woff. </p>
 <p><img alt="files" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-5.png" /></p>
 <h3 id="step-2-install-the-icons"><a name="user-content-step-2-install-the-icons" href="#step-2-install-the-icons" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 2: Install the icons</h3>
-<p>Next, look at styles/main.css. The font icons are formatted here. Change the @font-face style to reference the new files you imported:</p>
+<p>Next, look at styles/main.css again. The font icons are formatted here. Change the @font-face style to reference the new files you imported:</p>
 <pre><code>@font-face {
      font-family: &quot;icon-font&quot;;
      src: url(&quot;fonts/icomoon.woff&quot;) format(&quot;woff&quot;), url(&quot;fonts/icomoon.ttf&quot;) format(&quot;truetype&quot;);
@@ -1087,7 +1089,7 @@ The palette has its colors listed in both Hex format and RGB. Using the colors l
  }
  ```
 
-and one more, down around line 177:
+and one more, down around line 179:
 
 </code></pre>
 
@@ -1097,7 +1099,7 @@ content: &lsquo;\e600&rsquo;;</code></pre>
 <p>}</p>
 <pre><code>When you save your changes, you’ll see your new icons in the simulator:
 
-![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-4.png)
+![Cuisine](dineissimo-1-4.png)
 
 ### Step 3: Replace the remaining icons:
 
@@ -1148,6 +1150,7 @@ done</p>
 <pre><code>
 Now, let’s create a styles.scss file in the /sass folder. We’re going to build this file by including all the .scss files in the right order:
 
+
 </code></pre>
 
 <p>@import &ldquo;main&rdquo;;<br />
@@ -1157,6 +1160,7 @@ Now, let’s create a styles.scss file in the /sass folder. We’re going to bui
 @import &ldquo;claim&rdquo;;<br />
 @import &ldquo;menu-details&rdquo;;<br />
 @import &ldquo;cart&rdquo;;<br />
+@import &ldquo;thanks&rdquo;;<br />
 @import &ldquo;intro&rdquo;;</p>
 <pre><code>That styles.scss file is going to be saved as styles.css in /css. If you open that file, you’ll see the css all compressed into one line so that it’s really small. Your final task will be to link this one file within your index.html; you can then remove the link href references to the custom stylesheets and instead link only to:
 
