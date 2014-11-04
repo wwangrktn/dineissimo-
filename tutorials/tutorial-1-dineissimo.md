@@ -59,7 +59,7 @@ Finally, change the #userPanel background color to orange:
 
 Nice! It’s so cheery! You could continue to make more changes if you like, for example to darken some of the fonts so they show up better. 
 
-![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-2.png)
+![Cuisine](dineissimo-1-2.png)
 
 ## [Intermediate: Change the icons](id:intermediate)
 
@@ -69,12 +69,12 @@ Diving deeper into the css, we can start really customizing our app to use a dif
 
 Visit [Icomoon](http://www.icomoon.io) and in the font library, select ‘icomoon’. Click on the eight icons mentioned above and click the ‘font’ button:
 
-![Cuisine](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-3.png)
+![Cuisine](dineissimo-1-3.png)
 
 
 Download a zip file of these icons by clicking the ‘download’ button. Expand the zip file and move the four files in the font folder to your app’s styles/font folder. These will be called icomoon.eot, icomoon.svg, icomoon.ttf, and icomoon.woff. 
 
-![files](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-1-5.png)
+![files](dineissimo-1-5.png)
 
 
 ### Step 2: Install the icons
