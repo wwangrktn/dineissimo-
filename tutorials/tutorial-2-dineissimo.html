@@ -1004,18 +1004,16 @@ body .markdown-body
 <p>In this tutorial you’re going to install and integrate the Social Share plugin. This plugin allows you to share text, files, or URLs from the Dineissimo interface to your friends. Users of the app should be able to post this content on Twitter, Facebook, WhatsApp, or a SMS provider. </p>
 <h2 id="beginner-getting-started"><a name="user-content-beginner-getting-started" href="#beginner-getting-started" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Beginner: Getting Started:</h2>
 <h3 id="step-1-installing-the-plugin-in-browser"><a name="user-content-step-1-installing-the-plugin-in-browser" href="#step-1-installing-the-plugin-in-browser" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 1: Installing the plugin in-browser</h3>
-<p>For the first part of this tutorial, you will work on the AppBuilder in-browser client (available at [<a href="http://platform.telerik.com">http://platform.telerik.com</a>[(<a href="http://platform.telerik.com">http://platform.telerik.com</a>), and later you will install our app on device to test the plugin.</p>
+<p>For the first part of this tutorial, you will work on the AppBuilder in-browser client (available at <a href="http://platform.telerik.com"><a href="http://platform.telerik.com"><a href="http://platform.telerik.com">http://platform.telerik.com</a></a></a>, and later you will install our app on device to test the plugin.</p>
 <p>First, install the Social Share plugin into the project in-browser. Click on the plugins link in the Project Navigator.</p>
-<p><img alt="Platform" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-1.png" /></p>
+<p><img alt="Platform" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-2-1.png" /></p>
 <p>Scroll down to ‘Other Plugins’ and click ‘Install’. A modal window shows the Packages in the Plugins Marketplace and you can search for ‘SocialSharing’. Highlight that plugin and click ‘install’. AppBuilder installs the plugin into your Plugins folder. </p>
-<p><img alt="Platform" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-2.png" /></p>
+<p><img alt="Platform" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-2-2.png" /></p>
 <p>With this plugin installed, you’re now ready to use it within your Dineissimo app. </p>
 <h2 id="step-2-add-the-social-sharing-interface"><a name="user-content-step-2-add-the-social-sharing-interface" href="#step-2-add-the-social-sharing-interface" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 2: Add the Social Sharing interface</h2>
 <p>Next, you are going to allow users of the app to share a picture of their menu choice via Facebook and Twitter by adding two buttons to the interface.</p>
-<p>In the menu-details.html file, add the html markup for the buttons:</p>
-<pre><code>&lt;li&gt;&lt;span class=&quot;fa fa-shopping-cart&quot;&gt; &lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;fa fa-star-o&quot;&gt; &lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;fa fa-twitter&quot; data-bind=&quot;click: shareTweet&quot;&gt; &lt;/span&gt;&lt;/li&gt;
+<p>In the views/menu-details.html file, add the html markup for the buttons within the details-buttons ul markup:</p>
+<pre><code>&lt;li&gt;&lt;span class=&quot;fa fa-twitter&quot; data-bind=&quot;click: shareTweet&quot;&gt; &lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&quot;fa fa-facebook&quot; data-bind=&quot;click: shareFacebook&quot;&gt; &lt;/span&gt;&lt;/li&gt; 
 </code></pre>
 
@@ -1052,7 +1050,7 @@ this.onError
 </blockquote>
 <h3 id="step-3-take-a-look"><a name="user-content-step-3-take-a-look" href="#step-3-take-a-look" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 3: Take a look</h3>
 <p>Click Run on the device of your choice to see how the small buttons look. You can click on a menu item and on the detail page you’ll see the Twitter and Facebook graphic. Clicking on those graphics, unfortunately, doesn’t trigger the Social Share plugin - to really see the plugin in action, we have to build on device. Let’s look at why this doesn’t work, and what you need to do to see this plugin in action.</p>
-<p><img alt="Simulator" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-3.png" /></p>
+<p><img alt="Simulator" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-2-3.png" /></p>
 <h2 id="ninja-test-the-plugin-on-device"><a name="user-content-ninja-test-the-plugin-on-device" href="#ninja-test-the-plugin-on-device" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Ninja: Test the plugin on device</h2>
 <p>Let’s deploy this app on device so we can see how the plugin works.</p>
 <p>When integrating plugins, we need to be able to deploy our code to device. In general, device testing can be done using the AppBuilder Companion App, available for all platforms. But for custom plugins like the Social Share plugin, we have to go one step further and do an actual device build to make the app run as a mobile app on your device. Unlike the core Cordova plugins, which are available in the AppBuilder Companion App, custom plugins like SocialSharing must run in a built app to access the native device APIs they need. </p>
@@ -1065,7 +1063,7 @@ this.onError
 For Android: <a href="http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/distribute-android"><a href="http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/distribute-android"><a href="http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/distribute-android">http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/distribute-android</a></a></a><br />
 For Windows Phone: <a href="http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute"><a href="http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute"><a href="http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute">http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute</a></a></a></p>
 <p>Once you have completed your setup, you can click ‘build’ and the interface will walk you through installing the app to your connected device. A QR code is produced by AppBuilder; use a QR reader on your device to download the freshly-built app. </p>
-<p><img alt="QR Code" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-5.png" /></p>
+<p><img alt="QR Code" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-2-5.png" /></p>
 <p>Find the Twitter and Facebook buttons, and test your integration of the social plugin. You can edit the sendTweet and sendToFacebook functions to change the message sent.</p>
-<p><img alt="Social Share Demo" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-2-4.png" /></p>
+<p><img alt="Social Share Demo" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-2-4.png" /></p>
 <p>As a further challenge, try integrating more parts of the Social Share plugin. You can make it send an Email or an SMS, or integrate with WhatsApp. Give it a try!</p></article></body></html>
