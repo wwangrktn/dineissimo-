@@ -10,7 +10,7 @@ Sign up for a Stripe account at [http://www.stripe.com](http://www.stripe.com). 
 
 Once you sign up for an account, go to ‘Account Settings’ in the dashboard and locate your API Keys. Make a note of the ‘Test Secret Key’ for later.
 
-![Stripe](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-3-1.png)
+![Stripe](dineissimo-3-1.png)
 
 ##Step 2: Install the Stripe Plugin
 
@@ -19,7 +19,7 @@ Because we are going to need to alter the API Key in the Plugin code, we will in
 1. First, Go to [http://plugins.telerik.com/plugin/stripe](http://plugins.telerik.com/plugin/stripe) and click ‘Download Plugin’.
 2. Upload it to the AppBuilder in-browser client by right-clicking on the ‘plugin’ gear icon in the Project Navigator panel and selecting the zip file you just recompressed.
 
-![Stripe](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-3-2.png)
+![Stripe](dineissimo-3-2.png)
 
 3. Edit the Stripe plugin’s plugin.xml file, adding your Test Secret Key. Expand the Plugins folder from the gear icon in the Project Navigator Panel and find the Stripe folder. Edit plugin.xml by removing the line:
 
@@ -195,7 +195,7 @@ This function asks Stripe to create a charge with the amount in your shopping ca
 appear in the notification, for example incorrect credit cards, amounts, or other problems. If your test charge goes through, however, on this sandbox account, you will see a ‘thank you'
 alert and the charge will appear in your Stripe dashboard:
 
-![Stripe](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-3-4.png)
+![Stripe](dineissimo-3-4.png)
 
 This is very exciting! Now you can accept credit cards for your restaurant. You’re really in business now.
 

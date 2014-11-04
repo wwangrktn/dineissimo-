@@ -1005,14 +1005,14 @@ body .markdown-body
 <h3 id="step-1-sign-up-for-stripe"><a name="user-content-step-1-sign-up-for-stripe" href="#step-1-sign-up-for-stripe" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 1: Sign Up for Stripe</h3>
 <p>Sign up for a Stripe account at <a href="http://www.stripe.com"><a href="http://www.stripe.com"><a href="http://www.stripe.com">http://www.stripe.com</a></a></a>. Stripe describes itself as a ‘suite of APIs that powers commerce for businesses of all sizes.’ Apps such as Lyft, TaskRabbit, Wufoo and Postmates have integrated Stripe to accept payments from their customers. It is known for its sleek shopping experience and inclusion of useful APIs for coupons, special deals, subscriptions, and recurring billing. For our purposes, we will use Stripe to allow customers to pay for menu items that they want to add to their restaurant experience. </p>
 <p>Once you sign up for an account, go to ‘Account Settings’ in the dashboard and locate your API Keys. Make a note of the ‘Test Secret Key’ for later.</p>
-<p><img alt="Stripe" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-3-1.png" /></p>
+<p><img alt="Stripe" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-3-1.png" /></p>
 <h2 id="step-2-install-the-stripe-plugin"><a name="user-content-step-2-install-the-stripe-plugin" href="#step-2-install-the-stripe-plugin" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 2: Install the Stripe Plugin</h2>
 <p>Because we are going to need to alter the API Key in the Plugin code, we will install this plugin differently than the way we did it for the Social Share plugin.</p>
 <ol>
 <li>First, Go to <a href="http://plugins.telerik.com/plugin/stripe"><a href="http://plugins.telerik.com/plugin/stripe"><a href="http://plugins.telerik.com/plugin/stripe">http://plugins.telerik.com/plugin/stripe</a></a></a> and click ‘Download Plugin’.</li>
 <li>Upload it to the AppBuilder in-browser client by right-clicking on the ‘plugin’ gear icon in the Project Navigator panel and selecting the zip file you just recompressed.</li>
 </ol>
-<p><img alt="Stripe" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-3-2.png" /></p>
+<p><img alt="Stripe" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-3-2.png" /></p>
 <ol>
 <li>Edit the Stripe plugin’s plugin.xml file, adding your Test Secret Key. Expand the Plugins folder from the gear icon in the Project Navigator Panel and find the Stripe folder. Edit plugin.xml by removing the line:</li>
 </ol>
@@ -1175,7 +1175,7 @@ body .markdown-body
 <p>This function asks Stripe to create a charge with the amount in your shopping cart (multiplied by 100, as Stripe expects payments in cents). Any errors reported by Stripe<br />
 appear in the notification, for example incorrect credit cards, amounts, or other problems. If your test charge goes through, however, on this sandbox account, you will see a ‘thank you&rsquo;<br />
 alert and the charge will appear in your Stripe dashboard:</p>
-<p><img alt="Stripe" src="https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-3-4.png" /></p>
+<p><img alt="Stripe" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-3-4.png" /></p>
 <p>This is very exciting! Now you can accept credit cards for your restaurant. You’re really in business now.</p>
 <h1 id="ninja"><a name="user-content-ninja" href="#ninja" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Ninja:</h1>
 <p>To extend this basic implementation, you could collect email addresses in your form and email a receipt to your customer.</p>
