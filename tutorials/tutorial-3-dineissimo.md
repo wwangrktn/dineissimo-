@@ -121,7 +121,7 @@ with this form:
 ```
 This form will look like this in the end:
 
-![Stripe](https://raw.githubusercontent.com/telerik/dineissimo/master/tutorials/dineissimo-3-3.png)
+![Stripe](dineissimo-3-3.png)
 
 Finally, go to shopping-cart.js. We need to alter the definition of win.app.ShoppingCart:
 
