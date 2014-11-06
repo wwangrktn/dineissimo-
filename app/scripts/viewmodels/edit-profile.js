@@ -5,7 +5,7 @@
 
 (function (win) {
     win.app = win.app || {};
-
+    
     var defaultPic = "styles/images/videoprofile.png";
 
     win.app.EditProfile = kendo.observable({
@@ -19,15 +19,15 @@
                     //targetHeight: 80,
                     destinationType: Camera.DestinationType.FILE_URI,
                     sourceType: Camera.PictureSourceType.CAMERA
-                }
-                :
-                {
+                } : {
                     quality: 50,
                     targetWidth: 80,
                     targetHeight: 80,
                     destinationType: Camera.DestinationType.FILE_URI,
                     sourceType: Camera.PictureSourceType.CAMERA
                 };
+            
+            /* Comment in the code block below in order to enable the Cordova camera plug in and to participate in the contest */
             /*win.navigator.camera.getPicture(
                 function (data) {
                     console.log("success called");
