@@ -75,7 +75,7 @@
             if (this.profile.firstName === "" || this.profile.lastName === "" || this.profile.email === "") {
                 win.app.alert("You must complete all fields to participate in the contest");
             } else if (win.navigator.simulator) {
-                win.app.alert("Sorry, but you must run this on the device to recieve the prize");
+                win.app.alert("Sorry. But you must run Dineissimo app on device in order to receive the prize. Please see instructions in Dineissimo app Menu tab -> “Claim the prize”. ");
             } else if (this.profile.profilePic === defaultPic) {
                 win.app.alert("Sorry, but you must change your profile picture to recieve the prize");
             } else {
