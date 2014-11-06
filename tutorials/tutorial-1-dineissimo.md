@@ -47,7 +47,7 @@ While you’re at it, change the color of the flyout drawer menu to green by cha
     background-color: #81AE39;
   }
 ```
-Finally, change the #userPanel background color to orange: 
+Finally, change the #user-panel background color to orange: 
 
 ```
   #user-panel {
@@ -63,16 +63,16 @@ Nice! It’s so cheery! You could continue to make more changes if you like, for
 
 ## [Intermediate: Change the icons](id:intermediate)
 
-Diving deeper into the css, we can start really customizing our app to use a different icon font. Icons can really impact the look and feel of your app. Let’s change our app by using different icons from [Icomoon](http://www.icomoon.io). There are a lot of icons in this app, so for the purposes of a short tutorial, let’s concentrate on swapping the ones we see above: the hamburger (menu), pencil, fork/knife, about, photos, videos, cart, and trophy.
+Diving deeper into the css, we can start really customizing our app to use a different icon font. Icons can really impact the look and feel of your app. Let’s change our app by using different icons from [Icomoon](http://www.icomoon.io). There are a lot of icons in this app, so for the purposes of a short tutorial, let’s concentrate on swapping the ones we see above: the hamburger (menu), pencil, fork/knife, about, photos, cart, and trophy.
 
 ### Step 1: Find some new icons
 
-Visit [Icomoon](http://www.icomoon.io) and in the font library, select ‘icomoon’. Click on the eight icons mentioned above and click the ‘font’ button:
+Visit [Icomoon](http://www.icomoon.io) and click the red "IcoMoon App" button. Click "Add Icons from Library" and select the ‘Icomoon - Free’ library. This group of icons will be imported into your Icomoon workspace. Select the seven icons mentioned above and click the ‘Generate Font’ button:
 
 ![Cuisine](dineissimo-1-3.png)
 
 
-Download a zip file of these icons by clicking the ‘download’ button. Expand the zip file and move the four files in the font folder to your app’s styles/font folder. These will be called icomoon.eot, icomoon.svg, icomoon.ttf, and icomoon.woff. 
+Download a zip file of these icons by clicking the ‘download’ button. Expand the zip file and upload the four files in the font folder to your app’s styles/font folder. These will be called icomoon.eot, icomoon.svg, icomoon.ttf, and icomoon.woff. 
 
 ![files](dineissimo-1-5.png)
 
@@ -101,9 +101,6 @@ Edit the icon styles so they reflect your new icons:
  .km-picture:before, .km-picture:after {
      content: '\e601';
  }
- .km-video:before, .km-video:after {
-     content: '\e602';
- }
  .km-basket:before, .km-basket:after {
      content: '\e603';
  }
@@ -122,7 +119,7 @@ and one more, down around line 179:
 
 ```
 #edit-link:before {
-    font: 1em/1em"icon-font";
+    font: 1em / 1em "icon-font";
     content: '\e600';
  }
 ```

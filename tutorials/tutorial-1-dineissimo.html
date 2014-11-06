@@ -1036,7 +1036,7 @@ The palette has its colors listed in both Hex format and RGB. Using the colors l
   }
 </code></pre>
 
-<p>Finally, change the #userPanel background color to orange: </p>
+<p>Finally, change the #user-panel background color to orange: </p>
 <pre><code>  #user-panel {
      background-color: #F15A29;
      height: 130px;
@@ -1047,11 +1047,11 @@ The palette has its colors listed in both Hex format and RGB. Using the colors l
 <p>Nice! It’s so cheery! You could continue to make more changes if you like, for example to darken some of the fonts so they show up better. </p>
 <p><img alt="Cuisine" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-1-2.png" /></p>
 <h2 id="intermediate-change-the-icons"><a href="id:intermediate">Intermediate: Change the icons</a></h2>
-<p>Diving deeper into the css, we can start really customizing our app to use a different icon font. Icons can really impact the look and feel of your app. Let’s change our app by using different icons from <a href="http://www.icomoon.io">Icomoon</a>. There are a lot of icons in this app, so for the purposes of a short tutorial, let’s concentrate on swapping the ones we see above: the hamburger (menu), pencil, fork/knife, about, photos, videos, cart, and trophy.</p>
+<p>Diving deeper into the css, we can start really customizing our app to use a different icon font. Icons can really impact the look and feel of your app. Let’s change our app by using different icons from <a href="http://www.icomoon.io">Icomoon</a>. There are a lot of icons in this app, so for the purposes of a short tutorial, let’s concentrate on swapping the ones we see above: the hamburger (menu), pencil, fork/knife, about, photos, cart, and trophy.</p>
 <h3 id="step-1-find-some-new-icons"><a name="user-content-step-1-find-some-new-icons" href="#step-1-find-some-new-icons" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 1: Find some new icons</h3>
-<p>Visit <a href="http://www.icomoon.io">Icomoon</a> and in the font library, select ‘icomoon’. Click on the eight icons mentioned above and click the ‘font’ button:</p>
+<p>Visit <a href="http://www.icomoon.io">Icomoon</a> and click the red &ldquo;IcoMoon App&rdquo; button. Click &ldquo;Add Icons from Library&rdquo; and select the ‘Icomoon - Free’ library. This group of icons will be imported into your Icomoon workspace. Select the seven icons mentioned above and click the ‘Generate Font’ button:</p>
 <p><img alt="Cuisine" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-1-3.png" /></p>
-<p>Download a zip file of these icons by clicking the ‘download’ button. Expand the zip file and move the four files in the font folder to your app’s styles/font folder. These will be called icomoon.eot, icomoon.svg, icomoon.ttf, and icomoon.woff. </p>
+<p>Download a zip file of these icons by clicking the ‘download’ button. Expand the zip file and upload the four files in the font folder to your app’s styles/font folder. These will be called icomoon.eot, icomoon.svg, icomoon.ttf, and icomoon.woff. </p>
 <p><img alt="files" src="/Users/Looper/Documents/apps/foodamental/tutorials/dineissimo-1-5.png" /></p>
 <h3 id="step-2-install-the-icons"><a name="user-content-step-2-install-the-icons" href="#step-2-install-the-icons" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Step 2: Install the icons</h3>
 <p>Next, look at styles/main.css again. The font icons are formatted here. Change the @font-face style to reference the new files you imported:</p>
@@ -1072,9 +1072,6 @@ The palette has its colors listed in both Hex format and RGB. Using the colors l
  .km-picture:before, .km-picture:after {
      content: '\e601';
  }
- .km-video:before, .km-video:after {
-     content: '\e602';
- }
  .km-basket:before, .km-basket:after {
      content: '\e603';
  }
@@ -1094,7 +1091,7 @@ and one more, down around line 179:
 </code></pre>
 
 <h1 id="edit-linkbefore"><a name="user-content-edit-linkbefore" href="#edit-linkbefore" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>edit-link:before {</h1>
-<pre><code>font: 1em/1em&rdquo;icon-font&rdquo;;
+<pre><code>font: 1em / 1em &ldquo;icon-font&rdquo;;
 content: &lsquo;\e600&rsquo;;</code></pre>
 <p>}</p>
 <pre><code>When you save your changes, you’ll see your new icons in the simulator:
