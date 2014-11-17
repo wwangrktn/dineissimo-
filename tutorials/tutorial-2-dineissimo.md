@@ -81,18 +81,15 @@ On each platform, preparing for a device build is a somewhat involved procedure�
 
 >Note, the app identifier that you use for your provisioning profile needs to match the identifier that is included in the codebase, so if you need to make a change to match those two, double click ‘properties’ in the Project Navigator and edit the Application Identifier field. It should look like ‘com.company.appname'
 
-As a part of claiming your Amazon.com Gift Certificate you had installed AppBuilder companion app so you can deploy Dineissimo app to your device without unclocking it. In order to test this new social media plugin add-on you just created for you app, simply open the AppBuilder companion app again and use a three-finger tap and hold to load the new app bits and you are good to go!  
-
-
-Side note: If you have  removed the AppBuilder companion app since claiming the prize, please refer to the following documentation that walks you through the process on each OS. You'll need to complete this setup for your device's OS before continuing.
+Please refer to the following documentation that walks you through the process on each OS. You'll need to complete this setup for your device's OS before continuing.
 
 For iOS: [http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/publish-adhoc](http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/publish-adhoc)
-
 For Android: [http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/distribute-android](http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/distribute-android)
 For Windows Phone: [http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute](http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute)
 
-
 Once you have completed your setup, you can click ‘build’ and the interface will walk you through installing the app to your connected device. A QR code is produced by AppBuilder; use a QR reader on your device to download the freshly-built app. 
+
+![QR Code](dineissimo-2-5.png)
 
 
 Find the Twitter and Facebook buttons, and test your integration of the social plugin. You can edit the sendTweet and sendToFacebook functions to change the message sent.
