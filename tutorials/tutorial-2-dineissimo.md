@@ -1,6 +1,6 @@
 #Getting Friendly: Adding the Social Plugin to the Dineissimo app
 
-While developing your app all by yourself is fun, the real power of a mobile app development platform is brought home when you start leveraging the plugins that the Telerik Platform offers. Telerik has a really nice selection of curated plugins that you can easily install into your app. They are all listed in the  [plugins marketplace](http://plugins.telerik.com/); new plugins are frequently added to the marketplace. 
+While developing your app all by yourself is fun, the real power of a mobile app development platform is brought home when you start leveraging the plugins that the Telerik Platform offers. Telerik has a really nice selection of curated plugins that you can easily install into your app. They are all listed in the [plugins marketplace](http://plugins.telerik.com/); new plugins are frequently added to the marketplace. 
 
 In this tutorial you’re going to install and integrate the Social Share plugin. This plugin allows you to share text, files, or URLs from the Dineissimo interface to your friends. Users of the app should be able to post this content on Twitter, Facebook, WhatsApp, or a SMS provider. 
 
@@ -10,12 +10,12 @@ In this tutorial you’re going to install and integrate the Social Share plugin
 
 For the first part of this tutorial, you will work on the AppBuilder in-browser client (available at [http://platform.telerik.com](http://platform.telerik.com), and later you will install our app on device to test the plugin.
 
-First, install the Social Share plugin into the project in-browser. Click on the plugins link in the Project Navigator.
+First, install the Social Share plugin into the project in-browser. Right-click on the properties link in the Project Navigator and select 'open'.
 
 ![Platform](dineissimo-2-1.png)
 
 
-Scroll down to ‘Other Plugins’ and click ‘Install’. A modal window shows the Packages in the Plugins Marketplace and you can search for ‘SocialSharing’. Highlight that plugin and click ‘install’. AppBuilder installs the plugin into your Plugins folder. 
+Click on 'Plugins' on the left and scroll down to ‘Other Plugins’ and click ‘Install’. A modal window shows the Packages in the Plugins Marketplace and you can search for ‘SocialSharing’. Highlight that plugin and click ‘install’. AppBuilder installs the plugin into your Plugins folder. 
 
 ![Platform](dineissimo-2-2.png)
 
@@ -88,9 +88,6 @@ For Android: [http://docs.telerik.com/platform/appbuilder/publishing-your-app/di
 For Windows Phone: [http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute](http://docs.telerik.com/platform/appbuilder/publishing-your-app/distribute-production/wp8-distribute)
 
 Once you have completed your setup, you can click ‘build’ and the interface will walk you through installing the app to your connected device. A QR code is produced by AppBuilder; use a QR reader on your device to download the freshly-built app. 
-
-![QR Code](dineissimo-2-5.png)
-
 
 Find the Twitter and Facebook buttons, and test your integration of the social plugin. You can edit the sendTweet and sendToFacebook functions to change the message sent.
 
