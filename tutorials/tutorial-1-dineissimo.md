@@ -1,8 +1,13 @@
-    Telerik Platform solution makes it incredibly easy for developers to build, modify and deploy hybrid mobile apps. We want you to experience the difference yourself. Try out our platform by deploying this sample app, "Dineissimo" to your device. Then, find out how easy it is to alter its look and add cool features by following our helpful tutorials. Each tutorial walks you through different capabilities and have beginner, intermediate and “Ninja” level instructions. Here are the links:
-    * [Re-skin your app](tutorial-1-dineissimo.md)
-    * [Add a social plugin](tutorial-2-dineissimo.md)
-    * [Create a great checkout experience](tutorial-3-dineissimo.md)
-    * [Add backend cloud services and email notifications](tutorial-4-dineissimo.md)
+ ---
+##Welcome!
+Telerik's Platform solution makes it incredibly easy for developers to build, modify and deploy hybrid mobile apps. We want you to experience the difference yourself. Try out our platform by deploying this sample app, "Dineissimo" to your device. Then, find out how easy it is to alter its look and add cool features by following our helpful tutorials. Each tutorial walks you through different capabilities and has beginner, intermediate and “Ninja” level instructions. Here are the links:
+
+* [Re-skin your app](tutorial-1-dineissimo.md)
+* [Add a social plugin](tutorial-2-dineissimo.md)
+* [Create a great checkout experience](tutorial-3-dineissimo.md)
+* [Add backend cloud services and email notifications](tutorial-4-dineissimo.md)
+
+---
 
 # Make it your Own: Reskin the Dineissimo App
 
