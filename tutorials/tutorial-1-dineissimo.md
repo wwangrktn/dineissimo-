@@ -1,5 +1,5 @@
 ##Welcome!
-Telerik's Platform solution makes it incredibly easy for developers to build, modify and deploy hybrid mobile apps. We want you to experience the difference yourself. Try out our platform by deploying this sample app, "Dineissimo" to your device. Then, find out how easy it is to alter its look and add cool features by following our helpful tutorials. Each tutorial walks you through different capabilities and has beginner, intermediate and “Ninja” level instructions. Here are the links:
+Telerik's Platform solution makes it incredibly easy for developers to build, modify and deploy hybrid mobile apps. We want you to experience the difference yourself. Try out our platform by [deploying this sample app](https://www.telerik.com/campaigns/platform/run-hybrid-app?utm_medium=tutorial&utm_source=github&utm_campaign=dc-platform-100k-oct14&utm_content=1), "Dineissimo" to your device. Then, find out how easy it is to alter its look and add cool features by following our helpful tutorials. Each tutorial walks you through different capabilities and has beginner, intermediate and “Ninja” level instructions. Here are the links:
 
 * [Re-skin your app](tutorial-1-dineissimo.md)
 * [Add a social plugin](tutorial-2-dineissimo.md)
