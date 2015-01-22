@@ -1,3 +1,14 @@
+---
+##Welcome!
+Telerik's Platform solution makes it incredibly easy for developers to build, modify and deploy hybrid mobile apps. We want you to experience the difference yourself. Try out our platform by deploying this sample app, "Dineissimo" to your device. Then, find out how easy it is to alter its look and add cool features by following our helpful tutorials. Each tutorial walks you through different capabilities and has beginner, intermediate and “Ninja” level instructions. Here are the links:
+
+* [Re-skin your app](tutorial-1-dineissimo.md)
+* [Add a social plugin](tutorial-2-dineissimo.md)
+* [Create a great checkout experience](tutorial-3-dineissimo.md)
+* [Add backend cloud services and email notifications](tutorial-4-dineissimo.md)
+
+---
+
 # Create a Great Checkout Experience for the Dineissimo App using the Stripe Plugin
 
 One of the most important decisions in app development will be how to make money. In the case of Dineissimo, you have an app that is tailor-made to accept payments: a restaurant experience that allows users to add items to a shopping cart. Let’s complete the circle by integrating Telerik’s new Stripe plugin so that users can actually check out.
