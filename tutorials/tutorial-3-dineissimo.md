@@ -26,17 +26,13 @@ Once you sign up for an account, go to ‘Account Settings’ in the dashboard a
 
 Because we are going to need to alter the API Key in the Plugin code, we will install this plugin differently than the way we did it for the Social Share plugin.
 
-1. First, Go to [http://plugins.telerik.com/plugin/stripe](http://plugins.telerik.com/plugin/stripe) and click ‘Download Plugin’.
-2. Upload it to the AppBuilder in-browser client by right-clicking on the ‘plugin’ gear icon in the Project Navigator panel and selecting the zip file you just recompressed.
+1. First, right-click on Properties in the Project Navigator and open the Properties panel. Click on Plugins at the bottom and scroll down to "Other Plugins".
 
-![Stripe](dineissimo-3-2.png)
+![Stripe](dineissimo-3-2a.png)
 
-3. Edit the Stripe plugin’s plugin.xml file, adding your Test Secret Key. Expand the Plugins folder from the gear icon in the Project Navigator Panel and find the Stripe folder. Edit plugin.xml by removing the line:
+2. Find the Stripe plugin in the list and click 'Install' to install it. When it's installed, you need to open the plugin's build configuration by clicking the arrow to the left of its checkbox. Click the "Configuration Variables" button and enter the API key that you made note of before.
 
-```
-<preference name="API_KEY" />
-```
-Look for the two places that reference <string>API_KEY</string> and replace API_KEY with your Test Secret Key and save plugin.xml.
+![Stripe](dineissimo-3-2b.png)
 
 ##Step 3: Build out the checkout screens
 
