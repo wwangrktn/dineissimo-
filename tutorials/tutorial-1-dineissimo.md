@@ -8,7 +8,6 @@ Telerik's Platform solution makes it incredibly easy for developers to build, mo
 * [Add backend cloud services and email notifications](tutorial-4-dineissimo.md)
 
 ---
-
 # Make it your Own: Reskin the Dineissimo App
 
 Kendo offers a basic set of styles for its widgets so that you can have a good-looking app right out of the box even if you don’t want to add additional styling. Most developers, however, need to create apps that reflect their brand colors and look-and-feel or that simply reflects the app’s content; a children’s app will look different than a utility or business app. In this tutorial, you will learn how to [change the basic colors in your app](#beginner), how to [change the icons](#intermediate), and how to [use a css preprocessor](#advanced), Sass, to speed up your css workflow.
