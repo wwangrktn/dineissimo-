@@ -26,11 +26,11 @@ Once you sign up for an account, go to ‘Account Settings’ in the dashboard a
 
 Because we are going to need to alter the API Key in the Plugin code, we will install this plugin differently than the way we did it for the Social Share plugin.
 
-1. First, right-click on Properties in the Project Navigator and open the Properties panel. Click on Plugins at the bottom and scroll down to "Other Plugins".
+First, right-click on Properties in the Project Navigator and open the Properties panel. Click on Plugins at the bottom and scroll down to "Other Plugins". Find the Stripe plugin in the list and click 'Install' to install it. 
 
 ![Stripe](dineissimo-3-2a.png)
 
-2. Find the Stripe plugin in the list and click 'Install' to install it. When it's installed, you need to open the plugin's build configuration by clicking the arrow to the left of its checkbox. Click the "Configuration Variables" button and enter the API key that you made note of before.
+When it's installed, you need to open the plugin's build configuration by clicking the arrow to the left of its checkbox. Click the "Configuration Variables" button and enter the API key that you made note of before.
 
 ![Stripe](dineissimo-3-2b.png)
 
