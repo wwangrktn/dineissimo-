@@ -2,7 +2,7 @@
 
 A sample AppBuilder app for a hypothetical small restaurant chain. [Clone this repository in AppBuilder](http://docs.telerik.com/platform/appbuilder/sample-apps/clone-sample-app) to get started.
 
-<img src="app-screenshot.png" style="max-height: 600px;">
+![](app-screenshot.png)
 
 ## Tutorials
 
