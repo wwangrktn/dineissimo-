@@ -1,6 +1,8 @@
 # Dineissimo
 
-A sample AppBuilder app for a hypothetical small restaurant chain. [Clone this repository in AppBuilder](http://docs.telerik.com/platform/appbuilder/sample-apps/clone-sample-app) to get started.
+A sample AppBuilder app for a hypothetical small restaurant chain.
+
+<a href="https://platform.telerik.com/#appbuilder/clone/https%3A%2F%2Fgithub.com%2Ftelerik%2Fdineissimo.git" target="_blank"><img src="http://docs.telerik.com/platform/appbuilder/sample-apps/images/try-in-appbuilder.png" alt="Try in AppBuilder" title="Try in AppBuilder" /></a>
 
 ![](app-screenshot.png)
 
