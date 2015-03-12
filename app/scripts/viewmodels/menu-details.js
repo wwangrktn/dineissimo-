@@ -22,6 +22,24 @@
             win.app.MenuDetails.set( "loaded", false );
         },
 
+        shareTweet: function(e) {
+                   window.plugins.socialsharing.shareViaTwitter(
+        “Terrific menu items from Dineissimo!”,
+        “www/”+e.data.item.imgSrc,
+        null,
+        this.onSuccess, 
+        this.onError
+                );
+        },
+        shareFacebook: function(e) {
+                    window.plugins.socialsharing.shareViaFacebook(
+        “Terrific menu items from Dineissimo!”,
+        “www/”+e.data.item.imgSrc,
+        null,
+        this.onSuccess, 
+        this.onError
+                   );
+        },
         show: function (e) {
             var view = e.view;
             $( "#details-title" ).addClass( "invisible" );

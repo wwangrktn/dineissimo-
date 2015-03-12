@@ -22,14 +22,15 @@
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.5.0",
   "CorePlugins": [
+    "nl.x-services.plugins.socialsharing@4.3.13",
     "org.apache.cordova.camera",
-    "org.apache.cordova.media-capture",
     "org.apache.cordova.console",
     "org.apache.cordova.device",
+    "org.apache.cordova.dialogs",
     "org.apache.cordova.file",
     "org.apache.cordova.geolocation",
     "org.apache.cordova.inappbrowser",
-    "org.apache.cordova.dialogs",
+    "org.apache.cordova.media-capture",
     "org.apache.cordova.splashscreen",
     "org.apache.cordova.statusbar"
   ],
@@ -68,5 +69,7 @@
     "com.telerik.mobiletesting": {
       "IOS_APP_URL": ""
     }
-  }
+  },
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.telerik.Dineissimo"
 }

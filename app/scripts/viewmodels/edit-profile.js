@@ -28,7 +28,7 @@
                 };
             
             /* Comment in the code block below in order to enable the Cordova camera plug in and to participate in the contest */
-            /*win.navigator.camera.getPicture(
+            win.navigator.camera.getPicture(
                 function (data) {
                     console.log("success called");
                     that.profile.set("profilePic", data);
@@ -41,7 +41,7 @@
                         $("#firstName").focus();
                 },
                 opts
-            );*/
+            );
         },
 
         deletePhoto: function (e) {
